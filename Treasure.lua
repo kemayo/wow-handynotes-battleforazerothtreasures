@@ -70,6 +70,15 @@ ns.points = {
         -- [] = {quest=, achievement=, criteria=, note=""}, -- 
     },
     [942] = { -- Stormsong Valley
-        -- [] = {quest=, achievement=, criteria=, note=""}, -- 
+        [53524173] = {quest=51449, achievement=12853, criteria=41061}, -- Weathered Treasure Chest
+        [50118623] = {quest=50526, achievement=12853, criteria=41063}, -- Frosty Treasure Chest
+        [59913907] = {quest=50937, achievement=12853, criteria=41065, note="On roof"}, -- Hidden Scholar's Chest
+        [58216368] = {quest=52326, achievement=12853, criteria=41067, note="Top shelf inside shed"}, -- Discarded Lunchbox
+        [36692323] = {quest=52976, achievement=12853, criteria=41069, note="Climb ladder onto ship"}, -- Venture Co. Supply Chest
+        [42854723] = {quest=50089, achievement=12853, criteria=41062, note="In cave"}, -- Old Ironbound Chest
+        [67224321] = {quest=50734, achievement=12853, criteria=41064, note="Under ship"}, -- Sunken Strongbox
+        [58608388] = {quest=49811, achievement=12853, criteria=41066, note="Under platform"}, -- Smuggler's Stash
+        [44447353] = {quest=52429, achievement=12853, criteria=41068, note="Jump onto platform"}, -- Carved Wooden Chest
+        [46003069] = {quest=52980, achievement=12853, criteria=41070, note="Behind pillar"}, -- Forgotten Chest
     },
 }
