@@ -67,7 +67,16 @@ ns.points = {
         -- [] = {quest=52195, achievement=12852, criteria=41017, note="",}, -- Secret of the Depths
     },
     [896] = { -- Drustvar
-        -- [] = {quest=, achievement=, criteria=, note=""}, -- 
+        [33713008] = {quest=53356, achievement=12995, criteria=41697}, -- Web-Covered Chest
+        [63306585] = {quest=53385, achievement=12995, criteria=41699, note="Left Down Up Right"}, -- Runebound Cache
+        [33687173] = {quest=53387, achievement=12995, criteria=41701, note="Right Up Left Down"}, -- Runebound Coffer
+        [55605181] = {quest=53472, achievement=12995, criteria=41703, note="Click on Witch Torch"}, -- Bespelled Chest
+        [25472416] = {quest=53474, achievement=12995, criteria=41705, note="Click on Witch Torch"}, -- Enchanted Chest
+        [25751995] = {quest=53357, achievement=12995, criteria=41698, note="Get keys from Gorging Raven"}, -- Merchant's Chest
+        [44222770] = {quest=53386, achievement=12995, criteria=41700, note="Left Right Down Up"}, -- Runebound Chest
+        [18515133] = {quest=53471, achievement=12995, criteria=41702, note="Click on Witch Torch"}, -- Hexed Chest
+        [67767367] = {quest=53473, achievement=12995, criteria=41704, note="Click on Witch Torch"}, -- Ensorcelled Chest
+        -- [] = {quest=53475, achievement=12995, criteria=41752, note=""}, -- Stolen Thornspeaker Cache
     },
     [942] = { -- Stormsong Valley
         [53524173] = {quest=51449, achievement=12853, criteria=41061}, -- Weathered Treasure Chest
