@@ -1,0 +1,4 @@
+package-as: HandyNotes_BattleForAzerothTreasures
+manual-changelog:
+    filename: CHANGELOG.md
+    markup-type: markdown
