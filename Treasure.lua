@@ -46,7 +46,17 @@ ns.points = {
     },
     --]]
     [862] = { -- Zuldazar
-        -- [] = {quest=, achievement=, criteria=, note=""}, -- 
+        [54093150] = {quest=48938, achievement=12851, criteria=40988, note="On second floor"}, -- Offerings of the Chosen
+        [51718690] = {quest=49936, achievement=12851, criteria=40990, note="Bottom floor of ship"}, -- Spoils of Pandaria
+        [49486526] = {quest=49257, achievement=12851, criteria=40992, note="Top of ship"}, -- Warlord's Cache
+        [61065863] = {quest=50947, achievement=12851, criteria=40994, npc=133208, note="Event: kill Da White Shark first"}, -- Da White Shark's Bounty
+        [56123806] = {quest=51338, achievement=12851, criteria=40996, note="In cave behind waterfall"}, -- Cache of Secrets
+        [64732170] = {quest=50259, achievement=12851, criteria=40989}, -- Witch Doctor's Hoard
+        [51432661] = {quest=50582, achievement=12851, criteria=40991}, -- Gift of the Brokenhearted
+        [38793443] = {quest=50707, achievement=12851, criteria=40993, note="Road behind waterfall"}, -- Dazar's Forgotten Chest
+        [71841676] = {quest=50949, achievement=12851, criteria=40995}, -- The Exile's Lament
+        [71161767] = path(50949),
+        [52974722] = {quest=51624, achievement=12851, criteria=40997}, -- Riches of Tor'nowa
     },
     [863] = { -- Nazmir
         -- [] = {quest=, achievement=, criteria=, note=""}, -- 
