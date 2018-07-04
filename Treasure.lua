@@ -72,7 +72,19 @@ ns.points = {
         [35455498] = {quest=49313, achievement=12771, criteria=40866, note="In cave",}, -- Wunja's Trove
     },
     [864] = { -- Vol'dun
-        -- [] = {quest=, achievement=, criteria=, note="",}, -- 
+        [46598801] = {quest=50237, achievement=12849, criteria=40966, note="Use mine cart",}, -- Ashvane Spoils
+        [44339222] = path(50237, "Mine cart"),
+        [49787940] = {quest=51132, achievement=12849, criteria=40968, note="Climb the rock arch",}, -- Lost Explorer's Bounty
+        [44512615] = {quest=51135, achievement=12849, criteria=40970, note="Climb fallen tree",}, -- Stranded Cache
+        [29388747] = {quest=51137, achievement=12849, criteria=40972, note="Under sand pile",}, -- Zem'lan's Buried Treasure
+        [40578574] = {quest=52994, achievement=12849, criteria=41003,}, -- Deadwood Chest
+        [38848290] = path(52994),
+        [48206469] = {quest=51093, achievement=12849, criteria=40967, note="Door on East side",}, -- Grayal's Last Offering
+        [47195846] = {quest=51133, achievement=12849, criteria=40969, note="Path from South side",}, -- Sandfury Reserve
+        [57746464] = {quest=51136, achievement=12849, criteria=40971,}, -- Excavator's Greed
+        [56696469] = path(51136),
+        [57061120] = {quest=52992, achievement=12849, criteria=41002, note="Enter at top of temple",}, -- Lost Offerings of Kimbul
+        -- [] = {quest=53004, achievement=12849, criteria=41004, note="",}, -- Sandsunken Treasure
     },
     [895] = { -- Tiragarde Sound
         [61515233] = {quest=49963, achievement=12852, criteria=41012, note="Ride the Guardian",}, -- Hay Covered Chest
