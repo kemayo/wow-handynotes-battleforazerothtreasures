@@ -2,4 +2,4 @@
 
 ## Changed in v1
 
-* Created with limited data
+* Created with the achievement-related treasures
