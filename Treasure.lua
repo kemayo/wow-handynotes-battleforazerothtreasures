@@ -59,7 +59,17 @@ ns.points = {
         [52974722] = {quest=51624, achievement=12851, criteria=40997}, -- Riches of Tor'nowa
     },
     [863] = { -- Nazmir
-        -- [] = {quest=, achievement=, criteria=, note=""}, -- 
+        [77903634] = {quest=49867, achievement=12771, criteria=40857,}, -- Lucky Horace's Lucky Chest
+        [77884635] = {quest=50061, achievement=12771, criteria=40858, note="In dead hippo's mouth",}, -- Partially-Digested Treasure
+        [43065078] = {quest=49979, achievement=12771, criteria=40859, note="In cave",}, -- Cursed Nazmani Chest
+        [42275056] = path(49979),
+        [35668560] = {quest=49885, achievement=12771, criteria=40860, note="In cave",}, -- Cleverly Disguised Chest
+        [62103487] = {quest=49891, achievement=12771, criteria=40861, note="Underwater cave",}, -- Lost Nazmani Treasure
+        [42772620] = {quest=49484, achievement=12771, criteria=40862, note="Climb the tree",}, -- Offering to Bwonsamdi
+        [66791735] = {quest=49483, achievement=12771, criteria=40863, note="Climb the tree",}, -- Shipwrecked Chest
+        [46238292] = {quest=49889, achievement=12771, criteria=40864,}, -- Venomous Seal
+        [76826220] = {quest=50045, achievement=12771, criteria=40865, note="Underwater cave",}, -- Swallowed Naga Chest
+        [35455498] = {quest=49313, achievement=12771, criteria=40866, note="In cave",}, -- Wunja's Trove
     },
     [864] = { -- Vol'dun
         -- [] = {quest=, achievement=, criteria=, note="",}, -- 
