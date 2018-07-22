@@ -293,7 +293,7 @@ local HLHandler = {}
 local info = {}
 
 function HLHandler:OnEnter(uiMapID, coord)
-    local tooltip = self:GetParent() == WorldMapButton and WorldMapTooltip or GameTooltip
+    local tooltip = self:GetParent() == WorldMapFrame:GetCanvas() and WorldMapTooltip or GameTooltip
     if self:GetCenter() > UIParent:GetCenter() then -- compare X coordinate
         tooltip:SetOwner(self, "ANCHOR_LEFT")
     else
@@ -395,7 +395,7 @@ do
 end
 
 function HLHandler:OnLeave(uiMapID, coord)
-    if self:GetParent() == WorldMapButton then
+    if self:GetParent() == WorldMapFrame:GetCanvas() then
         WorldMapTooltip:Hide()
     else
         GameTooltip:Hide()
