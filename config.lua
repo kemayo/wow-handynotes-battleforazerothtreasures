@@ -2,8 +2,11 @@ local myname, ns = ...
 
 ns.defaults = {
     profile = {
-        show_junk = true,
+        show_on_world = true,
+        show_on_minimap = true,
+        show_junk = false,
         show_npcs = true,
+        show_treasure = true,
         found = false,
         repeatable = true,
         icon_scale = 1.0,
@@ -52,6 +55,18 @@ ns.options = {
                     min = 0, max = 1, step = 0.01,
                     order = 30,
                 },
+                show_on_world = {
+                    type = "toggle",
+                    name = "World Map",
+                    desc = "Show icons on world map",
+                    order = 40,
+                },
+                show_on_minimap = {
+                    type = "toggle",
+                    name = "Minimap",
+                    desc = "Show icons on the minimap",
+                    order = 50,
+                },
             },
         },
         display = {
@@ -71,11 +86,6 @@ ns.options = {
                     desc = "Show the full tooltips for items",
                     order = 10,
                 },
-                -- show_junk = {
-                --     type = "toggle",
-                --     name = "Junk",
-                --     desc = "Show items which don't count for any achievement",
-                -- },
                 found = {
                     type = "toggle",
                     name = "Show found",
@@ -88,12 +98,24 @@ ns.options = {
                     desc = "Show rare NPCs to be killed, generally for items or achievements",
                     order = 30,
                 },
-                repeatable = {
+                show_treasure = {
                     type = "toggle",
-                    name = "Show repeatable",
-                    desc = "Show items which are repeatable? This generally means ones which have a daily tracking quest attached",
+                    name = "Show treasure",
+                    desc = "Show treasure that can be looted",
+                    order = 30,
+                },
+                show_junk = {
+                    type = "toggle",
+                    name = "Junk",
+                    desc = "Show items which don't count for any achievement",
                     order = 40,
                 },
+                -- repeatable = {
+                --     type = "toggle",
+                --     name = "Show repeatable",
+                --     desc = "Show items which are repeatable? This generally means ones which have a daily tracking quest attached",
+                --     order = 40,
+                -- },
                 tooltip_questid = {
                     type = "toggle",
                     name = "Show quest ids",
@@ -151,6 +173,17 @@ ns.should_show_point = function(coord, point, currentZone, currentLevel)
             elseif IsQuestFlaggedCompleted(point.quest) then
                 return false
             end
+        elseif point.achievement then
+            local completedByMe = select(13, GetAchievementInfo(point.achievement))
+            if completedByMe then
+                return false
+            end
+            if point.criteria then
+                local _, _, completed, _, _, completedBy = GetAchievementCriteriaInfoByID(point.achievement, point.criteria)
+                if completed and completedBy == player_name then
+                    return false
+                end
+            end
         end
         if point.follower and C_Garrison.IsFollowerCollected(point.follower) then
             return false
@@ -159,11 +192,20 @@ ns.should_show_point = function(coord, point, currentZone, currentLevel)
             return false
         end
     end
-    if (not ns.db.repeatable) and point.repeatable then
-        return false
-    end
-    if point.npc and not point.follower and not ns.db.show_npcs then
-        return false
+    -- if (not ns.db.repeatable) and point.repeatable then
+    --     return false
+    -- end
+    if not point.follower then
+        if point.npc then
+            if not ns.db.show_npcs then
+                return false
+            end
+        else
+            -- Not an NPC, not a follower, must be treasure
+            if not ns.db.show_treasure then
+                return false
+            end
+        end
     end
     if point.hide_before and not ns.db.upcoming and not IsQuestFlaggedCompleted(point.hide_before) then
         return false

@@ -310,7 +310,7 @@ end
 local function createWaypoint(button, uiMapID, coord)
     if TomTom then
         local x, y = HandyNotes:getXY(coord)
-        TomTom:AddMFWaypoint(uiMapID, nil, x, y, {
+        TomTom:AddWaypoint(uiMapID, x, y, {
             title = get_point_info_by_coord(uiMapID, coord),
             persistent = nil,
             minimap = true,
@@ -441,6 +441,9 @@ do
         Debug("GetNodes2", uiMapID, minimap)
         currentLevel = level
         currentZone = uiMapID
+        if (minimap and not ns.db.show_on_minimap) or (not minimap and not ns.db.show_on_world) then
+            return iter
+        end
         if minimap and ns.map_spellids[uiMapID] then
             if ns.map_spellids[mapFile] == true then
                 return iter
