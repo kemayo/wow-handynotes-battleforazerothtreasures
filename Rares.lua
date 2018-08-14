@@ -81,6 +81,43 @@ merge(ns.points[1161], {
 })
 
 merge(ns.points[896], { -- Drustvar
+    [59933466] = {quest=47884, npc=124548, achievement=12941, criteria=41706,}, -- Betsy
+    [58901790] = {quest=48842, npc=127333, achievement=12941, criteria=41708,}, -- Barbthorn Queen
+    [66585068] = {quest=48978, npc=126621, achievement=12941, criteria=41711,}, -- Bonesquall
+    [59245526] = {quest=48981, npc=127877, achievement=12941, criteria=41713, note="Pick one to fight",}, -- Longfang & Henry Breakwater
+    [52074697] = {quest=49216, npc=129904, achievement=12941, criteria=41715,}, -- Cottontail Matron
+    [65002266] = {quest=49311, npc=128973, achievement=12941, criteria=41718,}, -- Whargarble the Ill-Tempered
+    [50842040] = {quest=49388, npc=127129, achievement=12941, criteria=41720,}, -- Grozgore
+    [51352957] = {quest=49481, npc=129805, achievement=12941, criteria=41722,}, -- Beshol
+    [63414020] = {quest=49530, npc=129995, achievement=12941, criteria=41724,}, -- Emily Mayville
+    [56572924] = {quest=49602, npc=130143, achievement=12941, criteria=41726,}, -- Balethorn
+    [31011831] = {quest=50546, npc=134213, achievement=12941, criteria=41728,}, -- Executioner Blackwell
+    [22934796] = {quest=50688, npc=134754, achievement=12941, criteria=41729,}, -- Hyo'gi
+    [34966921] = {quest=51383, npc=137529, achievement=12941, criteria=41732,}, -- Arvon the Betrayed
+    [43808828] = {quest=51471, npc=137825, achievement=12941, criteria=41736,}, -- Avalanche
+    [29202488] = {quest=51700, npc=138675, achievement=12941, criteria=41742,}, -- Gorged Boar
+    [24242193] = {quest=51749, npc=138866, item=154217, achievement=12941, criteria=41748,}, -- Fungi Trio (quest 51887 also?)
+    [30476344] = {quest=51923, npc=139322, item=154315, achievement=12941, criteria=41751,}, -- Whitney "Steelclaw" Ramsay
+    [66574259] = {quest=48178, npc=125453, achievement=12941, criteria=41707,}, -- Quillrat Matriarch
+    [72786036] = {quest=48928, npc=127651, achievement=12941, criteria=41709,}, -- Vicemaul
+    [62956938] = {quest=48979, npc=127844, achievement=12941, criteria=41712,}, -- Gluttonous Yeti
+    [43463611] = {quest=49137, achievement=12941, criteria=41714,}, -- Ancient Sarcophagus
+    [59557181] = {quest=49269, npc=128707, achievement=12941, criteria=41717,}, -- Rimestone
+    [59557181] = {quest=49341, item=158598, achievement=12941, criteria=41719,}, -- Seething Cache
+    [57424380] = {quest=49480, npc=129835, achievement=12941, criteria=41721,}, -- Gorehorn
+    [32204036] = {quest=49528, npc=129950, achievement=12941, criteria=41723,}, -- Talon
+    [59874478] = {quest=49601, npc=130138, achievement=12941, criteria=41725,}, -- Nevermore
+    [35483290] = {quest=50163, npc=132319, achievement=12941, criteria=41727,}, -- Bilefang Mother
+    [18746057] = {quest=50669, npc=134706, achievement=12941, criteria=42342,}, -- Deathcap
+    [28051425] = {quest=50939, npc=135796, achievement=12941, criteria=41730,}, -- Captain Leadfist
+    [29056863] = {quest=51470, npc=137824, achievement=12941, criteria=41733,}, -- Arclight
+    [23422975] = {quest=51698, npc=138618, achievement=12941, criteria=41739,}, -- Haywire Golem
+    [33245765] = {quest=51748, npc=138863, achievement=12941, criteria=41745,}, -- Sister Martha
+    [26935962] = {quest=51922, npc=139321, achievement=12941, criteria=41750,}, -- Braedan Whitewall
+    -- [20295731] = {quest=nil, npc=137665,}, -- Soul Goliath
+    -- [35711177] = {quest=nil, npc=138667,}, -- Blighted Monstrosity
+    -- [25151616] = {quest=nil, npc=139358,}, -- The Caterer
+    -- [34722062] = {quest=nil, npc=137704,}, -- Matron Morana
 })
 merge(ns.points[942], { -- Stormsong Valley
 })
