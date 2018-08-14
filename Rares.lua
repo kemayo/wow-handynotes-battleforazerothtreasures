@@ -11,6 +11,34 @@ merge(ns.points[862], { -- Zuldazar
 merge(ns.points[863], { -- Nazmir
 })
 merge(ns.points[864], { -- Vol'dun
+    [50378160] = {quest=nil, npc=135852, achievement=12943, criteria=41606,}, -- Ak'tar
+    [54661534] = {quest=nil, npc=130439, achievement=12943, criteria=41607,}, -- Ashmane
+    [49048904] = {quest=nil, npc=128553, achievement=12943, criteria=41608,}, -- Azer'tor
+    [31078111] = {quest=nil, npc=128497, achievement=12943, criteria=41609,}, -- Bajiani the Slick
+    [49064989] = {quest=nil, npc=129476, achievement=12943, criteria=41610,}, -- Bloated Krolusk
+    [56005346] = {quest=nil, npc=136393, achievement=12943, criteria=41611,}, -- Bloodwing Bonepicker
+    [41412392] = {quest=nil, npc=136346, achievement=12943, criteria=41612,}, -- Captain Stef "Marrow" Quin
+    [42549216] = {quest=nil, npc=124722, achievement=12943, criteria=41613,}, -- Commodore Calhoun
+    [61433843] = {quest=nil, npc=136335, achievement=12943, criteria=41614,}, -- Enraged Krolusk
+    [63984784] = {quest=nil, npc=128674, achievement=12943, criteria=41615,}, -- Gut-Gut the Glutton
+    [53755340] = {quest=nil, npc=130443, achievement=12943, criteria=41616,}, -- Hivemother Kraxi
+    [37688447] = {quest=nil, npc=129283, achievement=12943, criteria=41617,}, -- Jumbo Sandsnapper
+    [60561756] = {quest=nil, npc=136341, achievement=12943, criteria=41618,}, -- Jungleweb Hunter
+    [35205164] = {quest=nil, npc=128686, achievement=12943, criteria=41619,}, -- Kamid the Trapper
+    [37964068] = {quest=nil, npc=137681, achievement=12943, criteria=41620,}, -- King Clickyclack
+    [43768623] = {quest=nil, npc=128951, achievement=12943, criteria=41621,}, -- Nez'ara
+    [49067187] = {quest=nil, npc=136340, achievement=12943, criteria=41622,}, -- Relic Hunter Hazaak
+    [44408053] = {quest=nil, npc=127776, achievement=12943, criteria=41623,}, -- Scaleclaw Broodmother
+    [32716522] = {quest=nil, npc=136336, achievement=12943, criteria=41624,}, -- Scorpox
+    [24566843] = {quest=nil, npc=136338, achievement=12943, criteria=41625,}, -- Sirokar
+    [47062556] = {quest=nil, npc=134571, achievement=12943, criteria=41626,}, -- Skycaller Teskris
+    [51433620] = {quest=nil, npc=134745, achievement=12943, criteria=41627,}, -- Skycarver Krakit
+    [66842511] = {quest=nil, npc=136304, achievement=12943, criteria=41628,}, -- Songstress Nahjeen
+    [57217347] = {quest=nil, npc=130401, achievement=12943, criteria=41629,}, -- Vathikur
+    [37094611] = {quest=nil, npc=129180, achievement=12943, criteria=41630,}, -- Warbringer Hozzik
+    [30065261] = {quest=nil, npc=134638, achievement=12943, criteria=41631,}, -- Warlord Zothix
+    [50703077] = {quest=nil, npc=134625, achievement=12943, criteria=41632,}, -- Warmother Captive
+    [43905396] = {quest=nil, npc=129411, achievement=12943, criteria=41633,}, -- Zunashi the Exile
 })
 merge(ns.points[895], { -- Tiragarde Sound
     [75147848] = {quest=nil, npc=132182, achievement=12939, criteria=41793,}, -- Auditor Dolp
