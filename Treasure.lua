@@ -97,6 +97,7 @@ ns.points = {
         [29222534] = {quest=52833, achievement=12852, criteria=41019, note="Kill pirates in Freehold until the map drops",}, -- Fading Treasure Map
         [48983759] = {quest=52845, achievement=12852, criteria=41021, note="Kill pirates in Freehold until the map drops",}, -- Singed Treasure Map
         -- [] = {quest=52195, achievement=12852, criteria=41017, note="",}, -- Secret of the Depths
+        [79205050] = {quest=48607, junk=true, label="Small Treasure Chest",},
     },
     [896] = { -- Drustvar
         [33713008] = {quest=53356, achievement=12995, criteria=41697,}, -- Web-Covered Chest
