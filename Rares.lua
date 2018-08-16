@@ -97,14 +97,14 @@ merge(ns.points[864], { -- Vol'dun
 })
 merge(ns.points[895], { -- Tiragarde Sound
     [75147848] = {quest=nil, npc=132182, achievement=12939, criteria=41793,}, -- Auditor Dolp
-    [76218305] = {quest=nil, npc=129181, achievement=12939, criteria=41795,}, -- Barman Bill
+    [76218305] = {quest=50233, npc=129181, item=163717, achievement=12939, criteria=41795,}, -- Barman Bill
     [34013029] = {quest=nil, npc=132068, achievement=12939, criteria=41796,}, -- Bashmu
-    [56676994] = {quest=nil, npc=132086, achievement=12939, criteria=41797,}, -- Black-Eyed Bart
+    [56676994] = {quest=50096, npc=132086, item=163718, achievement=12939, criteria=41797,}, -- Black-Eyed Bart
     [84707385] = {quest=nil, npc=139145, achievement=12939, criteria=41798,}, -- Blackthorne
     [83364413] = {quest=49999, npc=130508, achievement=12939, criteria=41800,}, -- Broodmother Razora
     [38422066] = {quest=nil, npc=132088, achievement=12939, criteria=41806,}, -- Captain Wintersail
-    [72838146] = {quest=nil, npc=139152, achievement=12939, criteria=41812,}, -- Carla Smirk
-    [89787815] = {quest=nil, npc=132211, achievement=12939, criteria=41813,}, -- Fowlmouth
+    [72838146] = {quest=51809, npc=139152, achievement=12939, criteria=41812,}, -- Carla Smirk
+    [89787815] = {quest=50155, npc=132211, achievement=12939, criteria=41813,}, -- Fowlmouth
     [59982275] = {quest=nil, npc=132127, achievement=12939, criteria=41814,}, -- Foxhollow Skyterror
     [57725613] = {quest=53373, npc=139233, achievement=12939, criteria=41819,}, -- Gulliver
     [48072334] = {quest=nil, npc=131520, achievement=12939, criteria=41820,}, -- Kulett the Ornery
@@ -119,7 +119,7 @@ merge(ns.points[895], { -- Tiragarde Sound
     [58541513] = {quest=nil, npc=127290, achievement=12939, criteria=41829,}, -- Saurolisk Tamer Mugg (Mugg)
     [76022887] = {quest=51877, npc=139287, achievement=12939, criteria=41830,}, -- Sawtooth
     [55703318] = {quest=nil, npc=139285, achievement=12939, criteria=41831,}, -- Shiverscale the Toxic
-    [81008166] = {quest=nil, npc=132280, achievement=12939, criteria=41832,}, -- Squacks
+    [80838277] = {quest=50160, npc=132280, achievement=12939, criteria=41832,}, -- Squacks
     [49353613] = {quest=nil, npc=139135, achievement=12939, criteria=41833,}, -- Squirgle of the Depths
     [66701427] = {quest=nil, npc=139280, achievement=12939, criteria=41834,}, -- Sythian the Swift
     [60801727] = {quest=nil, npc=133356, achievement=12939, criteria=41835,}, -- Tempestria
