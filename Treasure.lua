@@ -131,7 +131,7 @@ ns.points = {
         [44222770] = {quest=53386, achievement=12995, criteria=41700, note="Left Right Down Up",}, -- Runebound Chest
         [18515133] = {quest=53471, achievement=12995, criteria=41702, note="Click on Witch Torch",}, -- Hexed Chest
         [67767367] = {quest=53473, achievement=12995, criteria=41704, note="Click on Witch Torch",}, -- Ensorcelled Chest
-        -- [] = {quest=53475, achievement=12995, criteria=41752, note=""}, -- Stolen Thornspeaker Cache
+        [24304840] = {quest=53475, achievement=12995, criteria=41752,}, -- Stolen Thornspeaker Cache
     },
     [942] = { -- Stormsong Valley
         [53524173] = {quest=51449, achievement=12853, criteria=41061,}, -- Weathered Treasure Chest
