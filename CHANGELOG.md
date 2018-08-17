@@ -2,9 +2,11 @@
 
 ## Changed in v3
 
+* Secret of the Depths in Boralus (which involved a few under-the-hood code changes to support...)
 * Stagger the Tiragarde Sound treasure-map treasures, so you only see them once you've found the right map
 * Fix hiding of found things if only the achievement criteria is known
 * Add various rare mob questids, for better tracking
+* Missing Stolen Thornspeaker Cache in Drustvar
 * More junk treasures
 
 ## Changed in v2
