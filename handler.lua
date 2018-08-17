@@ -286,10 +286,6 @@ local function handle_tooltip(tooltip, point)
             end
             comparison:Show()
         end
-
-        if point.npc then
-            tooltip:AddLine("|cffeda55fClick|r to search for groups")
-        end
     else
         tooltip:SetText(UNKNOWN)
     end
@@ -387,21 +383,6 @@ do
         local point = ns.points[currentZone] and ns.points[currentZone][currentCoord]
         if button == "RightButton" and not down then
             ToggleDropDownMenu(1, nil, HL_Dropdown, self, 0, 0)
-        elseif button == "LeftButton" and down and point.npc then
-            if InCombatLockdown() then
-                print("|cFF33FF99" .. myname .. "|r: Can't search in combat")
-            else
-                local name = mob_name(point.npc)
-                PVEFrame_ShowFrame("GroupFinderFrame", LFGListPVEStub)
-                local panel = LFGListFrame.CategorySelection
-                LFGListCategorySelection_SelectCategory(panel, 6, 0)
-                LFGListCategorySelection_StartFindGroup(panel, name)
-                -- LFGListEntryCreation_SetAutoCreateMode(panel:GetParent().EntryCreation, "quest", activityID, questID)
-
-                -- C_LFGList.Search(6, LFGListSearchPanel_ParseSearchTerms(npcName), 0, 4)
-                -- LFG_LIST_SEARCH_RESULTS_RECEIVED
-                -- local number, ids = C_LFGList.GetSearchResults()
-            end
         end
     end
 end
