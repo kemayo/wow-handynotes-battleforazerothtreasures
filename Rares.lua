@@ -109,7 +109,7 @@ merge(ns.points[895], { -- Tiragarde Sound
     [57725613] = {quest=53373, npc=139233, achievement=12939, criteria=41819,}, -- Gulliver
     [48072334] = {quest=49984, npc=131520, achievement=12939, criteria=41820,}, -- Kulett the Ornery
     [68352088] = {quest=50525, npc=134106, item=155524, achievement=12939, criteria=41821,}, -- Lumbergrasp Sentinel
-    [58094870] = {quest=nil, npc=139290, achievement=12939, criteria=41822,}, -- Maison the Portable
+    [58094870] = {quest=51880, npc=139290, item=154458, achievement=12939, criteria=41822,}, -- Maison the Portable
     [64291931] = {quest=51321, npc=137183, item=160472, achievement=12939, criteria=41823,}, -- Imperiled Merchants (Honey-Coated Slitherer)
     [43801771] = {quest=nil, npc=131252, achievement=12939, criteria=41824,}, -- Merianae
     [65176460] = {quest=51833, npc=139205, achievement=12939, criteria=41825,}, -- P4-N73R4
@@ -123,7 +123,7 @@ merge(ns.points[895], { -- Tiragarde Sound
     [49353613] = {quest=51807, npc=139135, achievement=12939, criteria=41833,}, -- Squirgle of the Depths
     [66701427] = {quest=51873, npc=139280, achievement=12939, criteria=41834,}, -- Sythian the Swift
     [60801727] = {quest=50301, npc=133356, achievement=12939, criteria=41835,}, -- Tempestria
-    [55095056] = {quest=nil, npc=139289, achievement=12939, criteria=41836,}, -- Tentulos the Drifter
+    [55095056] = {quest=51879, npc=139289, achievement=12939, criteria=41836,}, -- Tentulos the Drifter
     [63735039] = {quest=49942, npc=131389, item=158556, achievement=12939, criteria=41837,}, -- Teres
     [70035567] = {quest=51835, npc=139235, achievement=12939, criteria=41838,}, -- Tort Jaw
     [46391997] = {quest=nil, npc=132076, item=160452, achievement=12939, criteria=41839,}, -- Totes
@@ -153,7 +153,7 @@ merge(ns.points[896], { -- Drustvar
     [29202488] = {quest=51700, npc=138675, achievement=12941, criteria=41742,}, -- Gorged Boar
     [24242193] = {quest=51749, npc=138866, item=154217, achievement=12941, criteria=41748,}, -- Fungi Trio (quest 51887 also?)
     [30476344] = {quest=51923, npc=139322, item=154315, achievement=12941, criteria=41751,}, -- Whitney "Steelclaw" Ramsay
-    [66574259] = {quest=48178, npc=125453, achievement=12941, criteria=41707,}, -- Quillrat Matriarch
+    [66574259] = {quest=48178, npc=125453, item=158583, achievement=12941, criteria=41707,}, -- Quillrat Matriarch
     [72786036] = {quest=48928, npc=127651, achievement=12941, criteria=41709,}, -- Vicemaul
     [62956938] = {quest=48979, npc=127844, achievement=12941, criteria=41712,}, -- Gluttonous Yeti
     [43463611] = {quest=49137, achievement=12941, criteria=41714,}, -- Ancient Sarcophagus
