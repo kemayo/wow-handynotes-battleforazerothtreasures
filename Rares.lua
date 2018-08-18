@@ -8,7 +8,7 @@ end
 
 merge(ns.points[862], { -- Zuldazar
     [81202100] = {quest=50280, npc=129961, item=161042, achievement=12944, criteria=41850,}, -- Atal'zul Gotaka
-    [64003300] = {quest=50439, npc=129954, item=161043, achievement=12944, criteria=41851,}, -- Gahz'ralka
+    [64403240] = {quest=50439, npc=129954, item=161043, achievement=12944, criteria=41851,}, -- Gahz'ralka
     [44007660] = {quest=51083, npc=136428, item=160979, achievement=12944, criteria=41852,}, -- Dark Chronicler
     [53204480] = {quest=51080, npc=136413, item=161047, achievement=12944, criteria=41853,}, -- Syrawon the Dominus
     [48205400] = {quest=49972, npc=131476, item=161125, achievement=12944, criteria=41869,}, -- Zayoos
@@ -22,7 +22,7 @@ merge(ns.points[862], { -- Zuldazar
     [70803240] = {quest=nil, npc=122004, item=161091, achievement=12944, criteria=41877,}, -- Umbra'jin
     [65201020] = {quest=50693, npc=134760, item=160958, achievement=12944, criteria=41855,}, -- Darkspeaker Jo'la
     [42003620] = {quest=50677, npc=134738, item=160978, achievement=12944, criteria=41856,}, -- Hakbi the Risen
-    [64003300] = {quest=50508, npc=134048, item=162613, achievement=12944, criteria=41858,}, -- Vukuba
+    [62004620] = {quest=50508, npc=134048, item=162613, achievement=12944, criteria=41858,}, -- Vukuba
     [44002540] = {quest=50438, npc=133842, item=161040, achievement=12944, criteria=41859,}, -- Warcrawler Karkithiss
     [60606620] = {quest=50281, npc=134782, item=161022, achievement=12944, criteria=41863,}, -- Murderbeak
     [74003940] = {quest=50269, npc=133190, achievement=12944, criteria=41864,}, -- Daggerjaw

@@ -86,7 +86,7 @@ ns.points = {
         [57746464] = {quest=51136, achievement=12849, criteria=40971,}, -- Excavator's Greed
         [56696469] = path(51136),
         [57061120] = {quest=52992, achievement=12849, criteria=41002, note="Enter at top of temple",}, -- Lost Offerings of Kimbul
-        -- [] = {quest=53004, achievement=12849, criteria=41004, note="",}, -- Sandsunken Treasure
+        [26504530] = {quest=53004, achievement=12849, criteria=41004,}, -- Sandsunken Treasure
     },
     [895] = { -- Tiragarde Sound
         [61515233] = {quest=49963, achievement=12852, criteria=41012, note="Ride the Guardian",}, -- Hay Covered Chest
@@ -140,7 +140,7 @@ ns.points = {
         [24304840] = {quest=53475, achievement=12995, criteria=41752,}, -- Stolen Thornspeaker Cache
     },
     [942] = { -- Stormsong Valley
-        [53524173] = {quest=51449, achievement=12853, criteria=41061,}, -- Weathered Treasure Chest
+        [66901200] = {quest=51449, achievement=12853, criteria=41061,}, -- Weathered Treasure Chest
         [50118623] = {quest=50526, achievement=12853, criteria=41063,}, -- Frosty Treasure Chest
         [59913907] = {quest=50937, achievement=12853, criteria=41065, note="On roof",}, -- Hidden Scholar's Chest
         [58216368] = {quest=52326, achievement=12853, criteria=41067, note="Top shelf inside shed",}, -- Discarded Lunchbox
