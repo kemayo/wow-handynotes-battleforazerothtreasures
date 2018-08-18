@@ -141,7 +141,7 @@ ns.points = {
     },
     [942] = { -- Stormsong Valley
         [66901200] = {quest=51449, achievement=12853, criteria=41061,}, -- Weathered Treasure Chest
-        [50118623] = {quest=50526, achievement=12853, criteria=41063,}, -- Frosty Treasure Chest
+        [48968407] = {quest=50526, achievement=12853, criteria=41063,}, -- Frosty Treasure Chest
         [59913907] = {quest=50937, achievement=12853, criteria=41065, note="On roof",}, -- Hidden Scholar's Chest
         [58216368] = {quest=52326, achievement=12853, criteria=41067, note="Top shelf inside shed",}, -- Discarded Lunchbox
         [36692323] = {quest=52976, achievement=12853, criteria=41069, note="Climb ladder onto ship",}, -- Venture Co. Supply Chest

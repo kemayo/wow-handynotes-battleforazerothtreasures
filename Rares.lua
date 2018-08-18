@@ -158,7 +158,7 @@ merge(ns.points[896], { -- Drustvar
     [62956938] = {quest=48979, npc=127844, achievement=12941, criteria=41712,}, -- Gluttonous Yeti
     [43463611] = {quest=49137, achievement=12941, criteria=41714,}, -- Ancient Sarcophagus
     [59557181] = {quest=49269, npc=128707, achievement=12941, criteria=41717,}, -- Rimestone
-    [59557181] = {quest=49341, item=158598, achievement=12941, criteria=41719,}, -- Seething Cache
+    [67936683] = {quest=49341, item=158598, achievement=12941, criteria=41719,}, -- Seething Cache
     [57424380] = {quest=49480, npc=129835, achievement=12941, criteria=41721,}, -- Gorehorn
     [32204036] = {quest=49528, npc=129950, achievement=12941, criteria=41723,}, -- Talon
     [59874478] = {quest=49601, npc=130138, achievement=12941, criteria=41725,}, -- Nevermore
