@@ -66,16 +66,16 @@ merge(ns.points[863], { -- Nazmir
     [52605489] = {quest=50040, npc=128930, achievement=12942, criteria=41479,}, -- Mala'kili and Rohnkor
 })
 merge(ns.points[864], { -- Vol'dun
-    [50378160] = {quest=nil, npc=135852, achievement=12943, criteria=41606,}, -- Ak'tar
-    [54661534] = {quest=nil, npc=130439, achievement=12943, criteria=41607,}, -- Ashmane
-    [49048904] = {quest=nil, npc=128553, achievement=12943, criteria=41608,}, -- Azer'tor
-    [31078111] = {quest=nil, npc=128497, achievement=12943, criteria=41609,}, -- Bajiani the Slick
+    [50378160] = {quest=51105, npc=135852, achievement=12943, criteria=41606,}, -- Ak'tar
+    [54661534] = {quest=51095, npc=130439, achievement=12943, criteria=41607,}, -- Ashmane
+    [49048904] = {quest=51096, npc=128553, achievement=12943, criteria=41608,}, -- Azer'tor
+    [31078111] = {quest=51117, npc=128497, achievement=12943, criteria=41609,}, -- Bajiani the Slick
     [49064989] = {quest=nil, npc=129476, achievement=12943, criteria=41610,}, -- Bloated Krolusk
-    [56005346] = {quest=nil, npc=136393, achievement=12943, criteria=41611,}, -- Bloodwing Bonepicker
-    [41412392] = {quest=nil, npc=136346, achievement=12943, criteria=41612,}, -- Captain Stef "Marrow" Quin
-    [42549216] = {quest=nil, npc=124722, achievement=12943, criteria=41613,}, -- Commodore Calhoun
-    [61433843] = {quest=nil, npc=136335, achievement=12943, criteria=41614,}, -- Enraged Krolusk
-    [63984784] = {quest=nil, npc=128674, achievement=12943, criteria=41615,}, -- Gut-Gut the Glutton
+    [56005346] = {quest=51118, npc=136393, achievement=12943, criteria=41611,}, -- Bloodwing Bonepicker
+    [41412392] = {quest=51120, npc=136346, achievement=12943, criteria=41612,}, -- Captain Stef "Marrow" Quin
+    [42549216] = {quest=51098, npc=124722, achievement=12943, criteria=41613,}, -- Commodore Calhoun
+    [61433843] = {quest=51121, npc=136335, achievement=12943, criteria=41614,}, -- Enraged Krolusk
+    [63984784] = {quest=51099, npc=128674, achievement=12943, criteria=41615,}, -- Gut-Gut the Glutton
     [53755340] = {quest=nil, npc=130443, achievement=12943, criteria=41616,}, -- Hivemother Kraxi
     [37688447] = {quest=nil, npc=129283, achievement=12943, criteria=41617,}, -- Jumbo Sandsnapper
     [60561756] = {quest=nil, npc=136341, achievement=12943, criteria=41618,}, -- Jungleweb Hunter
@@ -83,7 +83,7 @@ merge(ns.points[864], { -- Vol'dun
     [37964068] = {quest=nil, npc=137681, achievement=12943, criteria=41620,}, -- King Clickyclack
     [43768623] = {quest=nil, npc=128951, achievement=12943, criteria=41621,}, -- Nez'ara
     [49067187] = {quest=nil, npc=136340, achievement=12943, criteria=41622,}, -- Relic Hunter Hazaak
-    [44408053] = {quest=nil, npc=127776, achievement=12943, criteria=41623,}, -- Scaleclaw Broodmother
+    [44408053] = {quest=51107, npc=127776, achievement=12943, criteria=41623,}, -- Scaleclaw Broodmother
     [32716522] = {quest=nil, npc=136336, achievement=12943, criteria=41624,}, -- Scorpox
     [24566843] = {quest=nil, npc=136338, achievement=12943, criteria=41625,}, -- Sirokar
     [47062556] = {quest=nil, npc=134571, achievement=12943, criteria=41626,}, -- Skycaller Teskris
