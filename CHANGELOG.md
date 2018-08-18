@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v4
+
+* More questids for Tiragarde (done!) and Vol'dun
+* Removed the now-impossible "search for a group" feature
+* Fixed some misplaced icons
+
 ## Changed in v3
 
 * Secret of the Depths in Boralus (which involved a few under-the-hood code changes to support...)
