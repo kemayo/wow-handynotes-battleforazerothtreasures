@@ -139,7 +139,7 @@ merge(ns.points[896], { -- Drustvar
     [59933466] = {quest=47884, npc=124548, achievement=12941, criteria=41706,}, -- Betsy
     [58901790] = {quest=48842, npc=127333, achievement=12941, criteria=41708,}, -- Barbthorn Queen
     [66585068] = {quest=48978, npc=126621, achievement=12941, criteria=41711,}, -- Bonesquall
-    [59245526] = {quest=48981, npc=127877, achievement=12941, criteria=41713, note="Pick one to fight",}, -- Longfang & Henry Breakwater
+    [59245526] = {quest=48981, npc=127877, achievement=12941, criteria=41713, note="Pick one to fight; Dagger from Longfang, mail gloves from Henry",}, -- Longfang & Henry Breakwater
     [52074697] = {quest=49216, npc=129904, achievement=12941, criteria=41715,}, -- Cottontail Matron
     [65002266] = {quest=49311, npc=128973, achievement=12941, criteria=41718,}, -- Whargarble the Ill-Tempered
     [50842040] = {quest=49388, npc=127129, achievement=12941, criteria=41720,}, -- Grozgore
