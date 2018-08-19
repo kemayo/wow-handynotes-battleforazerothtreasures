@@ -22,7 +22,7 @@ merge(ns.points[862], { -- Zuldazar
     [70803240] = {quest=nil, npc=122004, item=161091, achievement=12944, criteria=41877,}, -- Umbra'jin
     [65201020] = {quest=50693, npc=134760, item=160958, achievement=12944, criteria=41855,}, -- Darkspeaker Jo'la
     [42003620] = {quest=50677, npc=134738, item=160978, achievement=12944, criteria=41856,}, -- Hakbi the Risen
-    [62004620] = {quest=50508, npc=134048, item=162613, achievement=12944, criteria=41858,}, -- Vukuba
+    [61904622] = {quest=50508, npc=134048, item=162613, achievement=12944, criteria=41858, note="Interact with Strange Egg",}, -- Vukuba
     [44002540] = {quest=50438, npc=133842, item=161040, achievement=12944, criteria=41859,}, -- Warcrawler Karkithiss
     [60606620] = {quest=50281, npc=134782, item=161022, achievement=12944, criteria=41863,}, -- Murderbeak
     [74003940] = {quest=50269, npc=133190, achievement=12944, criteria=41864,}, -- Daggerjaw
