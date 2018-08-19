@@ -90,7 +90,7 @@ ns.points = {
         [57061120] = {quest=52992, achievement=12849, criteria=41002, note="Enter at top of temple",}, -- Lost Offerings of Kimbul
         [26504530] = {quest=53004, achievement=12849, criteria=41004,}, -- Sandsunken Treasure
         -- Scavenger of the Sands TODO: criteria
-        [56297011] = {quest=53132, junk=true, item=163321, achievement=13016, criteria=nil, note="On the table",}, -- Julie's Cracked Dish
+        [56297011] = {quest=53132, junk=true, item=163321, achievement=13016, criteria=nil, note="Under the bridge",}, -- Jason's Rusty Blade
         [53568981] = {quest=53134, junk=true, item=163323, achievement=13016, criteria=nil, note="On the table",}, -- Julie's Cracked Dish
         [26795291] = {quest=53136, junk=true, item=163325, achievement=13016, criteria=nil, note="First floor, blue stone table",}, -- Ofer's Bound Journal
         [52431439] = {quest=53138, junk=true, item=163327, achievement=13016, criteria=nil, note="Near the bones close to the cliff",}, -- Julien's Left Boot
@@ -111,6 +111,8 @@ ns.points = {
         [52328519] = {quest=51673, junk=true, label="Treasure Chest",},
         [56496993] = {quest=50926, junk=true, label="Treasure Chest",},
         [37577607] = {quest=50924, junk=true, label="Treasure Chest",},
+        [52747649] = {quest=50926, junk=true, label="Treasure Chest",},
+        [51908251] = {quest=51673, junk=true, label="Treasure Chest",},
     },
     [895] = { -- Tiragarde Sound
         [61515233] = {quest=49963, achievement=12852, criteria=41012, note="Ride the Guardian",}, -- Hay Covered Chest
