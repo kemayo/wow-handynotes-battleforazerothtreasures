@@ -31,6 +31,9 @@ merge(ns.points[862], { -- Zuldazar
     [66203240] = {quest=50034, npc=131718, item=161020, achievement=12944, criteria=41867,}, -- Bramblewing
     [77601120] = {quest=50013, npc=131687, item=161109, achievement=12944, criteria=41868,}, -- Tambano
 })
+merge(ns.points[1165], { -- Dazar'alor
+    [55378240] = {quest=48333, npc=120899, item=160947, achievement=12944, criteria=41875,}, -- Kul'krazahn
+})
 merge(ns.points[863], { -- Nazmir
     [67812972] = {quest=48063, npc=125250, achievement=12942, criteria=41440,}, -- Ancient Jawbreaker
     [32802690] = {quest=50563, npc=134293, achievement=12942, criteria=41447,}, -- Azerite-Infused Slag
@@ -134,7 +137,6 @@ merge(ns.points[895], { -- Tiragarde Sound
 merge(ns.points[1161], { -- Boralus
     [80403500] = {quest=51877, npc=139287, achievement=12939, criteria=41830,}, -- Sawtooth
 })
-
 merge(ns.points[896], { -- Drustvar
     [59933466] = {quest=47884, npc=124548, achievement=12941, criteria=41706,}, -- Betsy
     [58901790] = {quest=48842, npc=127333, achievement=12941, criteria=41708,}, -- Barbthorn Queen

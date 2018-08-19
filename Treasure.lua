@@ -84,7 +84,7 @@ ns.points = {
         [38848290] = path(52994),
         [48206469] = {quest=51093, achievement=12849, criteria=40967, note="Door on East side",}, -- Grayal's Last Offering TODO: hide_before
         [47195846] = {quest=51133, achievement=12849, criteria=40969, note="Path from South side",}, -- Sandfury Reserve
-        [47445984] = path(51133)
+        [47445984] = path(51133),
         [57746464] = {quest=51136, achievement=12849, criteria=40971,}, -- Excavator's Greed
         [56696469] = path(51136),
         [57061120] = {quest=52992, achievement=12849, criteria=41002, note="Enter at top of temple",}, -- Lost Offerings of Kimbul
@@ -96,7 +96,7 @@ ns.points = {
         [52431439] = {quest=53138, item=163327, achievement=13016, criteria=nil, note="Near the bones close to the cliff",}, -- Julien's Left Boot
         [47067577] = {quest=53140, item=163329, achievement=13016, criteria=nil, note="Under the stairs",}, -- Zach's Canteen
         [66423596] = {quest=53142, item=163373, achievement=13016, criteria=nil, note="Cave",}, -- Rachel's Flute
-        [64883632] = path()
+        [64883632] = path(53142),
         [45229114] = {quest=53144, item=163375, achievement=13016, criteria=nil, note="On the wall",}, -- Portrait of Commander Martens
         [36217838] = {quest=53133, item=163322, achievement=13016, criteria=nil, note="Inside the turned over box",}, -- Ian's Empty Bottle
         [37803046] = {quest=53135, item=163324, achievement=13016, criteria=nil, note="Shatterstone Harbor's north entrance",}, -- Brian's Broken Compass
@@ -195,6 +195,6 @@ ns.points = {
         [44472690] = {quest=51338, minimap=true, achievement=12851, criteria=40996, note="In cave behind waterfall",}, -- Cache of Secrets
         [59258870] = {quest=50947, minimap=true, achievement=12851, criteria=40994, npc=133208, note="Event: kill Da White Shark first",}, -- Da White Shark's Bounty
         [38300716] = {quest=48938, minimap=true, achievement=12851, criteria=40988, note="On top of the Hall of the High Priests",}, -- Offerings of the Chosen
-        [36276280] = path(48938),
+        [41141101] = path(48938),
     },
 }
