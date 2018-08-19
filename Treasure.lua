@@ -79,7 +79,7 @@ ns.points = {
         [44339222] = path(50237, "Mine cart"),
         [49787940] = {quest=51132, achievement=12849, criteria=40968, note="Climb the rock arch",}, -- Lost Explorer's Bounty
         [44512615] = {quest=51135, achievement=12849, criteria=40970, note="Climb fallen tree",}, -- Stranded Cache
-        [29388747] = {quest=51137, achievement=12849, criteria=40972, note="Under sand pile",}, -- Zem'lan's Buried Treasure
+        [29388742] = {quest=51137, achievement=12849, criteria=40972, note="Under Disturbed Sand",}, -- Zem'lan's Buried Treasure
         [40578574] = {quest=52994, achievement=12849, criteria=41003,}, -- Deadwood Chest
         [38848290] = path(52994),
         [48206469] = {quest=51093, achievement=12849, criteria=40967, note="Door on East side",}, -- Grayal's Last Offering TODO: hide_before
@@ -113,6 +113,9 @@ ns.points = {
         [37577607] = {quest=50924, junk=true, label="Treasure Chest",},
         [52747649] = {quest=50926, junk=true, label="Treasure Chest",},
         [51908251] = {quest=51673, junk=true, label="Treasure Chest",},
+        [48338890] = {quest=50920, junk=true, label="Treasure Chest", note="In cave"},
+        [44858126] = {quest=50925, junk=true, label="Treasure Chest",},
+        [31158381] = {quest=50924, junk=true, label="Treasure Chest",},
     },
     [895] = { -- Tiragarde Sound
         [61515233] = {quest=49963, achievement=12852, criteria=41012, note="Ride the Guardian",}, -- Hay Covered Chest
