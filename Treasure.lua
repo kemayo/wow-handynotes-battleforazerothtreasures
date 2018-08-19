@@ -89,6 +89,22 @@ ns.points = {
         [56696469] = path(51136),
         [57061120] = {quest=52992, achievement=12849, criteria=41002, note="Enter at top of temple",}, -- Lost Offerings of Kimbul
         [26504530] = {quest=53004, achievement=12849, criteria=41004,}, -- Sandsunken Treasure
+        -- Scavenger of the Sands TODO: criteria
+        [56297011] = {quest=53132, item=163321, achievement=13016, criteria=nil, note="On the table",}, -- Julie's Cracked Dish
+        [53568981] = {quest=53134, item=163323, achievement=13016, criteria=nil, note="On the table",}, -- Julie's Cracked Dish
+        [26795291] = {quest=53136, item=163325, achievement=13016, criteria=nil, note="First floor, blue stone table",}, -- Ofer's Bound Journal
+        [52431439] = {quest=53138, item=163327, achievement=13016, criteria=nil, note="Near the bones close to the cliff",}, -- Julien's Left Boot
+        [47067577] = {quest=53140, item=163329, achievement=13016, criteria=nil, note="Under the stairs",}, -- Zach's Canteen
+        [66423596] = {quest=53142, item=163373, achievement=13016, criteria=nil, note="Cave",}, -- Rachel's Flute
+        [64883632] = path()
+        [45229114] = {quest=53144, item=163375, achievement=13016, criteria=nil, note="On the wall",}, -- Portrait of Commander Martens
+        [36217838] = {quest=53133, item=163322, achievement=13016, criteria=nil, note="Inside the turned over box",}, -- Ian's Empty Bottle
+        [37803046] = {quest=53135, item=163324, achievement=13016, criteria=nil, note="Shatterstone Harbor's north entrance",}, -- Brian's Broken Compass
+        [29465938] = {quest=53137, item=163326, achievement=13016, criteria=nil, note="On the small hill",}, -- Skye's Pet Rock
+        [43217700] = {quest=53139, item=163328, achievement=13016, criteria=nil, note="Near the wall",}, -- Navarro's Flask
+        [45883073] = {quest=53141, item=163372, achievement=13016, criteria=nil, note="Hanging on the hut",}, -- Damarcus' Backpack
+        [47933673] = {quest=53143, item=163374, achievement=13016, criteria=nil, note="Cave under the giant tree",}, -- Josh's Fang Necklace
+        [62862267] = {quest=53145, item=163376, achievement=13016, criteria=nil, note="Down from Tortaka Refuge",}, -- Kurt's Ornate Key
         -- junk
         [60843637] = {quest=50916, junk=true, label="Treasure Chest",},
         [57545508] = {quest=50928, junk=true, label="Treasure Chest",},
