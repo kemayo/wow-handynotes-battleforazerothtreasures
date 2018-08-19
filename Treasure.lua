@@ -175,10 +175,4 @@ ns.points = {
         -- junk
         [66758031] = {quest=50952, junk=true, label="Small Treasure Chest",},
     },
-    [1165] = { -- Dazar'alor
-        [44472690] = {quest=51338, minimap=true, achievement=12851, criteria=40996, note="In cave behind waterfall",}, -- Cache of Secrets
-        [59258870] = {quest=50947, minimap=true, achievement=12851, criteria=40994, npc=133208, note="Event: kill Da White Shark first",}, -- Da White Shark's Bounty
-        [38300716] = {quest=48938, minimap=true, achievement=12851, criteria=40988, note="On top of the Hall of the High Priests",}, -- Offerings of the Chosen
-        [36276280] = path(48938),
-    },
 }
