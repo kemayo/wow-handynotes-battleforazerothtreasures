@@ -59,6 +59,7 @@ ns.points = {
         [52974722] = {quest=51624, achievement=12851, criteria=40997}, -- Riches of Tor'nowa
         -- junk
         [80135512] = {quest=51346, junk=true, label="Treasure Chest",},
+        [50823158] = {quest=50711, junk=true, label="Treasure Chest",},
     },
     [863] = { -- Nazmir
         [77903634] = {quest=49867, achievement=12771, criteria=40857,}, -- Lucky Horace's Lucky Chest
@@ -81,12 +82,19 @@ ns.points = {
         [29388747] = {quest=51137, achievement=12849, criteria=40972, note="Under sand pile",}, -- Zem'lan's Buried Treasure
         [40578574] = {quest=52994, achievement=12849, criteria=41003,}, -- Deadwood Chest
         [38848290] = path(52994),
-        [48206469] = {quest=51093, achievement=12849, criteria=40967, note="Door on East side",}, -- Grayal's Last Offering
+        [48206469] = {quest=51093, achievement=12849, criteria=40967, note="Door on East side",}, -- Grayal's Last Offering TODO: hide_before
         [47195846] = {quest=51133, achievement=12849, criteria=40969, note="Path from South side",}, -- Sandfury Reserve
+        [47445984] = path(51133)
         [57746464] = {quest=51136, achievement=12849, criteria=40971,}, -- Excavator's Greed
         [56696469] = path(51136),
         [57061120] = {quest=52992, achievement=12849, criteria=41002, note="Enter at top of temple",}, -- Lost Offerings of Kimbul
         [26504530] = {quest=53004, achievement=12849, criteria=41004,}, -- Sandsunken Treasure
+        -- junk
+        [60843637] = {quest=50916, junk=true, label="Treasure Chest",},
+        [57545508] = {quest=50928, junk=true, label="Treasure Chest",},
+        [52328519] = {quest=51673, junk=true, label="Treasure Chest",},
+        [56496993] = {quest=50926, junk=true, label="Treasure Chest",},
+        [37577607] = {quest=50924, junk=true, label="Treasure Chest",},
     },
     [895] = { -- Tiragarde Sound
         [61515233] = {quest=49963, achievement=12852, criteria=41012, note="Ride the Guardian",}, -- Hay Covered Chest
@@ -166,5 +174,11 @@ ns.points = {
         [55769095] = {quest=52195, atlas="DemonInvasion2", scale=1.4, minimap=true, hide_before={52134, 52135, 52136, 52137, 52138}, item=161342, achievement=12852, criteria=41017, note="Ominous Altar; use it, get teleported, pick up the gem",}, -- Secret of the Depths
         -- junk
         [66758031] = {quest=50952, junk=true, label="Small Treasure Chest",},
+    },
+    [1165] = { -- Dazar'alor
+        [44472690] = {quest=51338, minimap=true, achievement=12851, criteria=40996, note="In cave behind waterfall",}, -- Cache of Secrets
+        [59258870] = {quest=50947, minimap=true, achievement=12851, criteria=40994, npc=133208, note="Event: kill Da White Shark first",}, -- Da White Shark's Bounty
+        [38300716] = {quest=48938, minimap=true, achievement=12851, criteria=40988, note="On top of the Hall of the High Priests",}, -- Offerings of the Chosen
+        [36276280] = path(48938),
     },
 }
