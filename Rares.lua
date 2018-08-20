@@ -74,11 +74,11 @@ merge(ns.points[864], { -- Vol'dun
     [49058905] = {quest=49252, npc=128553, achievement=12943, criteria=41608,}, -- Azer'tor
     [31008109] = {quest=49251, npc=128497, achievement=12943, criteria=41609,}, -- Bajiani the Slick
     [49064989] = {quest=nil, npc=129476, achievement=12943, criteria=41610,}, -- Bloated Krolusk
-    [56105356] = {quest=51118, npc=136393, achievement=12943, criteria=41611,}, -- Bloodwing Bonepicker
+    [56105356] = {quest=51079, npc=136393, achievement=12943, criteria=41611,}, -- Bloodwing Bonepicker
     [41272449] = {quest=51073, npc=136346, achievement=12943, criteria=41612,}, -- Captain Stef "Marrow" Quin
     [42679245] = {quest=50905, npc=124722, achievement=12943, criteria=41613,}, -- Commodore Calhoun
     [61853788] = {quest=51077, npc=136335, achievement=12943, criteria=41614,}, -- Enraged Krolusk
-    [64004757] = {quest=51099, npc=128674, achievement=12943, criteria=41615,}, -- Gut-Gut the Glutton
+    [64004757] = {quest=49270, npc=128674, achievement=12943, criteria=41615,}, -- Gut-Gut the Glutton
     [53685347] = {quest=47533, npc=130443, achievement=12943, criteria=41616, note="In cave"}, -- Hivemother Kraxi
     -- [53835149] = path(47533),
     [37428498] = {quest=49392, npc=129283, achievement=12943, criteria=41617,}, -- Jumbo Sandsnapper
