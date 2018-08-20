@@ -75,29 +75,32 @@ merge(ns.points[864], { -- Vol'dun
     [31008109] = {quest=49251, npc=128497, achievement=12943, criteria=41609,}, -- Bajiani the Slick
     [49064989] = {quest=nil, npc=129476, achievement=12943, criteria=41610,}, -- Bloated Krolusk
     [56105356] = {quest=51118, npc=136393, achievement=12943, criteria=41611,}, -- Bloodwing Bonepicker
-    [41412392] = {quest=51120, npc=136346, achievement=12943, criteria=41612,}, -- Captain Stef "Marrow" Quin
+    [41272449] = {quest=51073, npc=136346, achievement=12943, criteria=41612,}, -- Captain Stef "Marrow" Quin
     [42679245] = {quest=50905, npc=124722, achievement=12943, criteria=41613,}, -- Commodore Calhoun
     [61853788] = {quest=51077, npc=136335, achievement=12943, criteria=41614,}, -- Enraged Krolusk
     [64004757] = {quest=51099, npc=128674, achievement=12943, criteria=41615,}, -- Gut-Gut the Glutton
-    [53685347] = {quest=47533, npc=130443, achievement=12943, criteria=41616,}, -- Hivemother Kraxi
+    [53685347] = {quest=47533, npc=130443, achievement=12943, criteria=41616, note="In cave"}, -- Hivemother Kraxi
     -- [53835149] = path(47533),
     [37428498] = {quest=49392, npc=129283, achievement=12943, criteria=41617,}, -- Jumbo Sandsnapper
     [60561756] = {quest=nil, npc=136341, achievement=12943, criteria=41618,}, -- Jungleweb Hunter
-    [35205164] = {quest=nil, npc=128686, achievement=12943, criteria=41619,}, -- Kamid the Trapper
-    [37964068] = {quest=nil, npc=137681, achievement=12943, criteria=41620,}, -- King Clickyclack
+    [35085183] = {quest=50528, npc=128686, achievement=12943, criteria=41619,}, -- Kamid the Trapper
+    [38284138] = {quest=51424, npc=137681, achievement=12943, criteria=41620, note="In cave"}, -- King Clickyclack
+    -- [37354050] = path(51424),
     [43758624] = {quest=50898, npc=128951, achievement=12943, criteria=41621,}, -- Nez'ara
     [49017210] = {quest=51126, npc=136340, achievement=12943, criteria=41622,}, -- Relic Hunter Hazaak
     [44538023] = {quest=48960, npc=127776, achievement=12943, criteria=41623,}, -- Scaleclaw Broodmother
     [32716522] = {quest=nil, npc=136336, achievement=12943, criteria=41624,}, -- Scorpox
-    [24566843] = {quest=nil, npc=136338, achievement=12943, criteria=41625,}, -- Sirokar
-    [47062556] = {quest=nil, npc=134571, achievement=12943, criteria=41626,}, -- Skycaller Teskris
-    [51433620] = {quest=nil, npc=134745, achievement=12943, criteria=41627,}, -- Skycarver Krakit
+    [24736850] = {quest=51075, npc=136338, achievement=12943, criteria=41625,}, -- Sirokar
+    [46972518] = {quest=50637, npc=134571, achievement=12943, criteria=41626, note="In cave",}, -- Skycaller Teskris
+    -- [46242714] = path(50637),
+    [51263645] = {quest=50686, npc=134745, achievement=12943, criteria=41627,}, -- Skycarver Krakit
     [66842511] = {quest=nil, npc=136304, achievement=12943, criteria=41628,}, -- Songstress Nahjeen
     [57197349] = {quest=49674, npc=130401, achievement=12943, criteria=41629,}, -- Vathikur
-    [37094611] = {quest=nil, npc=129180, achievement=12943, criteria=41630,}, -- Warbringer Hozzik
-    [30065261] = {quest=nil, npc=134638, achievement=12943, criteria=41631,}, -- Warlord Zothix
-    [50703077] = {quest=nil, npc=134625, achievement=12943, criteria=41632,}, -- Warmother Captive
-    [43905396] = {quest=nil, npc=129411, achievement=12943, criteria=41633,}, -- Zunashi the Exile
+    [37084616] = {quest=49373, npc=129180, achievement=12943, criteria=41630,}, -- Warbringer Hozzik
+    [30115256] = {quest=50662, npc=134638, achievement=12943, criteria=41631,}, -- Warlord Zothix
+    [50713086] = {quest=50658, npc=134625, achievement=12943, criteria=41632,}, -- Warmother Captive
+    [43915405] = {quest=48319, npc=129411, achievement=12943, criteria=41633, note="Inside skeleton under the sand"}, -- Zunashi the Exile
+    -- [43985246] = path(48319),
 })
 merge(ns.points[895], { -- Tiragarde Sound
     [75147848] = {quest=50156, npc=132182, achievement=12939, criteria=41793,}, -- Auditor Dolp
