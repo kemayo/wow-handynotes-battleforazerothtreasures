@@ -2,21 +2,27 @@ local myname, ns = ...
 
 -- note to self: I like Garr_TreasureIcon...
 
+local merge = function(t1, t2)
+    if not t2 then return t1 end
+    for k, v in pairs(t2) do
+        t1[k] = v
+    end
+end
+ns.merge = merge
+
 local AZERITE = 1553
 local CHEST = 'Treasure Chest'
 local CHEST_SM = 'Small Treasure Chest'
 local CHEST_GLIM = 'Glimmering Treasure Chest'
-local path = function(questid, label, atlas, note, scale)
-    label = label or "Path to treasure"
-    atlas = atlas or "map-icon-SuramarDoor.tga" -- 'PortalPurple'
-    return {
+local path = function(questid, details)
+    return merge({
         quest = questid,
-        label = label,
-        atlas = atlas,
+        label = "Path to treasure",
+        atlas = "map-icon-SuramarDoor.tga", -- 'PortalPurple'
         path = true,
         scale = scale,
         note = note,
-    }
+    }, details)
 end
 ns.path = path
 
@@ -76,7 +82,7 @@ ns.points = {
     },
     [864] = { -- Vol'dun
         [46598801] = {quest=50237, achievement=12849, criteria=40966, note="Use mine cart",}, -- Ashvane Spoils
-        [44339222] = path(50237, "Mine cart"),
+        [44339222] = path(50237, {label="Mine cart"}),
         [49787940] = {quest=51132, achievement=12849, criteria=40968, note="Climb the rock arch",}, -- Lost Explorer's Bounty
         [44502613] = {quest=51135, achievement=12849, criteria=40970, note="Climb fallen tree",}, -- Stranded Cache
         [44712480] = path(51135),
@@ -97,7 +103,7 @@ ns.points = {
         [52431439] = {quest=53138, junk=true, minimap=true, item=163327, achievement=13016, criteria=nil, note="Near the bones close to the cliff",}, -- Julien's Left Boot
         [47067577] = {quest=53140, junk=true, minimap=true, item=163329, achievement=13016, criteria=nil, note="Under the stairs",}, -- Zach's Canteen
         [66413590] = {quest=53142, junk=true, minimap=true, item=163373, achievement=13016, criteria=nil, note="In cave",}, -- Rachel's Flute
-        [64883632] = path(53142), --TODO: junk path?
+        [64883632] = path(53142, {junk=true}),
         [45229114] = {quest=53144, junk=true, minimap=true, item=163375, achievement=13016, criteria=nil, note="On the wall",}, -- Portrait of Commander Martens
         [36217838] = {quest=53133, junk=true, minimap=true, item=163322, achievement=13016, criteria=nil, note="Inside the turned over box",}, -- Ian's Empty Bottle
         [37813049] = {quest=53135, junk=true, minimap=true, item=163324, achievement=13016, criteria=nil, note="Under the rock",}, -- Brian's Broken Compass
