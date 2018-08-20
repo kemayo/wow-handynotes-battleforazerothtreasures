@@ -113,23 +113,23 @@ ns.points = {
         [47933673] = {quest=53143, junk=true, minimap=true, item=163374, achievement=13016, criteria=nil, note="Cave under the giant tree",}, -- Josh's Fang Necklace
         [62862267] = {quest=53145, junk=true, minimap=true, item=163376, achievement=13016, criteria=nil, note="Down from Tortaka Refuge",}, -- Kurt's Ornate Key
         -- junk
-        [60843637] = {quest=50916, junk=true, label="Treasure Chest",},
-        [57545508] = {quest=50928, junk=true, label="Treasure Chest",},
-        [52328519] = {quest=51673, junk=true, label="Treasure Chest",},
-        [56496993] = {quest=50926, junk=true, label="Treasure Chest",},
-        [37577607] = {quest=50924, junk=true, label="Treasure Chest",},
-        [52747649] = {quest=50926, junk=true, label="Treasure Chest",},
-        [51908251] = {quest=51673, junk=true, label="Treasure Chest",},
-        [48338890] = {quest=50920, junk=true, label="Treasure Chest", note="In cave"},
-        [44858126] = {quest=50925, junk=true, label="Treasure Chest",},
-        [31158381] = {quest=50924, junk=true, label="Treasure Chest",},
-        [26496777] = {quest=50923, junk=true, label="Treasure Chest",},
-        [30344624] = {quest=50922, junk=true, label="Treasure Chest",},
-        [35095003] = {quest=50919, junk=true, label="Treasure Chest",},
+        [60843637] = {quest=50916, junk=true, label=CHEST,},
+        [57545508] = {quest=50928, junk=true, label=CHEST,},
+        [52328519] = {quest=51673, junk=true, label=CHEST,},
+        [56496993] = {quest=50926, junk=true, label=CHEST,},
+        [37577607] = {quest=50924, junk=true, label=CHEST,},
+        [52747649] = {quest=50926, junk=true, label=CHEST,},
+        [51908251] = {quest=51673, junk=true, label=CHEST,},
+        [48338890] = {quest=50920, junk=true, label=CHEST, note="In cave"},
+        [44858126] = {quest=50925, junk=true, label=CHEST,},
+        [31158381] = {quest=50924, junk=true, label=CHEST,},
+        [26496777] = {quest=50923, junk=true, label=CHEST,},
+        [30344624] = {quest=50922, junk=true, label=CHEST,},
+        [35095003] = {quest=50919, junk=true, label=CHEST,},
         [46984656] = {quest=50883, junk=true, label="Mysterious trashpile", achievement="12482", note="In alcove, Summon Jani, give her Charged Ranishu Antennae"},
-        [46384538] = {quest=50921, junk=true, label="Treasure Chest",},
-        [54363351] = {quest=50917, junk=true, label="Treasure Chest",},
-        [62783373] = {quest=50916, junk=true, label="Treasure Chest",},
+        [46384538] = {quest=50921, junk=true, label=CHEST,},
+        [54363351] = {quest=50917, junk=true, label=CHEST,},
+        [62783373] = {quest=50916, junk=true, label=CHEST,},
     },
     [895] = { -- Tiragarde Sound
         [61515233] = {quest=49963, achievement=12852, criteria=41012, note="Ride the Guardian",}, -- Hay Covered Chest
@@ -150,25 +150,25 @@ ns.points = {
         [29222534] = {quest=52833, hide_before=52854, achievement=12852, criteria=41019, note="Kill pirates in Freehold until the map drops",}, -- Fading Treasure Map 162580 (q:52854)
         [48983759] = {quest=52845, hide_before=52860, achievement=12852, criteria=41021, note="Kill pirates in Freehold until the map drops",}, -- Singed Treasure Map 162584 (q:52860)
         -- junk:
-        [76967543] = {quest=48593, junk=true, label="Small Treasure Chest",},
-        [78008050] = {quest=48595, junk=true, label="Small Treasure Chest",},
-        [76358090] = {quest=48595, junk=true, label="Small Treasure Chest",},
-        [75758283] = {quest=48596, junk=true, label="Small Treasure Chest",},
-        [38432868] = {quest=48598, junk=true, label="Small Treasure Chest",},
-        [38762673] = {quest=48599, junk=true, label="Small Treasure Chest",},
-        [78114901] = {quest=48607, junk=true, label="Small Treasure Chest",},
-        [79205050] = {quest=48607, junk=true, label="Small Treasure Chest",},
-        [81344938] = {quest=48607, junk=true, label="Small Treasure Chest",},
-        [76126733] = {quest=48608, junk=true, label="Small Treasure Chest",},
-        [68635108] = {quest=48609, junk=true, label="Small Treasure Chest",},
-        [50842310] = {quest=48611, junk=true, label="Small Treasure Chest",},
-        [47442365] = {quest=48611, junk=true, label="Small Treasure Chest",},
-        [61212836] = {quest=48612, junk=true, label="Small Treasure Chest",},
-        [57311757] = {quest=48617, junk=true, label="Small Treasure Chest",},
-        [87347379] = {quest=48618, junk=true, label="Small Treasure Chest",},
-        [88387840] = {quest=48618, junk=true, label="Small Treasure Chest",},
-        [69801270] = {quest=48619, junk=true, label="Small Treasure Chest",},
-        [46481829] = {quest=48621, junk=true, label="Small Treasure Chest",},
+        [76967543] = {quest=48593, junk=true, label=CHEST_SM,},
+        [78008050] = {quest=48595, junk=true, label=CHEST_SM,},
+        [76358090] = {quest=48595, junk=true, label=CHEST_SM,},
+        [75758283] = {quest=48596, junk=true, label=CHEST_SM,},
+        [38432868] = {quest=48598, junk=true, label=CHEST_SM,},
+        [38762673] = {quest=48599, junk=true, label=CHEST_SM,},
+        [78114901] = {quest=48607, junk=true, label=CHEST_SM,},
+        [79205050] = {quest=48607, junk=true, label=CHEST_SM,},
+        [81344938] = {quest=48607, junk=true, label=CHEST_SM,},
+        [76126733] = {quest=48608, junk=true, label=CHEST_SM,},
+        [68635108] = {quest=48609, junk=true, label=CHEST_SM,},
+        [50842310] = {quest=48611, junk=true, label=CHEST_SM,},
+        [47442365] = {quest=48611, junk=true, label=CHEST_SM,},
+        [61212836] = {quest=48612, junk=true, label=CHEST_SM,},
+        [57311757] = {quest=48617, junk=true, label=CHEST_SM,},
+        [87347379] = {quest=48618, junk=true, label=CHEST_SM,},
+        [88387840] = {quest=48618, junk=true, label=CHEST_SM,},
+        [69801270] = {quest=48619, junk=true, label=CHEST_SM,},
+        [46481829] = {quest=48621, junk=true, label=CHEST_SM,},
     },
     [896] = { -- Drustvar
         [33713008] = {quest=53356, achievement=12995, criteria=41697,}, -- Web-Covered Chest
@@ -194,8 +194,8 @@ ns.points = {
         [44447353] = {quest=52429, achievement=12853, criteria=41068, note="Jump onto platform",}, -- Carved Wooden Chest
         [46003069] = {quest=52980, achievement=12853, criteria=41070, note="Behind pillar",}, -- Forgotten Chest
         -- junk
-        [64366899] = {quest=51939, junk=true, label="Small Treasure Chest",},
-        [62056563] = {quest=51184, junk=true, label="Small Treasure Chest",},
+        [64366899] = {quest=51939, junk=true, label=CHEST_SM,},
+        [62056563] = {quest=51184, junk=true, label=CHEST_SM,},
     },
     [1161] = { -- Boralus
         [61901010] = {quest=52870, achievement=12852, criteria=41016, note="In cave",}, -- Scrimshaw Cache
@@ -208,7 +208,7 @@ ns.points = {
         [67147982] = {quest=52138, atlas="poi-workorders", minimap=true, achievement=12852, criteria=41017, note="Read Damp Scrolls",},
         [55769095] = {quest=52195, atlas="DemonInvasion2", scale=1.4, minimap=true, hide_before={52134, 52135, 52136, 52137, 52138}, item=161342, achievement=12852, criteria=41017, note="Ominous Altar; use it, get teleported, pick up the gem",}, -- Secret of the Depths
         -- junk
-        [66758031] = {quest=50952, junk=true, label="Small Treasure Chest",},
+        [66758031] = {quest=50952, junk=true, label=CHEST_SM,},
     },
     [1165] = { -- Dazar'alor
         [44472690] = {quest=51338, minimap=true, achievement=12851, criteria=40996, note="In cave behind waterfall",}, -- Cache of Secrets
