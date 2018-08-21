@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v5
+
+* Include location for These Hills Sing
+
 ## Changed in v4
 
 * More questids for Tiragarde (done!) and Vol'dun
