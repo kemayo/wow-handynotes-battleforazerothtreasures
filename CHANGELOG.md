@@ -3,6 +3,8 @@
 ## Changed in v5
 
 * Include location for These Hills Sing
+* Include locations for Scavenger of the Sands (NLZ)
+* More questids and fixes for Vol'dun (NLZ)
 
 ## Changed in v4
 
