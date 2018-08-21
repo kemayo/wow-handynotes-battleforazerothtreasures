@@ -132,8 +132,8 @@ merge(ns.points[895], { -- Tiragarde Sound
     [70035567] = {quest=51835, npc=139235, achievement=12939, criteria=41838,}, -- Tort Jaw
     [46391997] = {quest=50095, npc=132076, item=160452, achievement=12939, criteria=41839,}, -- Totes
     [70271283] = {quest=50073, npc=131984, item=160473, achievement=12939, criteria=41840,}, -- Twin-hearted Construct
-    [52253215] = {quest=nil, npc=132052, item=155074,}, -- Vol'Jim
     [61515233] = {quest=49963, npc=130350, item=155571, note="Ride to Roan Berthold in Southwind Station; follow the road",}, -- Guardian of the Spring (49983 is the ride, 49963 is the loot)
+    -- [52253215] = {quest=nil, npc=132052, item=155074,}, -- Vol'Jim (removed from game?)
 })
 merge(ns.points[1161], { -- Boralus
     [80403500] = {quest=51877, npc=139287, achievement=12939, criteria=41830,}, -- Sawtooth
