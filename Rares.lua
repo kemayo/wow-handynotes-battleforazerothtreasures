@@ -211,7 +211,8 @@ merge(ns.points[942], { -- Stormsong Valley
     [42006280] = {quest=52461, npc=141239, item=159169, achievement=12940, criteria=41845,}, -- Osca the Bloodied
     [73806080] = {quest=52125, npc=139988, achievement=12940, criteria=41846,}, -- Sandfang
     [60004600] = {quest=52123, npc=139980, item=154449, achievement=12940, criteria=41847,}, -- Taja the Tidehowler
-    [53406450] = {quest=52324, npc=141043, item=159179, achievement=12940, criteria=nil,}, -- Jakala the Cruel
+    [53406450] = {quest=52323, npc=140925, item=159179, achievement=12940, criteria=nil, faction="Horde",}, -- Doc Marrtens
+    [53416451] = {quest=52324, npc=141043, item=nil, achievement=12940, criteria=nil, faction="Alliance", note="Talk to Doc Marrtens",}, -- Jakala the Cruel
     -- [72545052] = {quest=nil, npc=139515,}, -- Sandscour
     -- [68745147] = {quest=nil, npc=132047,}, -- Reinforced Hullbreaker
     -- [40143732] = {quest=nil, npc=137649,}, -- Pest Remover Mk. II
