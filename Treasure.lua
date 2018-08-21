@@ -89,7 +89,7 @@ ns.points = {
         [29388742] = {quest=51137, achievement=12849, criteria=40972, note="Under Disturbed Sand",}, -- Zem'lan's Buried Treasure
         [40578574] = {quest=52994, achievement=12849, criteria=41003,}, -- Deadwood Chest
         [38848290] = path(52994),
-        [48186469] = {quest=51093, achievement=12849, criteria=40967, note="Door on East side", hide_before=50550,}, -- Grayal's Last Offering
+        [48186469] = {quest=51093, achievement=12849, criteria=40967, note="Door on East side", hide_before=50550, faction="Horde",}, -- Grayal's Last Offering
         [49166469] = path(51093),
         [47195846] = {quest=51133, achievement=12849, criteria=40969, note="Path from South side",}, -- Sandfury Reserve
         [47445984] = path(51133),
