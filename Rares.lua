@@ -35,6 +35,8 @@ merge(ns.points[862], { -- Zuldazar
     [66082238] = {quest=nil, npc=143910, achievement=13048, criteria=41684, note="South of the Nesingwary's Trek windrider",}, -- Sludgecrusher the Anklyodon
     [61622537] = {quest=nil, npc=130741, achievement=13048, criteria=41673, note="Fighting Ten'gor at crossroad",}, -- Nol'ixwan the Direhorn
     [71242184] = {quest=nil, npc=123502, achievement=13048, criteria=41677, note="On the road from Zeb'ahari to Tal'gurub",}, -- King K'tal the Devilsaur
+    -- Mushroom Harvest
+    [45537917] = {npc=143314, achievement=13027, criteria=41391, note="On the beach, between trees",}, -- Bane of the Woods
 })
 merge(ns.points[1165], { -- Dazar'alor
     [55378240] = {quest=48333, npc=120899, item=160947, achievement=12944, criteria=41875,}, -- Kul'krazahn
@@ -74,6 +76,10 @@ merge(ns.points[863], { -- Nazmir
     [52605489] = {quest=50040, npc=128930, achievement=12942, criteria=41479,}, -- Mala'kili and Rohnkor
     -- Life Finds a Way... To Die!
     [25706971] = {quest=nil, npc=143898, achievement=13048, criteria=41683, note="Flying close to the road from Vol'dun to Zuldazar",}, -- Makatau the Pterrordax
+    -- Mushroom Harvest
+    [52357020] = {npc=143316, achievement=13027, criteria=41390, note="South of Heart of Darkness. Entrance is from the north side of Xal'vor ruins",}, -- Skullcap
+    [73614870] = {npc=143311, achievement=13027, criteria=41393, note="In cave, entrance at 73.2 49.7",}, -- Toadcruel
+    -- [73204970] = path(), Path without quest?
 })
 merge(ns.points[864], { -- Vol'dun
     [50378160] = {quest=51058, npc=135852, achievement=12943, criteria=41606,}, -- Ak'tar
@@ -108,6 +114,8 @@ merge(ns.points[864], { -- Vol'dun
     [50713086] = {quest=50658, npc=134625, achievement=12943, criteria=41632,}, -- Warmother Captive
     [43915405] = {quest=48319, npc=129411, achievement=12943, criteria=41633, note="Inside skeleton under the sand"}, -- Zunashi the Exile
     [43985246] = path(48319),
+    -- Mushroom Harvest
+    [61101826] = {npc=143313, achievement=13027, criteria=41392, note="Shrouded Shore, on the hill",}, -- Portakillo
 })
 merge(ns.points[895], { -- Tiragarde Sound
     [75147848] = {quest=50156, npc=132182, achievement=12939, criteria=41793,}, -- Auditor Dolp
