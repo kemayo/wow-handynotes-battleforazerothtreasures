@@ -89,29 +89,30 @@ ns.points = {
         [29388742] = {quest=51137, achievement=12849, criteria=40972, note="Under Disturbed Sand",}, -- Zem'lan's Buried Treasure
         [40578574] = {quest=52994, achievement=12849, criteria=41003,}, -- Deadwood Chest
         [38848290] = path(52994),
-        [48206469] = {quest=51093, achievement=12849, criteria=40967, note="Door on East side", hide_before=50550,}, -- Grayal's Last Offering
+        [48186469] = {quest=51093, achievement=12849, criteria=40967, note="Door on East side", hide_before=50550,}, -- Grayal's Last Offering
+        [49166469] = path(51093),
         [47195846] = {quest=51133, achievement=12849, criteria=40969, note="Path from South side",}, -- Sandfury Reserve
         [47445984] = path(51133),
         [57746464] = {quest=51136, achievement=12849, criteria=40971,}, -- Excavator's Greed
         [56696469] = path(51136),
-        [57061120] = {quest=52992, achievement=12849, criteria=41002, note="Enter at top of temple",}, -- Lost Offerings of Kimbul
+        [57061121] = {quest=52992, achievement=12849, criteria=41002, note="Enter at top of temple",}, -- Lost Offerings of Kimbul
         [26484534] = {quest=53004, achievement=12849, criteria=41004, note="Use Abandoned Bobber",}, -- Sandsunken Treasure
-        -- Scavenger of the Sands TODO: criteria
-        [56297011] = {quest=53132, junk=true, minimap=true, item=163321, achievement=13016, criteria=nil, note="Under the bridge",}, -- Jason's Rusty Blade
-        [53568981] = {quest=53134, junk=true, minimap=true, item=163323, achievement=13016, criteria=nil, note="On the table",}, -- Julie's Cracked Dish
-        [26775289] = {quest=53136, junk=true, minimap=true, item=163325, achievement=13016, criteria=nil, note="First floor, blue stone table",}, -- Ofer's Bound Journal
-        [52431439] = {quest=53138, junk=true, minimap=true, item=163327, achievement=13016, criteria=nil, note="Near the bones close to the cliff",}, -- Julien's Left Boot
-        [47067577] = {quest=53140, junk=true, minimap=true, item=163329, achievement=13016, criteria=nil, note="Under the stairs",}, -- Zach's Canteen
-        [66413590] = {quest=53142, junk=true, minimap=true, item=163373, achievement=13016, criteria=nil, note="In cave",}, -- Rachel's Flute
-        [64883632] = path(53142, {junk=true}),
-        [45229114] = {quest=53144, junk=true, minimap=true, item=163375, achievement=13016, criteria=nil, note="On the wall",}, -- Portrait of Commander Martens
-        [36217838] = {quest=53133, junk=true, minimap=true, item=163322, achievement=13016, criteria=nil, note="Inside the turned over box",}, -- Ian's Empty Bottle
-        [37813049] = {quest=53135, junk=true, minimap=true, item=163324, achievement=13016, criteria=nil, note="Under the rock",}, -- Brian's Broken Compass
-        [29455937] = {quest=53137, junk=true, minimap=true, item=163326, achievement=13016, criteria=nil, note="On the small hill",}, -- Skye's Pet Rock
-        [43217700] = {quest=53139, junk=true, minimap=true, item=163328, achievement=13016, criteria=nil, note="Near the wall",}, -- Navarro's Flask
-        [45883072] = {quest=53141, junk=true, minimap=true, item=163372, achievement=13016, criteria=nil, note="Hanging on the hut",}, -- Damarcus' Backpack
-        [47933673] = {quest=53143, junk=true, minimap=true, item=163374, achievement=13016, criteria=nil, note="Cave under the giant tree",}, -- Josh's Fang Necklace
-        [62862267] = {quest=53145, junk=true, minimap=true, item=163376, achievement=13016, criteria=nil, note="Down from Tortaka Refuge",}, -- Kurt's Ornate Key
+        -- Scavenger of the Sands
+        [56297011] = {quest=53132, minimap=true, achievement=13016, criteria=41342, note="Under the bridge",}, -- Jason's Rusty Blade
+        [36217838] = {quest=53133, minimap=true, achievement=13016, criteria=41343, note="Inside the turned over box",}, -- Ian's Empty Bottle
+        [53568981] = {quest=53134, minimap=true, achievement=13016, criteria=41344, note="On the table",}, -- Julie's Cracked Dish
+        [37813049] = {quest=53135, minimap=true, achievement=13016, criteria=41345, note="Under the rock",}, -- Brian's Broken Compass
+        [26775289] = {quest=53136, minimap=true, achievement=13016, criteria=41346, note="First floor, blue stone table",}, -- Ofer's Bound Journal
+        [29455937] = {quest=53137, minimap=true, achievement=13016, criteria=41347, note="On the small hill",}, -- Skye's Pet Rock
+        [52431439] = {quest=53138, minimap=true, achievement=13016, criteria=41348, note="Near the bones close to the cliff",}, -- Julien's Left Boot
+        [43217700] = {quest=53139, minimap=true, achievement=13016, criteria=41349, note="Near the wall",}, -- Navarro's Flask
+        [47067577] = {quest=53140, minimap=true, achievement=13016, criteria=41350, note="Under the stairs",}, -- Zach's Canteen
+        [45883072] = {quest=53141, minimap=true, achievement=13016, criteria=41351, note="Hanging on the hut",}, -- Damarcus' Backpack
+        [66413590] = {quest=53142, minimap=true, achievement=13016, criteria=41352, note="In cave",}, -- Rachel's Flute
+        [64883632] = path(53142),
+        [47933673] = {quest=53143, minimap=true, achievement=13016, criteria=41353, note="Cave under the giant tree",}, -- Josh's Fang Necklace
+        [45229114] = {quest=53144, minimap=true, achievement=13016, criteria=41354, note="On the wall",}, -- Portrait of Commander Martens
+        [62832267] = {quest=53145, minimap=true, achievement=13016, criteria=41355, note="Down from Tortaka Refuge",}, -- Kurt's Ornate Key
         -- junk
         [60843637] = {quest=50916, junk=true, label=CHEST,},
         [57545508] = {quest=50928, junk=true, label=CHEST,},
@@ -130,6 +131,10 @@ ns.points = {
         [46384538] = {quest=50921, junk=true, label=CHEST,},
         [54363351] = {quest=50917, junk=true, label=CHEST,},
         [62783373] = {quest=50916, junk=true, label=CHEST,},
+        [29815402] = {quest=50922, junk=true, label=CHEST,},
+        [64172528] = {quest=50918, junk=true, label=CHEST,},
+        [61071734] = {quest=50914, junk=true, label=CHEST,},
+        [53841481] = {quest=50915, junk=true, label=CHEST,},
     },
     [895] = { -- Tiragarde Sound
         [61515233] = {quest=49963, achievement=12852, criteria=41012, note="Ride the Guardian",}, -- Hay Covered Chest
