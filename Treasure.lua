@@ -53,14 +53,14 @@ ns.points = {
     --]]
     [862] = { -- Zuldazar
         [54093150] = {quest=48938, achievement=12851, criteria=40988, note="On second floor",}, -- Offerings of the Chosen
-        [51718690] = {quest=49936, achievement=12851, criteria=40990, note="Bottom floor of ship",}, -- Spoils of Pandaria
-        [49486526] = {quest=49257, achievement=12851, criteria=40992, note="Top of ship",}, -- Warlord's Cache
-        [61065863] = {quest=50947, achievement=12851, criteria=40994, npc=133208, note="Event: kill Da White Shark first",}, -- Da White Shark's Bounty
-        [56123806] = {quest=51338, achievement=12851, criteria=40996, note="In cave behind waterfall",}, -- Cache of Secrets
         [64732170] = {quest=50259, achievement=12851, criteria=40989,}, -- Witch Doctor's Hoard
+        [51718690] = {quest=49936, achievement=12851, criteria=40990, note="Bottom floor of ship",}, -- Spoils of Pandaria
         [51432661] = {quest=50582, achievement=12851, criteria=40991,}, -- Gift of the Brokenhearted
+        [49486526] = {quest=49257, achievement=12851, criteria=40992, note="Top of ship",}, -- Warlord's Cache
         [38793443] = {quest=50707, achievement=12851, criteria=40993, note="Road behind waterfall",}, -- Dazar's Forgotten Chest
+        [61065863] = {quest=50947, achievement=12851, criteria=40994, npc=133208, note="Event: kill Da White Shark first",}, -- Da White Shark's Bounty
         [71841676] = {quest=50949, achievement=12851, criteria=40995,}, -- The Exile's Lament
+        [56123806] = {quest=51338, achievement=12851, criteria=40996, note="In cave behind waterfall",}, -- Cache of Secrets
         [71161767] = path(50949),
         [52974722] = {quest=51624, achievement=12851, criteria=40997}, -- Riches of Tor'nowa
         -- junk
@@ -114,27 +114,28 @@ ns.points = {
         [45229114] = {quest=53144, minimap=true, achievement=13016, criteria=41354, note="On the wall",}, -- Portrait of Commander Martens
         [62832267] = {quest=53145, minimap=true, achievement=13016, criteria=41355, note="Down from Tortaka Refuge",}, -- Kurt's Ornate Key
         -- junk
-        [60843637] = {quest=50916, junk=true, label=CHEST,},
-        [57545508] = {quest=50928, junk=true, label=CHEST,},
-        [52328519] = {quest=51673, junk=true, label=CHEST,},
-        [56496993] = {quest=50926, junk=true, label=CHEST,},
-        [37577607] = {quest=50924, junk=true, label=CHEST,},
-        [52747649] = {quest=50926, junk=true, label=CHEST,},
-        [51908251] = {quest=51673, junk=true, label=CHEST,},
-        [48338890] = {quest=50920, junk=true, label=CHEST, note="In cave"},
-        [44858126] = {quest=50925, junk=true, label=CHEST,},
-        [31158381] = {quest=50924, junk=true, label=CHEST,},
-        [26496777] = {quest=50923, junk=true, label=CHEST,},
-        [30344624] = {quest=50922, junk=true, label=CHEST,},
-        [35095003] = {quest=50919, junk=true, label=CHEST,},
         [46984656] = {quest=50883, junk=true, label="Mysterious trashpile", achievement="12482", note="In alcove, Summon Jani, give her Charged Ranishu Antennae"},
-        [46384538] = {quest=50921, junk=true, label=CHEST,},
-        [54363351] = {quest=50917, junk=true, label=CHEST,},
-        [62783373] = {quest=50916, junk=true, label=CHEST,},
-        [29815402] = {quest=50922, junk=true, label=CHEST,},
-        [64172528] = {quest=50918, junk=true, label=CHEST,},
         [61071734] = {quest=50914, junk=true, label=CHEST,},
         [53841481] = {quest=50915, junk=true, label=CHEST,},
+        [60843637] = {quest=50916, junk=true, label=CHEST,},
+        [62783373] = {quest=50916, junk=true, label=CHEST,},
+        [54363351] = {quest=50917, junk=true, label=CHEST,},
+        [64172528] = {quest=50918, junk=true, label=CHEST,},
+        [35095003] = {quest=50919, junk=true, label=CHEST,},
+        [48338890] = {quest=50920, junk=true, label=CHEST, note="In cave"},
+        [46384538] = {quest=50921, junk=true, label=CHEST,},
+        [30344624] = {quest=50922, junk=true, label=CHEST,},
+        [29815402] = {quest=50922, junk=true, label=CHEST,},
+        [26496777] = {quest=50923, junk=true, label=CHEST,},
+        [31158381] = {quest=50924, junk=true, label=CHEST,},
+        [37577607] = {quest=50924, junk=true, label=CHEST,},
+        [36918033] = {quest=50924, junk=true, label=CHEST,},
+        [44858126] = {quest=50925, junk=true, label=CHEST,},
+        [52747649] = {quest=50926, junk=true, label=CHEST,},
+        [56496993] = {quest=50926, junk=true, label=CHEST,},
+        [57545508] = {quest=50928, junk=true, label=CHEST,},
+        [52328519] = {quest=51673, junk=true, label=CHEST,},
+        [51908251] = {quest=51673, junk=true, label=CHEST,},
     },
     [895] = { -- Tiragarde Sound
         [61515233] = {quest=49963, achievement=12852, criteria=41012, note="Ride the Guardian",}, -- Hay Covered Chest
@@ -189,14 +190,14 @@ ns.points = {
     },
     [942] = { -- Stormsong Valley
         [66901200] = {quest=51449, achievement=12853, criteria=41061,}, -- Weathered Treasure Chest
-        [48968407] = {quest=50526, achievement=12853, criteria=41063,}, -- Frosty Treasure Chest
-        [59913907] = {quest=50937, achievement=12853, criteria=41065, note="On roof",}, -- Hidden Scholar's Chest
-        [58216368] = {quest=52326, achievement=12853, criteria=41067, note="Top shelf inside shed",}, -- Discarded Lunchbox
-        [36692323] = {quest=52976, achievement=12853, criteria=41069, note="Climb ladder onto ship",}, -- Venture Co. Supply Chest
         [42854723] = {quest=50089, achievement=12853, criteria=41062, note="In cave",}, -- Old Ironbound Chest
+        [48968407] = {quest=50526, achievement=12853, criteria=41063,}, -- Frosty Treasure Chest
         [67224321] = {quest=50734, achievement=12853, criteria=41064, note="Under ship",}, -- Sunken Strongbox
+        [59913907] = {quest=50937, achievement=12853, criteria=41065, note="On roof",}, -- Hidden Scholar's Chest
         [58608388] = {quest=49811, achievement=12853, criteria=41066, note="Under platform",}, -- Smuggler's Stash
+        [58216368] = {quest=52326, achievement=12853, criteria=41067, note="Top shelf inside shed",}, -- Discarded Lunchbox
         [44447353] = {quest=52429, achievement=12853, criteria=41068, note="Jump onto platform",}, -- Carved Wooden Chest
+        [36692323] = {quest=52976, achievement=12853, criteria=41069, note="Climb ladder onto ship",}, -- Venture Co. Supply Chest
         [46003069] = {quest=52980, achievement=12853, criteria=41070, note="Behind pillar",}, -- Forgotten Chest
         [41256950] = {achievement=13046, atlas="Food", note="Open an Unforgettable Luncheon here; buy them at the Inn, or loot one from the Discarded Lunchbox in Brennadam",}, -- These Hills Sing
         -- junk
@@ -217,8 +218,8 @@ ns.points = {
         [66758031] = {quest=50952, junk=true, label=CHEST_SM,},
     },
     [1165] = { -- Dazar'alor
-        [44472690] = {quest=51338, minimap=true, achievement=12851, criteria=40996, note="In cave behind waterfall",}, -- Cache of Secrets
         [59258870] = {quest=50947, minimap=true, achievement=12851, criteria=40994, npc=133208, note="Event: kill Da White Shark first",}, -- Da White Shark's Bounty
+        [44472690] = {quest=51338, minimap=true, achievement=12851, criteria=40996, note="In cave behind waterfall",}, -- Cache of Secrets
         [38300716] = {quest=48938, minimap=true, achievement=12851, criteria=40988, note="On top of the Hall of the High Priests",}, -- Offerings of the Chosen
         [41141101] = path(48938),
     },
