@@ -86,7 +86,7 @@ merge(ns.points[864], { -- Vol'dun
     [54701517] = {quest=47532, npc=130439, achievement=12943, criteria=41607,}, -- Ashmane
     [49058905] = {quest=49252, npc=128553, achievement=12943, criteria=41608,}, -- Azer'tor
     [31008109] = {quest=49251, npc=128497, achievement=12943, criteria=41609,}, -- Bajiani the Slick
-    [49064989] = {quest=nil, npc=129476, achievement=12943, criteria=41610,}, -- Bloated Krolusk
+    [49064989] = {quest=47562, npc=129476, achievement=12943, criteria=41610,}, -- Bloated Krolusk
     [56105356] = {quest=51079, npc=136393, achievement=12943, criteria=41611,}, -- Bloodwing Bonepicker
     [41272449] = {quest=51073, npc=136346, achievement=12943, criteria=41612,}, -- Captain Stef "Marrow" Quin
     [42679245] = {quest=50905, npc=124722, achievement=12943, criteria=41613,}, -- Commodore Calhoun
@@ -102,7 +102,7 @@ merge(ns.points[864], { -- Vol'dun
     [43758624] = {quest=50898, npc=128951, achievement=12943, criteria=41621,}, -- Nez'ara
     [49017210] = {quest=51126, npc=136340, achievement=12943, criteria=41622,}, -- Relic Hunter Hazaak
     [44538023] = {quest=48960, npc=127776, achievement=12943, criteria=41623,}, -- Scaleclaw Broodmother
-    [32716522] = {quest=nil, npc=136336, achievement=12943, criteria=41624,}, -- Scorpox
+    [32716522] = {quest=51076, npc=136336, achievement=12943, criteria=41624,}, -- Scorpox
     [24736850] = {quest=51075, npc=136338, achievement=12943, criteria=41625,}, -- Sirokar
     [46972518] = {quest=50637, npc=134571, achievement=12943, criteria=41626, note="In cave",}, -- Skycaller Teskris
     [46242714] = path{quest=50637},
