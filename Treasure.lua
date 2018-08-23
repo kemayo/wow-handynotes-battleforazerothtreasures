@@ -14,15 +14,15 @@ local AZERITE = 1553
 local CHEST = 'Treasure Chest'
 local CHEST_SM = 'Small Treasure Chest'
 local CHEST_GLIM = 'Glimmering Treasure Chest'
-local path = function(questid, details)
-    return merge({
-        quest = questid,
-        label = "Path to treasure",
-        atlas = "map-icon-SuramarDoor.tga", -- 'PortalPurple'
-        path = true,
-        scale = scale,
-        note = note,
-    }, details)
+
+local path_meta = {__index = {
+    label = "Path to treasure",
+    atlas = "map-icon-SuramarDoor.tga", -- 'PortalPurple'
+    path = true,
+    scale = 1.1,
+}}
+local path = function(details)
+    return setmetatable(details or {}, path_meta)
 end
 ns.path = path
 
@@ -61,7 +61,7 @@ ns.points = {
         [61065863] = {quest=50947, achievement=12851, criteria=40994, npc=133208, note="Event: kill Da White Shark first",}, -- Da White Shark's Bounty
         [71841676] = {quest=50949, achievement=12851, criteria=40995,}, -- The Exile's Lament
         [56123806] = {quest=51338, achievement=12851, criteria=40996, note="In cave behind waterfall",}, -- Cache of Secrets
-        [71161767] = path(50949),
+        [71161767] = path{quest=50949},
         [52974722] = {quest=51624, achievement=12851, criteria=40997}, -- Riches of Tor'nowa
         -- junk
         [80135512] = {quest=51346, junk=true, label="Treasure Chest",},
@@ -71,7 +71,7 @@ ns.points = {
         [77903634] = {quest=49867, achievement=12771, criteria=40857,}, -- Lucky Horace's Lucky Chest
         [77884635] = {quest=50061, achievement=12771, criteria=40858, note="In dead hippo's mouth",}, -- Partially-Digested Treasure
         [43065078] = {quest=49979, achievement=12771, criteria=40859, note="In cave",}, -- Cursed Nazmani Chest
-        [42275056] = path(49979),
+        [42275056] = path{quest=49979},
         [35668560] = {quest=49885, achievement=12771, criteria=40860, note="In cave",}, -- Cleverly Disguised Chest
         [62103487] = {quest=49891, achievement=12771, criteria=40861, note="Underwater cave",}, -- Lost Nazmani Treasure
         [42772620] = {quest=49484, achievement=12771, criteria=40862, note="Climb the tree",}, -- Offering to Bwonsamdi
@@ -82,39 +82,39 @@ ns.points = {
     },
     [864] = { -- Vol'dun
         [46598801] = {quest=50237, achievement=12849, criteria=40966, note="Use mine cart",}, -- Ashvane Spoils
-        [44339222] = path(50237, {label="Mine cart"}),
+        [44339222] = path{quest=50237, label="Mine cart"},
         [49787940] = {quest=51132, achievement=12849, criteria=40968, note="Climb the rock arch",}, -- Lost Explorer's Bounty
         [44502613] = {quest=51135, achievement=12849, criteria=40970, note="Climb fallen tree",}, -- Stranded Cache
-        [44712480] = path(51135),
+        [44712480] = path{quest=51135},
         [29388742] = {quest=51137, achievement=12849, criteria=40972, note="Under Disturbed Sand",}, -- Zem'lan's Buried Treasure
         [40578574] = {quest=52994, achievement=12849, criteria=41003,}, -- Deadwood Chest
-        [38848290] = path(52994),
+        [38848290] = path{quest=52994},
         [48186469] = {quest=51093, achievement=12849, criteria=40967, note="Door on East side", hide_before=50550, faction="Horde",}, -- Grayal's Last Offering
-        [49166469] = path(51093),
+        [49166469] = path{quest=51093},
         [47195846] = {quest=51133, achievement=12849, criteria=40969, note="Path from South side",}, -- Sandfury Reserve
-        [47445984] = path(51133),
+        [47445984] = path{quest=51133},
         [57746464] = {quest=51136, achievement=12849, criteria=40971,}, -- Excavator's Greed
-        [56696469] = path(51136),
+        [56696469] = path{quest=51136},
         [57061121] = {quest=52992, achievement=12849, criteria=41002, note="Enter at top of temple",}, -- Lost Offerings of Kimbul
         [26484534] = {quest=53004, achievement=12849, criteria=41004, note="Use Abandoned Bobber",}, -- Sandsunken Treasure
         -- Scavenger of the Sands
-        [56297011] = {quest=53132, minimap=true, achievement=13016, criteria=41342, note="Under the bridge",}, -- Jason's Rusty Blade
-        [36217838] = {quest=53133, minimap=true, achievement=13016, criteria=41343, note="Inside the turned over box",}, -- Ian's Empty Bottle
-        [53568981] = {quest=53134, minimap=true, achievement=13016, criteria=41344, note="On the table",}, -- Julie's Cracked Dish
-        [37813049] = {quest=53135, minimap=true, achievement=13016, criteria=41345, note="Under the rock",}, -- Brian's Broken Compass
-        [26775289] = {quest=53136, minimap=true, achievement=13016, criteria=41346, note="First floor, blue stone table",}, -- Ofer's Bound Journal
-        [29455937] = {quest=53137, minimap=true, achievement=13016, criteria=41347, note="On the small hill",}, -- Skye's Pet Rock
-        [52431439] = {quest=53138, minimap=true, achievement=13016, criteria=41348, note="Near the bones close to the cliff",}, -- Julien's Left Boot
-        [43217700] = {quest=53139, minimap=true, achievement=13016, criteria=41349, note="Near the wall",}, -- Navarro's Flask
-        [47067577] = {quest=53140, minimap=true, achievement=13016, criteria=41350, note="Under the stairs",}, -- Zach's Canteen
-        [45883072] = {quest=53141, minimap=true, achievement=13016, criteria=41351, note="Hanging on the hut",}, -- Damarcus' Backpack
-        [66413590] = {quest=53142, minimap=true, achievement=13016, criteria=41352, note="In cave",}, -- Rachel's Flute
-        [64883632] = path(53142),
-        [47933673] = {quest=53143, minimap=true, achievement=13016, criteria=41353, note="Cave under the giant tree",}, -- Josh's Fang Necklace
-        [45229114] = {quest=53144, minimap=true, achievement=13016, criteria=41354, note="On the wall",}, -- Portrait of Commander Martens
-        [62832267] = {quest=53145, minimap=true, achievement=13016, criteria=41355, note="Down from Tortaka Refuge",}, -- Kurt's Ornate Key
+        [56297011] = {quest=53132, minimap=true, atlas="VignetteLootElite", scale=1.2, achievement=13016, criteria=41342, note="Under the bridge",}, -- Jason's Rusty Blade
+        [36217838] = {quest=53133, minimap=true, atlas="VignetteLootElite", scale=1.2, achievement=13016, criteria=41343, note="Inside the turned over box",}, -- Ian's Empty Bottle
+        [53568981] = {quest=53134, minimap=true, atlas="VignetteLootElite", scale=1.2, achievement=13016, criteria=41344, note="On the table",}, -- Julie's Cracked Dish
+        [37813049] = {quest=53135, minimap=true, atlas="VignetteLootElite", scale=1.2, achievement=13016, criteria=41345, note="Under the rock",}, -- Brian's Broken Compass
+        [26775289] = {quest=53136, minimap=true, atlas="VignetteLootElite", scale=1.2, achievement=13016, criteria=41346, note="First floor, blue stone table",}, -- Ofer's Bound Journal
+        [29455937] = {quest=53137, minimap=true, atlas="VignetteLootElite", scale=1.2, achievement=13016, criteria=41347, note="On the small hill",}, -- Skye's Pet Rock
+        [52431439] = {quest=53138, minimap=true, atlas="VignetteLootElite", scale=1.2, achievement=13016, criteria=41348, note="Near the bones close to the cliff",}, -- Julien's Left Boot
+        [43217700] = {quest=53139, minimap=true, atlas="VignetteLootElite", scale=1.2, achievement=13016, criteria=41349, note="Near the wall",}, -- Navarro's Flask
+        [47067577] = {quest=53140, minimap=true, atlas="VignetteLootElite", scale=1.2, achievement=13016, criteria=41350, note="Under the stairs",}, -- Zach's Canteen
+        [45883072] = {quest=53141, minimap=true, atlas="VignetteLootElite", scale=1.2, achievement=13016, criteria=41351, note="Hanging on the hut",}, -- Damarcus' Backpack
+        [66413590] = {quest=53142, minimap=true, atlas="VignetteLootElite", scale=1.2, achievement=13016, criteria=41352, note="In cave",}, -- Rachel's Flute
+        [64883632] = path{quest=53142},
+        [47933673] = {quest=53143, minimap=true, atlas="VignetteLootElite", scale=1.2, achievement=13016, criteria=41353, note="Cave under the giant tree",}, -- Josh's Fang Necklace
+        [45229114] = {quest=53144, minimap=true, atlas="VignetteLootElite", scale=1.2, achievement=13016, criteria=41354, note="On the wall",}, -- Portrait of Commander Martens
+        [62832267] = {quest=53145, minimap=true, atlas="VignetteLootElite", scale=1.2, achievement=13016, criteria=41355, note="Down from Tortaka Refuge",}, -- Kurt's Ornate Key
         -- junk
-        [46984656] = {quest=50883, junk=true, label="Mysterious trashpile", achievement="12482", note="In alcove, Summon Jani, give her Charged Ranishu Antennae"},
+        [46984656] = {quest=50883, junk=true, label="Mysterious trashpile", achievement=12482, note="In alcove, Summon Jani, give her Charged Ranishu Antennae"},
         [61071734] = {quest=50914, junk=true, label=CHEST,},
         [53841481] = {quest=50915, junk=true, label=CHEST,},
         [60843637] = {quest=50916, junk=true, label=CHEST,},
@@ -225,6 +225,6 @@ ns.points = {
         [59258870] = {quest=50947, minimap=true, achievement=12851, criteria=40994, npc=133208, note="Event: kill Da White Shark first",}, -- Da White Shark's Bounty
         [44472690] = {quest=51338, minimap=true, achievement=12851, criteria=40996, note="In cave behind waterfall",}, -- Cache of Secrets
         [38300716] = {quest=48938, minimap=true, achievement=12851, criteria=40988, note="On top of the Hall of the High Priests",}, -- Offerings of the Chosen
-        [41141101] = path(48938),
+        [41141101] = path{quest=48938},
     },
 }

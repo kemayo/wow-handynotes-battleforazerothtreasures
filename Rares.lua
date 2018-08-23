@@ -93,19 +93,19 @@ merge(ns.points[864], { -- Vol'dun
     [61853788] = {quest=51077, npc=136335, achievement=12943, criteria=41614,}, -- Enraged Krolusk
     [64004757] = {quest=49270, npc=128674, achievement=12943, criteria=41615,}, -- Gut-Gut the Glutton
     [53685347] = {quest=47533, npc=130443, achievement=12943, criteria=41616, note="In cave"}, -- Hivemother Kraxi
-    [53835149] = path(47533),
+    [53835149] = path{quest=47533},
     [37428498] = {quest=49392, npc=129283, achievement=12943, criteria=41617,}, -- Jumbo Sandsnapper
     [60561801] = {quest=51074, npc=136341, achievement=12943, criteria=41618,}, -- Jungleweb Hunter
     [35085183] = {quest=50528, npc=128686, achievement=12943, criteria=41619,}, -- Kamid the Trapper
     [38284138] = {quest=51424, npc=137681, achievement=12943, criteria=41620, note="In cave"}, -- King Clickyclack
-    [37354050] = path(51424),
+    [37354050] = path{quest=51424},
     [43758624] = {quest=50898, npc=128951, achievement=12943, criteria=41621,}, -- Nez'ara
     [49017210] = {quest=51126, npc=136340, achievement=12943, criteria=41622,}, -- Relic Hunter Hazaak
     [44538023] = {quest=48960, npc=127776, achievement=12943, criteria=41623,}, -- Scaleclaw Broodmother
     [32716522] = {quest=nil, npc=136336, achievement=12943, criteria=41624,}, -- Scorpox
     [24736850] = {quest=51075, npc=136338, achievement=12943, criteria=41625,}, -- Sirokar
     [46972518] = {quest=50637, npc=134571, achievement=12943, criteria=41626, note="In cave",}, -- Skycaller Teskris
-    [46242714] = path(50637),
+    [46242714] = path{quest=50637},
     [51263645] = {quest=50686, npc=134745, achievement=12943, criteria=41627,}, -- Skycarver Krakit
     [66892446] = {quest=51063, npc=136304, achievement=12943, criteria=41628,}, -- Songstress Nahjeen
     [57197349] = {quest=49674, npc=130401, achievement=12943, criteria=41629,}, -- Vathikur
@@ -113,7 +113,7 @@ merge(ns.points[864], { -- Vol'dun
     [30115256] = {quest=50662, npc=134638, achievement=12943, criteria=41631,}, -- Warlord Zothix
     [50713086] = {quest=50658, npc=134625, achievement=12943, criteria=41632,}, -- Warmother Captive
     [43915405] = {quest=48319, npc=129411, achievement=12943, criteria=41633, note="Inside skeleton under the sand"}, -- Zunashi the Exile
-    [43985246] = path(48319),
+    [43985246] = path{quest=48319},
     -- Mushroom Harvest
     [61101826] = {npc=143313, achievement=13027, criteria=41392, note="Shrouded Shore, on the hill",}, -- Portakillo
 })
