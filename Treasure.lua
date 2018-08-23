@@ -156,14 +156,17 @@ ns.points = {
         [29222534] = {quest=52833, hide_before=52854, achievement=12852, criteria=41019, note="Kill pirates in Freehold until the map drops",}, -- Fading Treasure Map 162580 (q:52854)
         [48983759] = {quest=52845, hide_before=52860, achievement=12852, criteria=41021, note="Kill pirates in Freehold until the map drops",}, -- Singed Treasure Map 162584 (q:52860)
         -- Shanty Raid
-        [43382585] = {quest=nil, item=163715, atlas="poi-workorders", achievement=13057, criteria=41542, note="In a cave",}, -- Fruit Counting
-        [76218305] = {quest=nil, item=163717, atlas="poi-workorders", achievement=13057, criteria=41544, note="Kill Barman Bill",}, -- Josephus
-        [56706990] = {quest=nil, item=163718, atlas="poi-workorders", achievement=13057, criteria=41545, note="Kill Black-Eyed Bart",}, -- Black Sphere
-        [73208410] = {quest=nil, item=163719, atlas="poi-workorders", achievement=13057, criteria=41546, note="Ground floor, on a table",}, -- Horse
+        [43382585] = {quest=53410, item=163715, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41542, note="In a cave",}, -- Fruit Counting
+        [76218305] = {quest=50233, item=163717, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41544, note="Kill Barman Bill",}, -- Josephus
+        [56706990] = {quest=50096, item=163718, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41545, note="Kill Black-Eyed Bart",}, -- Black Sphere
+        [73208410] = {quest=53411, item=163719, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41546, note="Ground floor, on a table",}, -- Horse
+        [70602270] = {quest=53407, item=163716, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41543, note="Behind Jay the Tavern Bard",}, -- Inebriation
+        [74403540] = {quest=53408, item=163714, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41541, note="On the fireplace mantel",}, -- Lively Men
         -- junk:
         [76967543] = {quest=48593, junk=true, label=CHEST_SM,},
         [78008050] = {quest=48595, junk=true, label=CHEST_SM,},
         [76358090] = {quest=48595, junk=true, label=CHEST_SM,},
+        [73468317] = {quest=48596, junk=true, label=CHEST_SM,},
         [75758283] = {quest=48596, junk=true, label=CHEST_SM,},
         [38432868] = {quest=48598, junk=true, label=CHEST_SM,},
         [38762673] = {quest=48599, junk=true, label=CHEST_SM,},
@@ -174,6 +177,7 @@ ns.points = {
         [68635108] = {quest=48609, junk=true, label=CHEST_SM,},
         [50842310] = {quest=48611, junk=true, label=CHEST_SM,},
         [47442365] = {quest=48611, junk=true, label=CHEST_SM,},
+        [48392785] = {quest=48611, junk=true, label=CHEST_SM,},
         [61212836] = {quest=48612, junk=true, label=CHEST_SM,},
         [57311757] = {quest=48617, junk=true, label=CHEST_SM,},
         [87347379] = {quest=48618, junk=true, label=CHEST_SM,},
@@ -224,8 +228,8 @@ ns.points = {
         [67147982] = {quest=52138, atlas="poi-workorders", minimap=true, achievement=12852, criteria=41017, note="Read Damp Scrolls",},
         [55769095] = {quest=52195, atlas="DemonInvasion2", scale=1.4, minimap=true, hide_before={52134, 52135, 52136, 52137, 52138}, item=161342, achievement=12852, criteria=41017, note="Ominous Altar; use it, get teleported, pick up the gem",}, -- Secret of the Depths
         -- Shanty Raid
-        [72616853] = {quest=nil, item=163714, atlas="poi-workorders", achievement=13057, criteria=41541, note="On the fireplace mantel",}, -- Lively Men
-        [53141767] = {quest=nil, item=163716, atlas="poi-workorders", achievement=13057, criteria=41543, note="Behind Jay the Tavern Bard",}, -- Inebriation
+        [72616853] = {quest=53408, item=163714, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41541, note="On the fireplace mantel",}, -- Lively Men
+        [53141767] = {quest=53407, item=163716, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41543, note="Behind Jay the Tavern Bard",}, -- Inebriation
         -- junk
         [66758031] = {quest=50952, junk=true, label=CHEST_SM,},
     },
