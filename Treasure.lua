@@ -206,6 +206,7 @@ ns.points = {
         [51796523] = {quest=51184, junk=true, label=CHEST_SM,},
         [70265958] = {quest=51927, junk=true, label=CHEST_SM,},
         [64366899] = {quest=51939, junk=true, label=CHEST_SM,},
+        [68067158] = {quest=51939, junk=true, label=CHEST_SM, note="In a bush",},
     },
     [1161] = { -- Boralus
         [61901010] = {quest=52870, achievement=12852, criteria=41016, note="In cave",}, -- Scrimshaw Cache
