@@ -4,6 +4,8 @@
 
 * Include location for These Hills Sing
 * Include locations for Scavenger of the Sands (NLZ)
+* Include rares for Mushroom Harvest (NLZ)
+* Include rares for Life Finds a Way... To Die! (NLZ)
 * More questids and fixes for Vol'dun (NLZ)
 
 ## Changed in v4
