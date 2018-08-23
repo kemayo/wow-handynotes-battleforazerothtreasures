@@ -13,7 +13,7 @@ merge(ns.points[862], { -- Zuldazar
     [49705740] = {quest=49410, npc=129343, item=161034, achievement=12944, criteria=41871,}, -- Avatar of Xolotal
     [59601820] = {quest=49267, npc=128699, item=161104, achievement=12944, criteria=41872,}, -- Bloodbulge
     [46606520] = {quest=49004, npc=127939, item=161029, achievement=12944, criteria=41873,}, -- Torraske the Eternal
-    [68604820] = {quest=48543, npc=126637, item=160984, achievement=12944, criteria=41874,}, -- Kandak
+    [68714875] = {quest=48543, npc=126637, item=160984, achievement=12944, criteria=41874,}, -- Kandak
     [59605640] = {quest=48333, npc=120899, item=160947, achievement=12944, criteria=41875,}, -- Kul'krazahn
     [74002820] = {quest=47792, npc=124185, item=161035, achievement=12944, criteria=41876,}, -- Golrakahn
     [70803240] = {quest=nil, npc=122004, item=161091, achievement=12944, criteria=41877,}, -- Umbra'jin
