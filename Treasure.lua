@@ -66,6 +66,7 @@ ns.points = {
         -- junk
         [50823158] = {quest=50711, junk=true, label="Treasure Chest",},
         [68503365] = {quest=50716, junk=true, label="Treasure Chest",},
+        [63062832] = {quest=50720, junk=true, label="Treasure Chest",},
         [80135512] = {quest=51346, junk=true, label="Treasure Chest",},
         -- [71684127] = {quest=50308, junk=true, label="Mysterious trashpile", achievement="12482", note="Jani"},
 

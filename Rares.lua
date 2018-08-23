@@ -5,7 +5,7 @@ local path = ns.path
 
 merge(ns.points[862], { -- Zuldazar
     [81202100] = {quest=50280, npc=129961, item=161042, achievement=12944, criteria=41850,}, -- Atal'zul Gotaka
-    [64403240] = {quest=50439, npc=129954, item=161043, achievement=12944, criteria=41851,}, -- Gahz'ralka
+    [64253271] = {quest=50439, npc=129954, item=161043, achievement=12944, criteria=41851,}, -- Gahz'ralka
     [44007660] = {quest=51083, npc=136428, item=160979, achievement=12944, criteria=41852,}, -- Dark Chronicler
     [53204480] = {quest=51080, npc=136413, item=161047, achievement=12944, criteria=41853,}, -- Syrawon the Dominus
     [48205400] = {quest=49972, npc=131476, item=161125, achievement=12944, criteria=41869,}, -- Zayoos
@@ -28,13 +28,13 @@ merge(ns.points[862], { -- Zuldazar
     [66203240] = {quest=50034, npc=131718, item=161020, achievement=12944, criteria=41867,}, -- Bramblewing
     [77601120] = {quest=50013, npc=131687, item=161109, achievement=12944, criteria=41868,}, -- Tambano
     -- Life Finds a Way... To Die!
-    [67732903] = {quest=nil, npc=135512, achievement=13048, criteria=41675, note="Shares spawn timer with Azuresail the Ancient and Kil'Tawan",}, -- Thuderfoot the Brutosaur
-    [67102657] = {quest=nil, npc=135510, achievement=13048, criteria=41676, note="Shares spawn timer with Thunderfoot and Kil'Tawan",}, -- Azuresail the Diemetrodon
-    [71134034] = {quest=nil, npc=139365, achievement=13048, criteria=41672, note="South of Savagelands",}, -- Queenfeather the Ravasaur
-    [52394771] = {quest=nil, npc=129323, achievement=13048, criteria=41674, note="Can be found near the road in the grass",}, -- The Sabertusk Empress
-    [66082238] = {quest=nil, npc=143910, achievement=13048, criteria=41684, note="South of the Nesingwary's Trek windrider",}, -- Sludgecrusher the Anklyodon
-    [61622537] = {quest=nil, npc=130741, achievement=13048, criteria=41673, note="Fighting Ten'gor at crossroad",}, -- Nol'ixwan the Direhorn
-    [71242184] = {quest=nil, npc=123502, achievement=13048, criteria=41677, note="On the road from Zeb'ahari to Tal'gurub",}, -- King K'tal the Devilsaur
+    [67732903] = {npc=135512, achievement=13048, criteria=41675, note="Shares spawn timer with Azuresail the Ancient and Kil'Tawan",}, -- Thuderfoot the Brutosaur
+    [67102657] = {npc=135510, achievement=13048, criteria=41676, note="Shares spawn timer with Thunderfoot and Kil'Tawan",}, -- Azuresail the Diemetrodon
+    [71134034] = {npc=139365, achievement=13048, criteria=41672, note="South of Savagelands",}, -- Queenfeather the Ravasaur
+    [52394771] = {npc=129323, achievement=13048, criteria=41674, note="Can be found near the road in the grass",}, -- The Sabertusk Empress
+    [66082238] = {npc=143910, achievement=13048, criteria=41684, note="South of the Nesingwary's Trek windrider",}, -- Sludgecrusher the Anklyodon
+    [61622537] = {npc=130741, achievement=13048, criteria=41673, note="Fighting Ten'gor at crossroad",}, -- Nol'ixwan the Direhorn
+    [71242184] = {npc=123502, achievement=13048, criteria=41677, note="On the road from Zeb'ahari to Tal'gurub",}, -- King K'tal the Devilsaur
     -- Mushroom Harvest
     [45537917] = {npc=143314, achievement=13027, criteria=41391, note="On the beach, between trees",}, -- Bane of the Woods
 })
