@@ -232,10 +232,12 @@ ns.points = {
         [62056563] = {quest=51184, junk=true, label=CHEST_SM,},
         [51796523] = {quest=51184, junk=true, label=CHEST_SM,},
         [70265958] = {quest=51927, junk=true, label=CHEST_SM,},
+        [75103513] = {quest=51938, junk=true, label=CHEST_SM,},
         [64366899] = {quest=51939, junk=true, label=CHEST_SM,},
         [68067158] = {quest=51939, junk=true, label=CHEST_SM, note="In a bush",},
         [48406562] = {quest=51940, junk=true, label=CHEST_SM,},
         [44107300] = {quest=51942, junk=true, label=CHEST_SM,},
+        [60865118] = {quest=51946, junk=true, label=CHEST_SM,},
     },
     [1183] = { -- Thornheart
         [60804121] = {quest=52429, item=162000, achievement=12853, criteria=41068, note="Jump down from here",}, -- Carved Wooden chest
