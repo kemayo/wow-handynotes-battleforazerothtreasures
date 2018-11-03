@@ -227,6 +227,15 @@ ns.points = {
         [36692323] = {quest=52976, achievement=12853, criteria=41069, note="Climb ladder onto ship",}, -- Venture Co. Supply Chest
         [46003069] = {quest=52980, achievement=12853, criteria=41070, note="Behind pillar",}, -- Forgotten Chest
         [41256950] = {achievement=13046, atlas="Food", note="Open an Unforgettable Luncheon here; buy them at the Inn, or loot one from the Discarded Lunchbox in Brennadam",}, -- These Hills Sing
+        -- Legends of the Tidesages
+        [49518090] = {achievement=13051, criteria=41425, minimap=true, atlas="poi-workorders",}, -- Part 1 (Near the waterfall)
+        [59025954] = {achievement=13051, criteria=41426, minimap=true, atlas="poi-workorders",}, -- Part 2 (On top of the hill)
+        [31957291] = {achievement=13051, criteria=41427, minimap=true, atlas="poi-workorders",}, -- Part 3 (Near the lake)
+        [33813323] = {achievement=13051, criteria=41428, minimap=true, atlas="poi-workorders",}, -- Part 4 (On top of the island)
+        [56023853] = {achievement=13051, criteria=41429, minimap=true, atlas="poi-workorders",}, -- Part 5 (Up the mountain right of Warfang Hold)
+        [44183660] = {achievement=13051, criteria=41430, minimap=true, atlas="poi-workorders",}, -- Part 6 (Up the mountain left of Warfang Hold)
+        [62083022] = {achievement=13051, criteria=41431, minimap=true, atlas="poi-workorders",}, -- Part 7
+        [75073113] = {achievement=13051, criteria=41432, minimap=true, atlas="poi-workorders",}, -- Part 8 (Near the Shrine of the Storm entrance)
         -- junk
         [66567107] = {quest=50576, item=154476, label="Honey Vat", note="Strangely, not part of the achievement",},
         [62056563] = {quest=51184, junk=true, label=CHEST_SM,},
