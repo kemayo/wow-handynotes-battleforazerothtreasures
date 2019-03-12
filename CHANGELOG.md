@@ -1,5 +1,13 @@
 # Changelog
 
+## Changed in v6
+
+* Updated for 8.1.5
+* More complete in Drustvar
+* Include locations for Legends of the Tidesages
+* Include locations for Shanty Raid
+* More Zuldazar fixes from NLZ
+
 ## Changed in v5
 
 * Include location for These Hills Sing
