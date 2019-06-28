@@ -313,4 +313,8 @@ ns.points = {
         -- junk
         [48981013] = {quest=49142, junk=true, label=CHEST,},
     },
+    [1355] = { -- Nazjatar
+    },
+    [1462] = { -- Mechagon
+    },
 }
