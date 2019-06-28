@@ -99,6 +99,18 @@ ns.points = {
         [46228295] = {quest=49889, achievement=12771, criteria=40864,}, -- Venomous Seal
         [76826220] = {quest=50045, achievement=12771, criteria=40865, note="Underwater cave",}, -- Swallowed Naga Chest
         [35455498] = {quest=49313, achievement=12771, criteria=40866, note="In cave",}, -- Wunja's Trove
+        -- Hoppin' Sad (Lost Spawn of Krag'wa)
+        [65605090] = {quest=53417, achievement=13028, minimap=true, atlas="WildBattlePetCapturable",}, --verify
+        [69105790] = {quest=53418, achievement=13028, minimap=true, atlas="WildBattlePetCapturable",}, --verify
+        [56106490] = {quest=53419, achievement=13028, minimap=true, atlas="WildBattlePetCapturable",},
+        [52804290] = {quest=53420, achievement=13028, minimap=true, atlas="WildBattlePetCapturable",}, --verify
+        [33506160] = {quest=53421, achievement=13028, minimap=true, atlas="WildBattlePetCapturable",},
+        [45609100] = {quest=53422, achievement=13028, minimap=true, atlas="WildBattlePetCapturable",}, --verify
+        [28408230] = {quest=53423, achievement=13028, minimap=true, atlas="WildBattlePetCapturable", note="Cave in cliffs",}, --verify
+        [24209160] = {quest=53424, achievement=13028, minimap=true, atlas="WildBattlePetCapturable",}, --verify
+        [21706930] = {quest=53425, achievement=13028, minimap=true, atlas="WildBattlePetCapturable",},
+        -- [52804290] = {quest=53426, achievement=13828, minimap=true,}, -- maybe?
+        [25694058] = {quest=53426, achievement=13028, minimap=true, atlas="WildBattlePetCapturable",},
         -- junk
         [41575046] = {quest=49916, junk=true, label=CHEST,},
         [41596574] = {quest=49916, junk=true, label=CHEST,},
