@@ -30,6 +30,7 @@ merge(ns.points[862], { -- Zuldazar
     [75613582] = {quest=50159, npc=132244, item=161112, achievement=12944, criteria=41866,}, -- Kiboku
     [66203240] = {quest=50034, npc=131718, item=161020, achievement=12944, criteria=41867,}, -- Bramblewing
     [77711029] = {quest=50013, npc=131687, item=161109, achievement=12944, criteria=41868,}, -- Tambano
+    [69783776] = {quest=54770, npc=149147, item=166345,}, -- N'chala  the Egg Thief
     -- Life Finds a Way... To Die!
     [67732903] = {npc=135512, achievement=13048, criteria=41675, note="Shares spawn timer with Azuresail the Ancient and Kil'Tawan",}, -- Thuderfoot the Brutosaur
     [67102657] = {npc=135510, achievement=13048, criteria=41676, note="Shares spawn timer with Thunderfoot and Kil'Tawan",}, -- Azuresail the Diemetrodon
@@ -143,7 +144,7 @@ merge(ns.points[895], { -- Tiragarde Sound
     [64805893] = {quest=50148, npc=132179, item=161446, achievement=12939, criteria=41827,}, -- Raging Swell
     [68336362] = {quest=51872, npc=139278, achievement=12939, criteria=41828,}, -- Ranja
     [58541513] = {quest=48806, npc=127290, item=154416, achievement=12939, criteria=41829,}, -- Saurolisk Tamer Mugg (Mugg)
-    [76022887] = {quest=51877, npc=139287, achievement=12939, criteria=41830,}, -- Sawtooth
+    [76022887] = {quest=51877, npc=139287, item=155273, achievement=12939, criteria=41830,}, -- Sawtooth
     [55703318] = {quest=51876, npc=139285, achievement=12939, criteria=41831,}, -- Shiverscale the Toxic
     [80838277] = {quest=50160, npc=132280, achievement=12939, criteria=41832,}, -- Squacks
     [49353613] = {quest=51807, npc=139135, achievement=12939, criteria=41833,}, -- Squirgle of the Depths
