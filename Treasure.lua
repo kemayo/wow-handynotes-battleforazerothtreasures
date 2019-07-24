@@ -337,7 +337,7 @@ ns.points = {
 		[38006060] = {quest=55957, minimap=true, achievement=13549, label=CHEST_AR},
 		
 		[61502290] = {quest=55958, minimap=true, achievement=13549, label=AR_TRUNK, note="Inside Cave"}, [61401990] = path{quest=55958}, -- game quest id: 55359
-		[37906040] = {quest=55959, minimap=true, achievement=13549, label=AR_TRUNK},
+		[37900604] = {quest=55959, minimap=true, achievement=13549, label=AR_TRUNK, note="Inside Cave"}, [39351005] = path{quest=55959},
 		[55701440] = {quest=55961, minimap=true, achievement=13549, label=AR_TRUNK}, -- game quest id: 55998 
 		[64202850] = {quest=55962, minimap=true, achievement=13549, label=AR_TRUNK, note="Click Arcane device on the side on the right"}, -- game quest id: 55996
 		[43901680] = {quest=55963, minimap=true, achievement=13549, label=AR_TRUNK},
