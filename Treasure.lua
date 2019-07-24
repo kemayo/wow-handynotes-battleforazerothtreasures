@@ -15,6 +15,8 @@ local CHEST = 'Treasure Chest'
 local CHEST_SM = 'Small Treasure Chest'
 local CHEST_GLIM = 'Glimmering Treasure Chest'
 local CHEST_MECH = 'Mechanized Chest'
+local CHEST_AR = 'Arcane Chest'
+local AR_TRUNK = 'Arcane Trunk'
 
 local path_meta = {__index = {
     label = "Path to treasure",
