@@ -110,12 +110,6 @@ ns.options = {
                     desc = "Show items which don't count for any achievement",
                     order = 40,
                 },
-                show_buffbased = {
-                    type = "toggle",
-                    name = "Show unavailable (buffs)",
-                    desc = "Show items which are unavailable due to an applied or missing buff (for example, Time Displacement on Mechagon Island)",
-                    order = 40,
-                },
                 -- repeatable = {
                 --     type = "toggle",
                 --     name = "Show repeatable",
@@ -232,10 +226,10 @@ ns.should_show_point = function(coord, point, currentZone, isMinimap)
             end
         end
     end
-    if not ns.db.show_buffbased and point.requires_buff and not playerHasBuff(point.requires_buff) then
+    if point.requires_buff and not playerHasBuff(point.requires_buff) then
         return false
     end
-    if not ns.db.show_buffbased and point.requires_no_buff and playerHasBuff(point.requires_no_buff) then
+    if point.requires_no_buff and playerHasBuff(point.requires_no_buff) then
         return false
     end
     if point.hide_before and not ns.db.upcoming and not allQuestsComplete(point.hide_before) then
