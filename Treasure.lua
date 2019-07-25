@@ -51,6 +51,8 @@ ns.points = {
             npc=[id], -- related npc id, used to display names in tooltip
             note=[string], -- some text which might be helpful
             hide_before=[id], -- hide if quest not completed
+            requires_buff=[id], -- hide if player does not have buff, mostly useful for buff-based zone phasing
+            requires_no_buff=[id] -- hide if player has buff, mostly useful for buff-based zone phasing
         },
     },
     --]]
