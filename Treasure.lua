@@ -384,7 +384,7 @@ ns.points = {
         [66432227] = {quest=55552, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 5 (of 9 in Normal Time)"},
         [64092627] = {quest=55552, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 5 (of 9 in Normal Time)"},
         [56782918] = {quest=55552, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 5 (of 9 in Normal Time)"},
-        [57302290] = {quest=55552, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 5 (of 9 in Normal Time)"},  -- Coords from wowhead
+        [57142283] = {quest=55552, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 5 (of 9 in Normal Time)"},
         [55612404] = {quest=55552, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 5 (of 9 in Normal Time)"},
         [50662858] = {quest=55552, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 5 (of 9 in Normal Time)"},
         -- 325665
