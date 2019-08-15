@@ -51,6 +51,8 @@ ns.points = {
             npc=[id], -- related npc id, used to display names in tooltip
             note=[string], -- some text which might be helpful
             hide_before=[id], -- hide if quest not completed
+            requires_buff=[id], -- hide if player does not have buff, mostly useful for buff-based zone phasing
+            requires_no_buff=[id] -- hide if player has buff, mostly useful for buff-based zone phasing
         },
     },
     --]]
@@ -349,64 +351,63 @@ ns.points = {
 		[80503190] = {quest=56547, minimap=true, achievement=13549, label=AR_TRUNK, note="Up the building"}, [83003380] = path{quest=56547}, -- game quest id: 56913
     },
     [1462] = { -- Mechagon
-        -- Chest 1, 325659
-        [43504990] = {quest=55547, criteria=0, label=CHEST_MECH, note="Mechanized Chest 1"},  -- Coords from wowhead
-        [52205350] = {quest=55547, criteria=0, label=CHEST_MECH, note="Mechanized Chest 1"},  -- Coords from wowhead
-        [53204170] = {quest=55547, criteria=0, label=CHEST_MECH, note="Mechanized Chest 1"},  -- Coords from wowhead
-        [49503020] = {quest=55547, criteria=0, label=CHEST_MECH, note="Mechanized Chest 1"},  -- Coords from wowhead
-        [57003880] = {quest=55547, criteria=0, label=CHEST_MECH, note="Mechanized Chest 1"},  -- Coords from wowhead
-        [56973861] = {quest=55547, criteria=0, label=CHEST_MECH, note="Mechanized Chest 1"},
-        -- Chest 2, 325660
-        [35703850] = {quest=55548, criteria=0, label=CHEST_MECH, note="Mechanized Chest 2"},  -- Coords from wowhead
-        [30785183] = {quest=55548, criteria=0, label=CHEST_MECH, note="Mechanized Chest 2"},
-        [40005410] = {quest=55548, criteria=0, label=CHEST_MECH, note="Mechanized Chest 2"},  -- Coords from wowhead
-        [20707130] = {quest=55548, criteria=0, label=CHEST_MECH, note="Mechanized Chest 2"},  -- Coords from wowhead
-        -- Chest 3, 325661
-        [80504850] = {quest=55549, criteria=0, label=CHEST_MECH, note="Mechanized Chest 3"},  -- Coords from wowhead
-        [73515334] = {quest=55549, criteria=0, label=CHEST_MECH, note="Mechanized Chest 3"},
-        [67205650] = {quest=55549, criteria=0, label=CHEST_MECH, note="Mechanized Chest 3"},  -- Coords from wowhead
-        [65866460] = {quest=55549, criteria=0, label=CHEST_MECH, note="Mechanized Chest 3"},
-        [59946357] = {quest=55549, criteria=0, label=CHEST_MECH, note="Mechanized Chest 3"},
-        -- Chest 4, 325662
-        [65555284] = {quest=55550, criteria=0, label=CHEST_MECH, note="Mechanized Chest 4"},
-        [72704720] = {quest=55550, criteria=0, label=CHEST_MECH, note="Mechanized Chest 4"},  -- Coords from wowhead
-        [73014950] = {quest=55550, criteria=0, label=CHEST_MECH, note="Mechanized Chest 4"},
-        [76215286] = {quest=55550, criteria=0, label=CHEST_MECH, note="Mechanized Chest 4"},
-        [81106150] = {quest=55550, criteria=0, label=CHEST_MECH, note="Mechanized Chest 4"},
-        -- Chest 5, 325663
-        [61403250] = {quest=55551, criteria=0, label=CHEST_MECH, note="Mechanized Chest 5"},  -- Coords from wowhead
-        [58804170] = {quest=55551, criteria=0, label=CHEST_MECH, note="Mechanized Chest 5"},  -- Coords from wowhead
-        [70604780] = {quest=55551, criteria=0, label=CHEST_MECH, note="Mechanized Chest 5"},  -- Coords from wowhead
-        [64505960] = {quest=55551, criteria=0, label=CHEST_MECH, note="Mechanized Chest 5"},  -- Coords from wowhead
-        [56705750] = {quest=55551, criteria=0, label=CHEST_MECH, note="Mechanized Chest 5"},  -- Coords from wowhead
-        -- Chest 6, 325664
-        [66502250] = {quest=55552, criteria=0, label=CHEST_MECH, note="Mechanized Chest 6"},  -- Coords from wowhead
-        [64002650] = {quest=55552, criteria=0, label=CHEST_MECH, note="Mechanized Chest 6"},  -- Coords from wowhead
-        [56782918] = {quest=55552, criteria=0, label=CHEST_MECH, note="Mechanized Chest 6"},
-        [57302290] = {quest=55552, criteria=0, label=CHEST_MECH, note="Mechanized Chest 6"},  -- Coords from wowhead
-        [55612404] = {quest=55552, criteria=0, label=CHEST_MECH, note="Mechanized Chest 6"},
-        [50802860] = {quest=55552, criteria=0, label=CHEST_MECH, note="Mechanized Chest 6"},  -- Coords from wowhead
-        -- Chest 7, 325665
-        [67452470] = {quest=55553, criteria=0, label=CHEST_MECH, note="Mechanized Chest 7"},
-        [80801870] = {quest=55553, criteria=0, label=CHEST_MECH, note="Mechanized Chest 7"},  -- Coords from wowhead
-        [86232042] = {quest=55553, criteria=0, label=CHEST_MECH, note="Mechanized Chest 7"},
-        [88602050] = {quest=55553, criteria=0, label=CHEST_MECH, note="Mechanized Chest 7"},  -- Coords from wowhead
-        [85602850] = {quest=55553, criteria=0, label=CHEST_MECH, note="Mechanized Chest 7"},  -- Coords from wowhead
-        -- Chest 8, 325666
-        [48367595] = {quest=55554, criteria=0, label=CHEST_MECH, note="Mechanized Chest 8"},
-        [57258202] = {quest=55554, criteria=0, label=CHEST_MECH, note="Mechanized Chest 8"},
-        [62607400] = {quest=55554, criteria=0, label=CHEST_MECH, note="Mechanized Chest 8"},  -- Coords from wowhead
-        [66707740] = {quest=55554, criteria=0, label=CHEST_MECH, note="Mechanized Chest 8"},  -- Coords from wowhead
-        -- Chest 9, 325667
-        [63606750] = {quest=55555, criteria=0, label=CHEST_MECH, note="Mechanized Chest 9"},  -- Coords from wowhead
-        [72126545] = {quest=55555, criteria=0, label=CHEST_MECH, note="Mechanized Chest 9"},
-        [76516601] = {quest=55555, criteria=0, label=CHEST_MECH, note="Mechanized Chest 9"},
-        [81167231] = {quest=55555, criteria=0, label=CHEST_MECH, note="Mechanized Chest 9"},
-        [85106350] = {quest=55555, criteria=0, label=CHEST_MECH, note="Mechanized Chest 9"},
-        -- Chest 10, 325668
-        [24806550] = {quest=55556, criteria=0, label=CHEST_MECH, note="Mechanized Chest 10"},  -- Coords from wowhead
-        [20607700] = {quest=55556, criteria=0, label=CHEST_MECH, note="Mechanized Chest 10"},  -- Coords from wowhead
-        [21788303] = {quest=55556, criteria=0, label=CHEST_MECH, note="Mechanized Chest 10"},
-        [12088566] = {quest=55556, criteria=0, label=CHEST_MECH, note="Mechanized Chest 10"},
+        -- 325659
+        [43304977] = {quest=55547, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 1 (of 9 in Normal Time)"},
+        [52115326] = {quest=55547, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 1 (of 9 in Normal Time)"},
+        [53254190] = {quest=55547, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 1 (of 9 in Normal Time)"},
+        [49223021] = {quest=55547, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 1 (of 9 in Normal Time)"},
+        [56973861] = {quest=55547, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 1 (of 9 in Normal Time)"},
+        -- 325660
+        [35683833] = {quest=55548, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 2 (of 9 in Normal Time)"},
+        [30785183] = {quest=55548, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 2 (of 9 in Normal Time)"},
+        [40155409] = {quest=55548, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 2 (of 9 in Normal Time)"},
+        [20617141] = {quest=55548, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 2 (of 9 in Normal Time)"},
+        -- 325661
+        [80374838] = {quest=55549, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 3 (of 9 in Normal Time)"},
+        [73515334] = {quest=55549, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 3 (of 9 in Normal Time)"},
+        [67075645] = {quest=55549, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 3 (of 9 in Normal Time)"},
+        [65866460] = {quest=55549, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 3 (of 9 in Normal Time)"},
+        [59946357] = {quest=55549, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 3 (of 9 in Normal Time)"},
+        -- 325662
+        [65555284] = {quest=55550, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 4 (of 9 in Normal Time)"},
+        [72594733] = {quest=55550, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 4 (of 9 in Normal Time)"},
+        [73014950] = {quest=55550, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 4 (of 9 in Normal Time)"},
+        [76215286] = {quest=55550, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 4 (of 9 in Normal Time)"},
+        [81196149] = {quest=55550, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 4 (of 9 in Normal Time)"},
+        -- 325663, Alt Mechagon only
+        [61583230] = {quest=55551, criteria=0, label=CHEST_MECH, requires_buff=296644, note="Chest 1 (of 1 in Alternate Time)"},
+        [58634160] = {quest=55551, criteria=0, label=CHEST_MECH, requires_buff=296644, note="Chest 1 (of 1 in Alternate Time)"},
+        [70654796] = {quest=55551, criteria=0, label=CHEST_MECH, requires_buff=296644, note="Chest 1 (of 1 in Alternate Time)"},
+        [64365961] = {quest=55551, criteria=0, label=CHEST_MECH, requires_buff=296644, note="Chest 1 (of 1 in Alternate Time)"},
+        [56665739] = {quest=55551, criteria=0, label=CHEST_MECH, requires_buff=296644, note="Chest 1 (of 1 in Alternate Time)"},
+        -- 325664
+        [66432227] = {quest=55552, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 5 (of 9 in Normal Time)"},
+        [64092627] = {quest=55552, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 5 (of 9 in Normal Time)"},
+        [56782918] = {quest=55552, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 5 (of 9 in Normal Time)"},
+        [57142283] = {quest=55552, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 5 (of 9 in Normal Time)"},
+        [55612404] = {quest=55552, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 5 (of 9 in Normal Time)"},
+        [50662858] = {quest=55552, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 5 (of 9 in Normal Time)"},
+        -- 325665
+        [67322289] = {quest=55553, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 6 (of 9 in Normal Time)"},
+        [80691868] = {quest=55553, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 6 (of 9 in Normal Time)"},
+        [86232042] = {quest=55553, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 6 (of 9 in Normal Time)"},
+        [88732015] = {quest=55553, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 6 (of 9 in Normal Time)"},
+        [85752824] = {quest=55553, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 6 (of 9 in Normal Time)"},
+        -- 325666
+        [48367595] = {quest=55554, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 7 (of 9 in Normal Time)"},
+        [57258202] = {quest=55554, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 7 (of 9 in Normal Time)"},
+        [62297390] = {quest=55554, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 7 (of 9 in Normal Time)"},
+        [66767759] = {quest=55554, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 7 (of 9 in Normal Time)"},
+        -- 325667
+        [63626715] = {quest=55555, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 8 (of 9 in Normal Time)"},
+        [72126545] = {quest=55555, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 8 (of 9 in Normal Time)"},
+        [76516601] = {quest=55555, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 8 (of 9 in Normal Time)"},
+        [81167231] = {quest=55555, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 8 (of 9 in Normal Time)"},
+        [85166335] = {quest=55555, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 8 (of 9 in Normal Time)"},
+        -- 325668
+        [24796526] = {quest=55556, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 9 (of 9 in Normal Time)"},
+        [20537696] = {quest=55556, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 9 (of 9 in Normal Time)"},
+        [21788303] = {quest=55556, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 9 (of 9 in Normal Time)"},
+        [12088568] = {quest=55556, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 9 (of 9 in Normal Time)"},
     },
 }
