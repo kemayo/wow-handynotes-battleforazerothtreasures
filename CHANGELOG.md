@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v8
+
+* Mechagon chests from Jeremy Gaudet
+* Nazjatar rares and chests from Znuff
+* Feline Figurine Found achievement in Nazjatar
+
 ## Changed in v7
 
 * 8.2: Mechagon and Nazjatar rares
