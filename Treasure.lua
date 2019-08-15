@@ -17,6 +17,7 @@ local CHEST_GLIM = 'Glimmering Treasure Chest'
 local CHEST_MECH = 'Mechanized Chest'
 local CHEST_AR = 'Arcane Chest'
 local AR_TRUNK = 'Arcane Trunk'
+local KITTY = 'Crystalline Cat Figurine'
 
 local path_meta = {__index = {
     label = "Path to treasure",
@@ -349,6 +350,17 @@ ns.points = {
 		[37900650] = {quest=55960, minimap=true, achievement=13549, label=AR_TRUNK, note="Underwater Cave"}, [39701000] = path{quest=55960}, 
 		[24803520] = {quest=56912, minimap=true, achievement=13549, label=AR_TRUNK, note="Inside Cave"}, [26703380] = path{quest=56912}, -- game quest id: 56913
 		[80503190] = {quest=56547, minimap=true, achievement=13549, label=AR_TRUNK, note="Up the building"}, [83003380] = path{quest=56547}, -- game quest id: 56913
+        -- Cats!
+        [28802910] = {quest=56983, minimap=true, achievement=13836, label=KITTY, atlas="Warfront-AllianceHero-Silver", scale=1.2},
+        [61102680] = {quest=56984, minimap=true, achievement=13836, label=KITTY, atlas="Warfront-AllianceHero-Silver", scale=1.2},
+        [59103040] = {quest=56985, minimap=true, achievement=13836, label=KITTY, atlas="Warfront-AllianceHero-Silver", scale=1.2},
+        [55302720] = {quest=56986, minimap=true, achievement=13836, label=KITTY, atlas="Warfront-AllianceHero-Silver", scale=1.2},
+        [40158608] = {quest=56987, minimap=true, achievement=13836, label=KITTY, note="In underwater cave", atlas="Warfront-AllianceHero-Silver", scale=1.2}, [40318144] = path{quest=56987},
+        [71402370] = {quest=56988, minimap=true, achievement=13836, label=KITTY, atlas="Warfront-AllianceHero-Silver", scale=1.2},
+        [38004930] = {quest=56989, minimap=true, achievement=13836, label=KITTY, atlas="Warfront-AllianceHero-Silver", scale=1.2}, [38704930] = path{quest=56989},
+        [58202200] = {quest=56990, minimap=true, achievement=13836, label=KITTY, atlas="Warfront-AllianceHero-Silver", scale=1.2},
+        [61601070] = {quest=56991, minimap=true, achievement=13836, label=KITTY, atlas="Warfront-AllianceHero-Silver", scale=1.2},
+        [73602590] = {quest=56992, minimap=true, achievement=13836, label=KITTY, atlas="Warfront-AllianceHero-Silver", scale=1.2},
     },
     [1462] = { -- Mechagon
         -- 325659
