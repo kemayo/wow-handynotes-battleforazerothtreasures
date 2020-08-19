@@ -72,6 +72,7 @@ ns.points = {
         [71161767] = path{quest=50949},
         [56123806] = {quest=51338, achievement=12851, criteria=40996, note="In cave behind waterfall",}, -- Cache of Secrets
         [52974719] = {quest=51624, achievement=12851, criteria=40997}, -- Riches of Tor'nowa
+        [54303440] = {quest=52269, item=161443, note="Pepe'jin is perched above the bar",}, -- A Tiny Voodoo Mask
         -- junk
         [50823158] = {quest=50711, junk=true, label=CHEST,},
         [65041636] = {quest=50715, junk=true, label=CHEST,},
@@ -321,6 +322,7 @@ ns.points = {
         [44472690] = {quest=51338, minimap=true, achievement=12851, criteria=40996, note="In cave behind waterfall",}, -- Cache of Secrets
         [38300716] = {quest=48938, minimap=true, achievement=12851, criteria=40988, note="On top of the Hall of the High Priests",}, -- Offerings of the Chosen
         [41141101] = path{quest=48938},
+        [39001580] = {quest=52269, item=161443, note="Pepe'jin is perched above the bar",}, -- A Tiny Voodoo Mask
         -- junk
         [48981013] = {quest=49142, junk=true, label=CHEST,},
     },
