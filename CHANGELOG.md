@@ -1,5 +1,12 @@
 # Changelog
 
+## Changed in v9
+
+* Make work in Shadowlands
+* Pepe'jin was hiding too well
+* Filled out some missing Jani trashpiles
+* Fixed Grayal's Last Offering for Alliance
+
 ## Changed in v8
 
 * Mechagon chests from Jeremy Gaudet
