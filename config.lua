@@ -170,7 +170,7 @@ end
 local player_faction = UnitFactionGroup("player")
 local player_name = UnitName("player")
 ns.should_show_point = function(coord, point, currentZone, isMinimap)
-    if isMinimap and not ns.db.show_on_minimap and not point.minimap then
+    if isMinimap and not ns.db.show_on_minimap then
         return false
     elseif not isMinimap and not ns.db.show_on_world then
         return false
