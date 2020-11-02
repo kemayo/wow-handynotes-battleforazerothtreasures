@@ -1,5 +1,13 @@
 # Changelog
 
+## Changed in v10
+
+* Add achievements:
+    * Drust the Facts, Ma'am
+    * A Loa of a Tale
+    * Dune Rider
+    * Carved in Stone, Written in Blood
+
 ## Changed in v9
 
 * Make work in Shadowlands
