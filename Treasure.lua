@@ -71,6 +71,15 @@ ns.points = {
         [56123806] = {quest=51338, achievement=12851, criteria=40996, note="In cave behind waterfall",}, -- Cache of Secrets
         [52974719] = {quest=51624, achievement=12851, criteria=40997}, -- Riches of Tor'nowa
         [54303440] = {quest=52269, item=161443, note="Pepe'jin is perched above the bar",}, -- A Tiny Voodoo Mask
+        -- A Loa of a Tale
+        [43747674] = {achievement=13036, criteria=41573, minimap=true, atlas="profession",}, -- Tales of de Loa: Rezan
+        [47842884] = {achievement=13036, criteria=41576, minimap=true, atlas="profession",}, -- Tales of de Loa: Shadra
+        [48545460] = {achievement=13036, criteria=41569, minimap=true, atlas="profession",}, -- Tales of de Loa: Jani
+        [49004129] = {achievement=13036, criteria=41572, minimap=true, atlas="profession",}, -- Tales of de Loa: Pa'ku
+        [51692825] = {achievement=13036, criteria=41566, minimap=true, atlas="profession",}, -- Tales of de Loa: Gonk
+        [57703170] = {achievement=13036, criteria=41581, minimap=true, atlas="profession",}, -- Tales of de Loa: Zandalar
+        [67281762] = {achievement=13036, criteria=41577, minimap=true, atlas="profession",}, -- Tales of de Loa: Torcali
+        [75506760] = {achievement=13036, criteria=41567, minimap=true, atlas="profession",}, -- Tales of de Loa: Gral
         -- junk
         [50823158] = {quest=50711, junk=true, label=CHEST,},
         [65041636] = {quest=50715, junk=true, label=CHEST,},
@@ -122,6 +131,11 @@ ns.points = {
         [43364810] = {quest=nil, achievement=13024, criteria=41861, minimap=true, atlas="reagents",},
         [51268511] = {quest=nil, achievement=13024, criteria=41862, minimap=true, atlas="reagents",},
         [42565711] = {quest=nil, achievement=13024, criteria=42116, minimap=true, atlas="reagents",},
+        -- Loa of a Tale
+        [39123865] = {achievement=13036, criteria=41565, minimap=true, atlas="profession",}, -- Tales of de Loa: Bwonsamdi
+        [39575467] = {achievement=13036, criteria=41568, minimap=true, atlas="profession",}, -- Tales of de Loa: Hir'eek
+        [58924865] = {achievement=13036, criteria=41571, minimap=true, atlas="profession",}, -- Tales of de Loa: Krag'wa
+        [72850760] = {achievement=13036, criteria=41579, minimap=true, atlas="profession",}, -- Tales of de Loa: Torga
         -- junk
         [41575046] = {quest=49916, junk=true, label=CHEST,},
         [41596574] = {quest=49916, junk=true, label=CHEST,},
@@ -169,6 +183,10 @@ ns.points = {
         [47906250] = {quest=nil, minimap=true, atlas="flightmasterferry", achievement=13018, note="Rickety Plank",},
         [45806360] = {quest=nil, minimap=true, atlas="flightmasterferry", achievement=13018, note="Rickety Plank",},
         [54902140] = {quest=nil, minimap=true, atlas="flightmasterferry", achievement=13018, note="Rickety Plank",},
+        -- Loa of a Tale
+        [27706212] = {achievement=13036, criteria=41570, minimap=true, atlas="profession",}, -- Tales of de Loa: Kimbul
+        [42226211] = {achievement=13036, criteria=41564, minimap=true, atlas="profession",}, -- Tales of de Loa: Akunda
+        [49572457] = {achievement=13036, criteria=41574, minimap=true, atlas="profession",}, -- Tales of de Loa: Sethraliss
         -- junk
         [46984656] = {quest=50883, junk=true, label="Mysterious trashpile", achievement=12482, note="In alcove, Summon Jani, give her Charged Ranishu Antennae"},
         [49398446] = {quest=50892, junk=true, label="Mysterious trashpile", achievement=12482, note="Under bridge, Summon Jani, give her Sturdy Redrock Jaw"},
@@ -332,6 +350,8 @@ ns.points = {
         [38300716] = {quest=48938, minimap=true, achievement=12851, criteria=40988, note="On top of the Hall of the High Priests",}, -- Offerings of the Chosen
         [41141101] = path{quest=48938},
         [39001580] = {quest=52269, item=161443, note="Pepe'jin is perched above the bar",}, -- A Tiny Voodoo Mask
+        -- A Loa of a Tale
+        [53230940] = {achievement=13036, criteria=41581, minimap=true, atlas="profession",}, -- Tales of de Loa: Zandalar
         -- junk
         [48981013] = {quest=49142, junk=true, label=CHEST,},
     },
