@@ -163,6 +163,12 @@ ns.points = {
         [47933673] = {quest=53143, minimap=true, atlas="VignetteLootElite", scale=1.2, achievement=13016, criteria=41353, note="Cave under the giant tree",}, -- Josh's Fang Necklace
         [45229114] = {quest=53144, minimap=true, atlas="VignetteLootElite", scale=1.2, achievement=13016, criteria=41354, note="On the wall",}, -- Portrait of Commander Martens
         [62832267] = {quest=53145, minimap=true, atlas="VignetteLootElite", scale=1.2, achievement=13016, criteria=41355, note="Down from Tortaka Refuge",}, -- Kurt's Ornate Key
+        -- Dune Rider
+        [32206900] = {quest=nil, minimap=true, atlas="flightmasterferry", achievement=13018, note="Rickety Plank",},
+        [38107100] = {quest=nil, minimap=true, atlas="flightmasterferry", achievement=13018, note="Rickety Plank",},
+        [47906250] = {quest=nil, minimap=true, atlas="flightmasterferry", achievement=13018, note="Rickety Plank",},
+        [45806360] = {quest=nil, minimap=true, atlas="flightmasterferry", achievement=13018, note="Rickety Plank",},
+        [54902140] = {quest=nil, minimap=true, atlas="flightmasterferry", achievement=13018, note="Rickety Plank",},
         -- junk
         [46984656] = {quest=50883, junk=true, label="Mysterious trashpile", achievement=12482, note="In alcove, Summon Jani, give her Charged Ranishu Antennae"},
         [49398446] = {quest=50892, junk=true, label="Mysterious trashpile", achievement=12482, note="Under bridge, Summon Jani, give her Sturdy Redrock Jaw"},
