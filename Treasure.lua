@@ -117,6 +117,11 @@ ns.points = {
         [21706930] = {quest=53425, achievement=13028, minimap=true, atlas="WildBattlePetCapturable",},
         -- [52804290] = {quest=53426, achievement=13828, minimap=true,}, -- maybe?
         [25694058] = {quest=53426, achievement=13028, minimap=true, atlas="WildBattlePetCapturable",},
+        -- Carved in Stone, Written in Blood
+        [56355727] = {quest=nil, achievement=13024, criteria=41860, minimap=true, atlas="reagents",},
+        [43364810] = {quest=nil, achievement=13024, criteria=41861, minimap=true, atlas="reagents",},
+        [51268511] = {quest=nil, achievement=13024, criteria=41862, minimap=true, atlas="reagents",},
+        [42565711] = {quest=nil, achievement=13024, criteria=42116, minimap=true, atlas="reagents",},
         -- junk
         [41575046] = {quest=49916, junk=true, label=CHEST,},
         [41596574] = {quest=49916, junk=true, label=CHEST,},
