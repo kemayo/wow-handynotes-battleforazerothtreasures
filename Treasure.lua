@@ -273,6 +273,17 @@ ns.points = {
         [18515133] = {quest=53471, item=163789, minimap=true, achievement=12995, criteria=41702, note="Click on Witch Torch",}, -- Hexed Chest
         [67767367] = {quest=53473, item=163791, minimap=true, achievement=12995, criteria=41704, note="Click on Witch Torch",}, -- Ensorcelled Chest
         [24304840] = {quest=53475, minimap=true, achievement=12995, criteria=41752,}, -- Stolen Thornspeaker Cache
+        -- Drust the Facts, Ma'am
+        [37126380] = {achievement=13064, criteria=41436, atlas="reagents",}, -- Drust Stele: The Circle
+        [27354833] = {achievement=13064, criteria=41438, atlas="reagents",}, -- Drust Stele: The Tree
+        [27605760] = {achievement=13064, criteria=41441, atlas="reagents",}, -- Drust Stele: Sacrifice
+        [19065787] = {achievement=13064, criteria=41443, atlas="reagents",}, -- Drust Stele: The Cycle
+        [56558583] = {achievement=13064, criteria=41446, atlas="reagents",}, -- Drust Stele: The Flayed Man
+        [50777371] = {achievement=13064, criteria=41437, atlas="reagents",}, -- Drust Stele: The Ritual
+        [59396668] = {achievement=13064, criteria=41439, atlas="reagents",}, -- Drust Stele: Breath Into Stone
+        [50144232] = {achievement=13064, criteria=41442, atlas="reagents",}, -- Drust Stele: Constructs
+        [46453723] = {achievement=13064, criteria=41445, atlas="reagents",}, -- Drust Stele: Conflict
+        [44584566] = {achievement=13064, criteria=41449, atlas="reagents",}, -- Drust Stele: Protectors of the Forest
         -- junk
         [65312905] = {quest=51871, junk=true, label=CHEST_SM,},
         [57862187] = {quest=51875, junk=true, label=CHEST_SM,},
