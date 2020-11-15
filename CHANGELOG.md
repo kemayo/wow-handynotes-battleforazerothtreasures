@@ -2,6 +2,7 @@
 
 ## Changed in upcoming release
 
+* Options for showing/hiding points in particular zones
 * Optimize some checks by using GetPlayerAuraBySpellID
 
 ## Changed in v10
