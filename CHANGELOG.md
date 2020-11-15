@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in upcoming release
+
+* Optimize some checks by using GetPlayerAuraBySpellID
+
 ## Changed in v10
 
 * Add achievements:
