@@ -1,7 +1,8 @@
 # Changelog
 
-## Changed in upcoming release
+## Changed in v11
 
+* TOC for 9.0.2
 * Options for showing/hiding points in particular zones
 * Optimize some checks by using GetPlayerAuraBySpellID
 

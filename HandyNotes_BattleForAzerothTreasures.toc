@@ -1,8 +1,8 @@
-## Interface: 90001
+## Interface: 90002
 ## Title: HandyNotes: Battle for Azeroth Treasures
 ## Notes: Where are the hidden treasures in Battle For Azeroth?
 ## Author: Kemayo
-## Version: 1
+## Version: @project-version@
 ## DefaultState: enabled
 ## X-Category: Map
 ## X-eMail: kemayo @ gmail DOT com
