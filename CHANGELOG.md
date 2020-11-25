@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v12
+
+* Config to hide particular achievements
+
 ## Changed in v11
 
 * TOC for 9.0.2
