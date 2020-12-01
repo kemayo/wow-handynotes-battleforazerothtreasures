@@ -2,6 +2,7 @@ local myname, ns = ...
 
 ns.defaults = {
     profile = {
+        default_icon = "VignetteLoot",
         show_on_world = true,
         show_on_minimap = false,
         show_junk = false,
@@ -70,6 +71,16 @@ ns.options = {
                     desc = "Show icons on the minimap",
                     order = 50,
                 },
+                default_icon = {
+                    type = "select",
+                    name = "Default Icon",
+                    values = {
+                        VignetteLoot = CreateAtlasMarkup("VignetteLoot", 20, 20) .. " Chest",
+                        VignetteLootElite = CreateAtlasMarkup("VignetteLootElite", 20, 20) .. " Chest with star",
+                        Garr_TreasureIcon = CreateAtlasMarkup("Garr_TreasureIcon", 20, 20) .. " Shiny chest",
+                    },
+                    order = 60,
+                }
             },
         },
         display = {
@@ -192,6 +203,7 @@ ns.options = {
     },
 }
 
+local player_name = UnitName("player")
 local allQuestsComplete = function(quests)
     if type(quests) == 'table' then
         -- if it's a table, only count as complete if all quests are complete
@@ -202,6 +214,26 @@ local allQuestsComplete = function(quests)
         end
         return true
     elseif C_QuestLog.IsQuestFlaggedCompleted(quests) then
+        return true
+    end
+end
+local criteriaComplete = function(achievement, criteria)
+    local _, _, completed, _, _, completedBy = GetAchievementCriteriaInfoByID(achievement, criteria)
+    if not (completed and completedBy == player_name) then
+        return false
+    end
+    return true
+end
+local allCriteriaComplete = function(achievement, criteria)
+    if type(criteria) == "table" then
+        -- if it's a table, only count as complete if all criteria are complete
+        for _, criteriaa in ipairs(criteria) do
+            if not criteriaComplete(achievement, criteriaa) then
+                return false
+            end
+        end
+        return true
+    elseif criteriaComplete(achievement, criteria) then
         return true
     end
 end
@@ -223,7 +255,6 @@ local achievementHidden = function(achievement)
 end
 
 local player_faction = UnitFactionGroup("player")
-local player_name = UnitName("player")
 ns.should_show_point = function(coord, point, currentZone, isMinimap)
     if isMinimap and not ns.db.show_on_minimap and not point.minimap then
         return false
@@ -248,6 +279,9 @@ ns.should_show_point = function(coord, point, currentZone, isMinimap)
     if point.faction and point.faction ~= player_faction then
         return false
     end
+    if point.level and point.level > UnitLevel("player") then
+        return false
+    end
     if (not ns.db.found) then
         if point.quest then
             if allQuestsComplete(point.quest) then
@@ -258,11 +292,8 @@ ns.should_show_point = function(coord, point, currentZone, isMinimap)
             if completedByMe then
                 return false
             end
-            if point.criteria then
-                local _, _, completed, _, _, completedBy = GetAchievementCriteriaInfoByID(point.achievement, point.criteria)
-                if completed and completedBy == player_name then
-                    return false
-                end
+            if point.criteria and allCriteriaComplete(point.achievement, point.criteria) then
+                return false
             end
         end
         if point.follower and C_Garrison.IsFollowerCollected(point.follower) then

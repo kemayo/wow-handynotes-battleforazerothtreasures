@@ -66,11 +66,11 @@ ns.points = {
         [41003328] = path{quest=50707, note="Path behind the waterfall"},
         [41973566] = path{quest=50707},
         [61065863] = {quest=50947, achievement=12851, criteria=40994, npc=133208, note="Event: kill Da White Shark first",}, -- Da White Shark's Bounty
-        [71821677] = {quest=50949, item=163036, achievement=12851, criteria=40995, note="In cave",}, -- The Exile's Lament
+        [71821677] = {quest=50949, loot={163036}, achievement=12851, criteria=40995, note="In cave",}, -- The Exile's Lament
         [71161767] = path{quest=50949},
         [56123806] = {quest=51338, achievement=12851, criteria=40996, note="In cave behind waterfall",}, -- Cache of Secrets
         [52974719] = {quest=51624, achievement=12851, criteria=40997}, -- Riches of Tor'nowa
-        [54303440] = {quest=52269, item=161443, note="Pepe'jin is perched above the bar",}, -- A Tiny Voodoo Mask
+        [54303440] = {quest=52269, loot={161443}, note="Pepe'jin is perched above the bar",}, -- A Tiny Voodoo Mask
         -- A Loa of a Tale
         [43747674] = {achievement=13036, criteria=41573, minimap=true, atlas="profession",}, -- Tales of de Loa: Rezan
         [47842884] = {achievement=13036, criteria=41576, minimap=true, atlas="profession",}, -- Tales of de Loa: Shadra
@@ -160,7 +160,7 @@ ns.points = {
         [57746464] = {quest=51136, achievement=12849, criteria=40971,}, -- Excavator's Greed
         [56696469] = path{quest=51136},
         [57061121] = {quest=52992, achievement=12849, criteria=41002, note="Enter at top of temple",}, -- Lost Offerings of Kimbul
-        [26484534] = {quest=53004, item=163036, achievement=12849, criteria=41004, note="Use Abandoned Bobber",}, -- Sandsunken Treasure
+        [26484534] = {quest=53004, loot={163036}, achievement=12849, criteria=41004, note="Use Abandoned Bobber",}, -- Sandsunken Treasure
         -- Scavenger of the Sands
         [56297011] = {quest=53132, minimap=true, atlas="VignetteLootElite", scale=1.2, achievement=13016, criteria=41342, note="Under the bridge",}, -- Jason's Rusty Blade
         [36217838] = {quest=53133, minimap=true, atlas="VignetteLootElite", scale=1.2, achievement=13016, criteria=41343, note="Inside the turned over box",}, -- Ian's Empty Bottle
@@ -217,27 +217,27 @@ ns.points = {
         [61515233] = {quest=49963, achievement=12852, criteria=41012, note="Ride the Guardian",}, -- Hay Covered Chest
         [56033319] = {quest=52866, achievement=12852, criteria=41014,}, -- Precarious Noble Cache
         [72482169] = {quest=52870, achievement=12852, criteria=41016, note="In cave",}, -- Scrimshaw Cache
-        [72495814] = {quest=50442, item=155381, achievement=12852, criteria=41013,}, -- Cutwater Treasure Chest
+        [72495814] = {quest=50442, loot={155381}, achievement=12852, criteria=41013,}, -- Cutwater Treasure Chest
         [61786275] = {quest=52867, achievement=12852, criteria=41015, note="In cave",}, -- Forgotten Smuggler's Stash
-        [73103950] = {quest=52195, item=161342, achievement=12852, criteria=41017, note="In Boralus, on Stomsong Monastary",}, -- Secret of the Depths
-        [55769095] = {quest=52195, hide_before={52134, 52135, 52136, 52137, 52138}, item=161342, achievement=12852, criteria=41017, note="Teleport here from Stormsong, pick up the gem",}, -- Secret of the Depths
+        [73103950] = {quest=52195, loot={161342}, achievement=12852, criteria=41017, note="In Boralus, on Stomsong Monastary",}, -- Secret of the Depths
+        [55769095] = {quest=52195, hide_before={52134, 52135, 52136, 52137, 52138}, loot={161342}, achievement=12852, criteria=41017, note="Teleport here from Stormsong, pick up the gem",}, -- Secret of the Depths
         -- Freehold treasure maps
-        [80007600] = {quest=52853, item=162571, achievement=12852, criteria=41018, note="Kill pirates in Freehold until the map drops",}, -- Soggy Treasure Map 162571 (q:52853)
-        [80708050] = {quest=52859, item=162581, achievement=12852, criteria=41020, note="Kill pirates in Freehold until the map drops",}, -- Yellowed Treasure Map 162581 (q:52859)
-        [74008300] = {quest=52854, item=162580, achievement=12852, criteria=41019, note="Kill pirates in Freehold until the map drops",}, -- Fading Treasure Map 162580 (q:52854)
-        [76008500] = {quest=52860, item=162584, achievement=12852, criteria=41021, note="Kill pirates in Freehold until the map drops",}, -- Singed Treasure Map 162584 (q:52860)
+        [80007600] = {quest=52853, loot={162571}, achievement=12852, criteria=41018, note="Kill pirates in Freehold until the map drops",}, -- Soggy Treasure Map 162571 (q:52853)
+        [80708050] = {quest=52859, loot={162581}, achievement=12852, criteria=41020, note="Kill pirates in Freehold until the map drops",}, -- Yellowed Treasure Map 162581 (q:52859)
+        [74008300] = {quest=52854, loot={162580}, achievement=12852, criteria=41019, note="Kill pirates in Freehold until the map drops",}, -- Fading Treasure Map 162580 (q:52854)
+        [76008500] = {quest=52860, loot={162584}, achievement=12852, criteria=41021, note="Kill pirates in Freehold until the map drops",}, -- Singed Treasure Map 162584 (q:52860)
         -- ...and the actual treasures they point to
         [54994608] = {quest=52807, hide_before=52853, achievement=12852, criteria=41018, note="Kill pirates in Freehold until the map drops",}, -- Soggy Treasure Map 162571 (q:52853)
         [90507551] = {quest=52836, hide_before=52859, achievement=12852, criteria=41020, note="Kill pirates in Freehold until the map drops",}, -- Yellowed Treasure Map 162581 (q:52859)
         [29222534] = {quest=52833, hide_before=52854, achievement=12852, criteria=41019, note="Kill pirates in Freehold until the map drops",}, -- Fading Treasure Map 162580 (q:52854)
         [48983759] = {quest=52845, hide_before=52860, achievement=12852, criteria=41021, note="Kill pirates in Freehold until the map drops",}, -- Singed Treasure Map 162584 (q:52860)
         -- Shanty Raid
-        [43382585] = {quest=53410, item=163715, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41542, note="In a cave",}, -- Fruit Counting
-        [76218305] = {quest=50233, item=163717, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41544, note="Kill Barman Bill",}, -- Josephus
-        [56706990] = {quest=50096, item=163718, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41545, note="Kill Black-Eyed Bart",}, -- Black Sphere
-        [73208410] = {quest=53411, item=163719, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41546, note="Ground floor, on a table",}, -- Horse
-        [70602270] = {quest=53407, item=163716, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41543, note="Behind Jay the Tavern Bard",}, -- Inebriation
-        [74403540] = {quest=53408, item=163714, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41541, note="On the fireplace mantel",}, -- Lively Men
+        [43382585] = {quest=53410, loot={163715}, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41542, note="In a cave",}, -- Fruit Counting
+        [76218305] = {quest=50233, loot={163717}, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41544, note="Kill Barman Bill",}, -- Josephus
+        [56706990] = {quest=50096, loot={163718}, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41545, note="Kill Black-Eyed Bart",}, -- Black Sphere
+        [73208410] = {quest=53411, loot={163719}, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41546, note="Ground floor, on a table",}, -- Horse
+        [70602270] = {quest=53407, loot={163716}, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41543, note="Behind Jay the Tavern Bard",}, -- Inebriation
+        [74403540] = {quest=53408, loot={163714}, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41541, note="On the fireplace mantel",}, -- Lively Men
         -- junk:
         [83673580] = {quest=53631, junk=true, label="Dusty Marine Supplies",},
         [76967543] = {quest=48593, junk=true, label=CHEST_SM,},
@@ -264,14 +264,14 @@ ns.points = {
     },
     [896] = { -- Drustvar
         [33713008] = {quest=53356, achievement=12995, criteria=41697,}, -- Web-Covered Chest
-        [63306585] = {quest=53385, item=163743, achievement=12995, criteria=41699, note="Left Down Up Right",}, -- Runebound Cache
-        [33687173] = {quest=53387, item=163740, achievement=12995, criteria=41701, note="Right Up Left Down",}, -- Runebound Coffer
-        [55605181] = {quest=53472, item=163790, minimap=true, achievement=12995, criteria=41703, note="Click on Witch Torch",}, -- Bespelled Chest
-        [25472416] = {quest=53474, item=163796, minimap=true, achievement=12995, criteria=41705, note="Click on Witch Torch",}, -- Enchanted Chest
+        [63306585] = {quest=53385, loot={163743}, achievement=12995, criteria=41699, note="Left Down Up Right",}, -- Runebound Cache
+        [33687173] = {quest=53387, loot={163740}, achievement=12995, criteria=41701, note="Right Up Left Down",}, -- Runebound Coffer
+        [55605181] = {quest=53472, loot={163790}, minimap=true, achievement=12995, criteria=41703, note="Click on Witch Torch",}, -- Bespelled Chest
+        [25472416] = {quest=53474, loot={163796}, minimap=true, achievement=12995, criteria=41705, note="Click on Witch Torch",}, -- Enchanted Chest
         [25751995] = {quest=53357, achievement=12995, criteria=41698, note="Get keys from Gorging Raven",}, -- Merchant's Chest
-        [44222770] = {quest=53386, item=163742, achievement=12995, criteria=41700, note="Left Right Down Up",}, -- Runebound Chest
-        [18515133] = {quest=53471, item=163789, minimap=true, achievement=12995, criteria=41702, note="Click on Witch Torch",}, -- Hexed Chest
-        [67767367] = {quest=53473, item=163791, minimap=true, achievement=12995, criteria=41704, note="Click on Witch Torch",}, -- Ensorcelled Chest
+        [44222770] = {quest=53386, loot={163742}, achievement=12995, criteria=41700, note="Left Right Down Up",}, -- Runebound Chest
+        [18515133] = {quest=53471, loot={163789}, minimap=true, achievement=12995, criteria=41702, note="Click on Witch Torch",}, -- Hexed Chest
+        [67767367] = {quest=53473, loot={163791}, minimap=true, achievement=12995, criteria=41704, note="Click on Witch Torch",}, -- Ensorcelled Chest
         [24304840] = {quest=53475, minimap=true, achievement=12995, criteria=41752,}, -- Stolen Thornspeaker Cache
         -- Drust the Facts, Ma'am
         [37126380] = {achievement=13064, criteria=41436, atlas="reagents",}, -- Drust Stele: The Circle
@@ -304,7 +304,7 @@ ns.points = {
         [59913907] = {quest=50937, achievement=12853, criteria=41065, note="On roof",}, -- Hidden Scholar's Chest
         [58608388] = {quest=49811, achievement=12853, criteria=41066, note="Under platform",}, -- Smuggler's Stash
         [58216368] = {quest=52326, achievement=12853, criteria=41067, note="Top shelf inside shed",}, -- Discarded Lunchbox
-        [44447353] = {quest=52429, item=162000, achievement=12853, criteria=41068, note="Jump down onto platform",}, -- Carved Wooden Chest
+        [44447353] = {quest=52429, loot={162000}, achievement=12853, criteria=41068, note="Jump down onto platform",}, -- Carved Wooden Chest
         [36692323] = {quest=52976, achievement=12853, criteria=41069, note="Climb ladder onto ship",}, -- Venture Co. Supply Chest
         [46003069] = {quest=52980, achievement=12853, criteria=41070, note="Behind pillar",}, -- Forgotten Chest
         [41256950] = {achievement=13046, atlas="Food", minimap=true, note="Open an Unforgettable Luncheon here; buy them at the Inn, or loot one from the Discarded Lunchbox in Brennadam",}, -- These Hills Sing
@@ -320,7 +320,7 @@ ns.points = {
         -- junk
         [32126620] = {quest=53635, junk=true, label="Curious Grain Sack",},
         [32946967] = {quest=53652, junk=true, label="Curious Grain Sack",},
-        [66567107] = {quest=50576, item=154476, label="Honey Vat", note="Strangely, not part of the achievement",},
+        [66567107] = {quest=50576, loot={154476}, label="Honey Vat", note="Strangely, not part of the achievement",},
         [62056563] = {quest=51184, junk=true, label=CHEST_SM,},
         [51796523] = {quest=51184, junk=true, label=CHEST_SM,},
         [70265958] = {quest=51927, junk=true, label=CHEST_SM,},
@@ -337,7 +337,7 @@ ns.points = {
         [46915393] = {quest=51949, junk=true, label=CHEST_SM,},
     },
     [1183] = { -- Thornheart
-        [60804121] = {quest=52429, item=162000, achievement=12853, criteria=41068, note="Jump down from here",}, -- Carved Wooden chest
+        [60804121] = {quest=52429, loot={162000}, achievement=12853, criteria=41068, note="Jump down from here",}, -- Carved Wooden chest
     },
     [1161] = { -- Boralus
         [61901010] = {quest=52870, achievement=12852, criteria=41016, note="In cave",}, -- Scrimshaw Cache
@@ -348,10 +348,10 @@ ns.points = {
         [63078186] = {quest=52136, atlas="poi-workorders", minimap=true, achievement=12852, criteria=41017, note="Read Damp Scrolls; upstairs",},
         [70328576] = {quest=52137, atlas="poi-workorders", minimap=true, achievement=12852, criteria=41017, note="Read Damp Scrolls; underground",},
         [67147982] = {quest=52138, atlas="poi-workorders", minimap=true, achievement=12852, criteria=41017, note="Read Damp Scrolls",},
-        [55769095] = {quest=52195, atlas="DemonInvasion2", scale=1.4, minimap=true, hide_before={52134, 52135, 52136, 52137, 52138}, item=161342, achievement=12852, criteria=41017, note="Ominous Altar; use it, get teleported, pick up the gem",}, -- Secret of the Depths
+        [55769095] = {quest=52195, atlas="DemonInvasion2", scale=1.4, minimap=true, hide_before={52134, 52135, 52136, 52137, 52138}, loot={161342}, achievement=12852, criteria=41017, note="Ominous Altar; use it, get teleported, pick up the gem",}, -- Secret of the Depths
         -- Shanty Raid
-        [72616853] = {quest=53408, item=163714, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41541, note="On the fireplace mantel",}, -- Lively Men
-        [53141767] = {quest=53407, item=163716, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41543, note="Behind Jay the Tavern Bard",}, -- Inebriation
+        [72616853] = {quest=53408, loot={163714}, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41541, note="On the fireplace mantel",}, -- Lively Men
+        [53141767] = {quest=53407, loot={163716}, atlas="poi-workorders", minimap=true, achievement=13057, criteria=41543, note="Behind Jay the Tavern Bard",}, -- Inebriation
         -- junk
         [66758031] = {quest=50952, junk=true, label=CHEST_SM,},
     },
@@ -360,7 +360,7 @@ ns.points = {
         [44472690] = {quest=51338, minimap=true, achievement=12851, criteria=40996, note="In cave behind waterfall",}, -- Cache of Secrets
         [38300716] = {quest=48938, minimap=true, achievement=12851, criteria=40988, note="On top of the Hall of the High Priests",}, -- Offerings of the Chosen
         [41141101] = path{quest=48938},
-        [39001580] = {quest=52269, item=161443, note="Pepe'jin is perched above the bar",}, -- A Tiny Voodoo Mask
+        [39001580] = {quest=52269, loot={161443}, note="Pepe'jin is perched above the bar",}, -- A Tiny Voodoo Mask
         -- A Loa of a Tale
         [53230940] = {achievement=13036, criteria=41581, minimap=true, atlas="profession",}, -- Tales of de Loa: Zandalar
         -- junk

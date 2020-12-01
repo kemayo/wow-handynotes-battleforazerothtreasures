@@ -10,12 +10,6 @@ local function Debug(...) if debugf then debugf:AddMessage(string.join(", ", tos
 ns.Debug = Debug
 
 local next = next
-local GameTooltip = GameTooltip
-local HandyNotes = HandyNotes
-local GetItemInfo = GetItemInfo
-local GetAchievementInfo = GetAchievementInfo
-local GetAchievementCriteriaInfo = GetAchievementCriteriaInfo
-local GetAchievementCriteriaInfoByID = GetAchievementCriteriaInfoByID
 
 local ARTIFACT_LABEL = '|cffff8000' .. ARTIFACT_POWER .. '|r'
 
@@ -36,8 +30,65 @@ local function mob_name(id)
     end
     return name_cache[id]
 end
+local function quick_texture_markup(icon)
+    -- needs less than CreateTextureMarkup
+    return '|T' .. icon .. ':0:0:1:-1|t'
+end
+local function render_string(s)
+    return s:gsub("{(%l+):(%d+):?([^}]*)}", function(variant, id, fallback)
+        id = tonumber(id)
+        if variant == "item" then
+            local name, link, _, _, _, _, _, _, _, icon = GetItemInfo(id)
+            if link and icon then
+                return quick_texture_markup(icon) .. link
+            end
+        elseif variant == "spell" then
+            local name, _, icon = GetSpellInfo(id)
+            if name and icon then
+                return quick_texture_markup(icon) .. name
+            end
+        elseif variant == "quest" then
+            local name = C_QuestLog.GetTitleForQuestID(id)
+            if name and name ~= "" then
+                return name
+            end
+        elseif variant == "npc" then
+            local name = mob_name(id)
+            if name then
+                return name
+            end
+        elseif variant == "currency" then
+            local info = C_CurrencyInfo.GetCurrencyInfo(id)
+            if info then
+                return quick_texture_markup(info.iconFileID) .. info.name
+            end
+        end
+        return fallback ~= "" and fallback or (variant .. ':' .. id)
+    end)
+end
+local function cache_string(s)
+    if not s then return end
+    for variant, id, fallback in s:gmatch("{(%l+):(%d+):?([^}]*)}") do
+        id = tonumber(id)
+        if variant == "item" then
+            C_Item.RequestLoadItemDataByID(id)
+        elseif variant == "spell" then
+            C_Spell.RequestLoadSpellData(id)
+        elseif variant == "quest" then
+            C_QuestLog.RequestLoadQuestByID(id)
+        elseif variant == "npc" then
+            mob_name(id)
+        end
+    end
+end
+local function cache_loot(loot)
+    if not loot then return end
+    for _,item in ipairs(loot) do
+        C_Item.RequestLoadItemDataByID(item)
+    end
+end
 
-local default_texture, npc_texture, follower_texture, currency_texture, junk_texture
+local npc_texture, follower_texture, currency_texture, junk_texture
 local icon_cache = {}
 local trimmed_icon = function(texture)
     if not icon_cache[texture] then
@@ -59,18 +110,22 @@ local atlas_texture = function(atlas, scale)
         scale = scale or 1,
     }
 end
+local default_textures = {
+    VignetteLoot = atlas_texture("VignetteLoot", 1.4),
+    VignetteLootElite = atlas_texture("VignetteLootElite", 1.7),
+    Garr_TreasureIcon = atlas_texture("Garr_TreasureIcon", 2.5),
+}
 local function work_out_label(point)
     local fallback
     if point.label then
-        return point.label
+        return (render_string(point.label))
     end
     if point.achievement then
-        if point.criteria then
+        if point.criteria and type(point.criteria) ~= "table" then
             local criteria = GetAchievementCriteriaInfoByID(point.achievement, point.criteria)
             if criteria then
                 return criteria
             end
-            fallback = 'achievement:'..point.achievement..'.'..point.criteria
         end
         local _, achievement = GetAchievementInfo(point.achievement)
         if achievement then
@@ -92,12 +147,13 @@ local function work_out_label(point)
         end
         fallback = 'npc:'..point.npc
     end
-    if point.item then
-        local _, link, _, _, _, _, _, _, _, texture = GetItemInfo(point.item)
+    if point.loot and #point.loot > 0 then
+        -- handle multiples?
+        local _, link = GetItemInfo(point.loot[1])
         if link then
             return link
         end
-        fallback = 'item:'..point.item
+        fallback = 'item:'..point.loot[1]
     end
     if point.currency then
         if point.currency == 'ARTIFACT' then
@@ -117,9 +173,9 @@ local function work_out_texture(point)
         end
         return icon_cache[point.atlas]
     end
-    if ns.db.icon_item then
-        if point.item then
-            local texture = select(10, GetItemInfo(point.item))
+    if ns.db.icon_item or point.icon then
+        if point.loot and #point.loot > 0 then
+            local texture = select(10, GetItemInfo(point.loot[1]))
             if texture then
                 return trimmed_icon(texture)
             end
@@ -146,7 +202,7 @@ local function work_out_texture(point)
     else
         if point.currency then
             if not currency_texture then
-                currency_texture = atlas_texture("VignetteLoot", 1.5)
+                currency_texture = atlas_texture("Auctioneer", 1.5)
             end
             return currency_texture
         end
@@ -169,12 +225,12 @@ local function work_out_texture(point)
         end
         return junk_texture
     end
-    if not default_texture then
-        default_texture = atlas_texture("Garr_TreasureIcon", 2.6)
+    if not default_textures[ns.db.default_icon] then
+        default_textures[ns.db.default_icon] = atlas_texture(ns.db.default_icon, 1.5)
     end
-    return default_texture
+    return default_textures[ns.db.default_icon] or default_textures["VignetteLoot"]
 end
-local get_point_info = function(point)
+local get_point_info = function(point, isMinimap)
     if point then
         local label = work_out_label(point)
         local icon = work_out_texture(point)
@@ -183,6 +239,10 @@ local get_point_info = function(point)
             category = "npc"
         elseif point.junk then
             category = "junk"
+        end
+        if not isMinimap then
+            cache_string(point.note)
+            cache_loot(point.loot)
         end
         return label, icon, category, point.quest, point.faction, point.scale, point.alpha or 1
     end
@@ -223,15 +283,49 @@ local function handle_tooltip(tooltip, point)
                 complete and 0 or 1, complete and 1 or 0, 0
             )
             if point.criteria then
-                local criteria, _, complete = GetAchievementCriteriaInfoByID(point.achievement, point.criteria)
-                tooltip:AddDoubleLine(" ", criteria,
-                    nil, nil, nil,
-                    complete and 0 or 1, complete and 1 or 0, 0
-                )
+                if type(point.criteria) == "table" then
+                    for _, criteria in ipairs(point.criteria) do
+                        local criteria, _, complete = GetAchievementCriteriaInfoByID(point.achievement, criteria)
+                        tooltip:AddDoubleLine(" ", criteria,
+                            nil, nil, nil,
+                            complete and 0 or 1, complete and 1 or 0, 0
+                        )
+                    end
+                else
+                    local criteria, _, complete = GetAchievementCriteriaInfoByID(point.achievement, point.criteria)
+                    tooltip:AddDoubleLine(" ", criteria,
+                        nil, nil, nil,
+                        complete and 0 or 1, complete and 1 or 0, 0
+                    )
+                end
+            elseif GetAchievementNumCriteria(point.achievement) == 1 then
+                local criteria, _, complete, _, _, _, _, _, quantityString = GetAchievementCriteriaInfo(point.achievement, 1)
+                if quantityString then
+                    tooltip:AddDoubleLine(
+                        criteria, quantityString,
+                        complete and 0 or 1, complete and 1 or 0, 0,
+                        complete and 0 or 1, complete and 1 or 0, 0
+                    )
+                else
+                    tooltip:AddDoubleLine(" ", criteria,
+                        nil, nil, nil,
+                        complete and 0 or 1, complete and 1 or 0, 0
+                    )
+                end
             end
         end
         if point.note then
-            tooltip:AddLine(point.note, nil, nil, nil, true)
+            tooltip:AddLine(render_string(point.note), nil, nil, nil, true)
+        end
+        if point.loot then
+            for _, item in ipairs(point.loot) do
+                local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(item)
+                if link then
+                    tooltip:AddDoubleLine(ENCOUNTER_JOURNAL_ITEM, quick_texture_markup(icon) .. link)
+                else
+                    tooltip:AddDoubleLine(ENCOUNTER_JOURNAL_ITEM, SEARCH_LOADING_TEXT, 1, 1, 0, 0, 1, 1)
+                end
+            end
         end
         if point.quest and ns.db.tooltip_questid then
             local quest = point.quest
@@ -241,16 +335,14 @@ local function handle_tooltip(tooltip, point)
             tooltip:AddDoubleLine("QuestID", quest or UNKNOWN)
         end
 
-        if (ns.db.tooltip_item or IsShiftKeyDown()) and (point.item or point.npc) then
+        if (ns.db.tooltip_item or IsShiftKeyDown()) and (point.loot or point.npc) then
             local comparison = ShoppingTooltip1
 
             do
                 local side
-                local rightDist = 0
                 local leftPos = tooltip:GetLeft() or 0
                 local rightPos = tooltip:GetRight() or 0
-
-                rightDist = GetScreenWidth() - rightPos
+                local rightDist = GetScreenWidth() - rightPos
 
                 if (leftPos and (rightDist < leftPos)) then
                     side = "left"
@@ -282,8 +374,8 @@ local function handle_tooltip(tooltip, point)
                 end
             end
 
-            if point.item then
-                comparison:SetHyperlink(("item:%d"):format(point.item))
+            if point.loot and #point.loot > 0 then
+                comparison:SetHyperlink(("item:%d"):format(point.loot[1]))
             elseif point.npc then
                 comparison:SetHyperlink(("unit:Creature-0-0-0-0-%d"):format(point.npc))
             end
@@ -403,7 +495,7 @@ do
         local state, value = next(t, prestate)
         while state do -- Have we reached the end of this zone?
             if value and ns.should_show_point(state, value, currentZone, isMinimap) then
-                local label, icon, _, _, _, scale, alpha = get_point_info(value)
+                local label, icon, _, _, _, scale, alpha = get_point_info(value, isMinimap)
                 scale = (scale or 1) * (icon and icon.scale or 1) * ns.db.icon_scale
                 return state, nil, icon, scale, ns.db.icon_alpha * alpha
             end
