@@ -5,19 +5,87 @@ local HL = LibStub("AceAddon-3.0"):NewAddon(myname, "AceEvent-3.0")
 -- local L = LibStub("AceLocale-3.0"):GetLocale(myname, true)
 ns.HL = HL
 
-local debugf = tekDebug and tekDebug:GetFrame(myname:gsub("HandyNotes_", ""))
-local function Debug(...) if debugf then debugf:AddMessage(string.join(", ", tostringall(...))) end end
-ns.Debug = Debug
+---------------------------------------------------------
+-- Data model stuff:
 
-local next = next
+-- flags for whether to show minimap icons in some zones, if Blizzard ever does the treasure-map thing again
+ns.map_spellids = {
+    -- zone = spellid
+}
+ns.map_questids = {
+    -- zone = questid
+}
 
-local ARTIFACT_LABEL = '|cffff8000' .. ARTIFACT_POWER .. '|r'
+ns.currencies = {
+    ANIMA = {
+        name = '|cffff8000' .. ANIMA .. '|r',
+        texture = select(10, GetAchievementInfo(14339)),
+    },
+    ARTIFACT = {
+        name = '|cffff8000' .. ARTIFACT_POWER .. '|r',
+        texture = select(10, GetAchievementInfo(11144)),
+    }
+}
 
-local cache_tooltip = CreateFrame("GameTooltip", "HNBattleTreasuresTooltip")
-cache_tooltip:AddFontStrings(
-    cache_tooltip:CreateFontString("$parentTextLeft1", nil, "GameTooltipText"),
-    cache_tooltip:CreateFontString("$parentTextRight1", nil, "GameTooltipText")
-)
+ns.points = {
+    --[[ structure:
+    [uiMapID] = { -- "_terrain1" etc will be stripped from attempts to fetch this
+        [coord] = {
+            label=[string], -- label: text that'll be the label, optional
+            loot={[id]}, -- itemids
+            quest=[id], -- will be checked, for whether character already has it
+            currency=[id], -- currencyid
+            achievement=[id], -- will be shown in the tooltip
+            criteria=[id], -- modifies achievement
+            junk=[bool], -- doesn't count for any achievement
+            npc=[id], -- related npc id, used to display names in tooltip
+            note=[string], -- some text which might be helpful
+            hide_before=[id], -- hide if quest not completed
+            requires_buff=[id], -- hide if player does not have buff, mostly useful for buff-based zone phasing
+            requires_no_buff=[id] -- hide if player has buff, mostly useful for buff-based zone phasing
+        },
+    },
+    --]]
+}
+function ns.RegisterPoints(zone, points)
+    if not ns.points[zone] then
+        ns.points[zone] = {}
+    end
+    ns.merge(ns.points[zone], points)
+end
+
+ns.merge = function(t1, t2)
+    if not t2 then return t1 end
+    for k, v in pairs(t2) do
+        t1[k] = v
+    end
+end
+
+ns.nodeMaker = function(metatable)
+    return function(details)
+        return setmetatable(details or {}, {__index = metatable})
+    end
+end
+
+ns.path = ns.nodeMaker{
+    label = "Path to treasure",
+    atlas = "poi-door", -- 'PortalPurple' / 'PortalRed'?
+    path = true,
+    minimap = true,
+    scale = 1.1,
+}
+
+---------------------------------------------------------
+-- All the utility code
+
+local cache_tooltip = _G["HNTreasuresCacheScanningTooltip"]
+if not cache_tooltip then
+    cache_tooltip = CreateFrame("GameTooltip", "HNTreasuresCacheScanningTooltip")
+    cache_tooltip:AddFontStrings(
+        cache_tooltip:CreateFontString("$parentTextLeft1", nil, "GameTooltipText"),
+        cache_tooltip:CreateFontString("$parentTextRight1", nil, "GameTooltipText")
+    )
+end
 local name_cache = {}
 local function mob_name(id)
     if not name_cache[id] then
@@ -25,7 +93,7 @@ local function mob_name(id)
         cache_tooltip:SetOwner(WorldFrame, "ANCHOR_NONE")
         cache_tooltip:SetHyperlink(("unit:Creature-0-0-0-0-%d"):format(id))
         if cache_tooltip:IsShown() then
-            name_cache[id] = HNBattleTreasuresTooltipTextLeft1:GetText()
+            name_cache[id] = HNTreasuresCacheScanningTooltipTextLeft1:GetText()
         end
     end
     return name_cache[id]
@@ -34,6 +102,8 @@ local function quick_texture_markup(icon)
     -- needs less than CreateTextureMarkup
     return '|T' .. icon .. ':0:0:1:-1|t'
 end
+local completeColor = CreateColor(0, 1, 0, 1)
+local incompleteColor = CreateColor(1, 0, 0, 1)
 local function render_string(s)
     return s:gsub("{(%l+):(%d+):?([^}]*)}", function(variant, id, fallback)
         id = tonumber(id)
@@ -50,8 +120,11 @@ local function render_string(s)
         elseif variant == "quest" then
             local name = C_QuestLog.GetTitleForQuestID(id)
             if name and name ~= "" then
-                return name
+                local completed = C_QuestLog.IsQuestFlaggedCompleted(id)
+                return CreateAtlasMarkup("questnormal") .. (completed and completeColor or incompleteColor):WrapTextInColorCode(name)
             end
+        elseif variant == "questid" then
+            return CreateAtlasMarkup("questnormal") .. (C_QuestLog.IsQuestFlaggedCompleted(id) and completeColor or incompleteColor):WrapTextInColorCode(id)
         elseif variant == "npc" then
             local name = mob_name(id)
             if name then
@@ -85,6 +158,19 @@ local function cache_loot(loot)
     if not loot then return end
     for _,item in ipairs(loot) do
         C_Item.RequestLoadItemDataByID(item)
+    end
+end
+local render_string_list
+do
+    local out = {}
+    function render_string_list(variant, ...)
+        if not ... then return "" end
+        if type(...) == "table" then return render_string_list(variant, unpack(...)) end
+        wipe(out)
+        for i=1,select("#", ...) do
+            table.insert(out, ("{%s:%d}"):format(variant, (select(i, ...))))
+        end
+        return render_string(string.join(", ", unpack(out)))
     end
 end
 
@@ -156,8 +242,8 @@ local function work_out_label(point)
         fallback = 'item:'..point.loot[1]
     end
     if point.currency then
-        if point.currency == 'ARTIFACT' then
-            return ARTIFACT_LABEL
+        if ns.currencies[point.currency] then
+            return ns.currencies[point.currency].name
         end
         local info = C_CurrencyInfo.GetCurrencyInfo(point.currency)
         if info then
@@ -181,8 +267,8 @@ local function work_out_texture(point)
             end
         end
         if point.currency then
-            if point.currency == 'ARTIFACT' then
-                local texture = select(10, GetAchievementInfo(11144))
+            if ns.currencies[point.currency] then
+                local texture = ns.currencies[point.currency].texture
                 if texture then
                     return trimmed_icon(texture)
                 end
@@ -230,10 +316,39 @@ local function work_out_texture(point)
     end
     return default_textures[ns.db.default_icon] or default_textures["VignetteLoot"]
 end
+local inactive_cache = {}
+local function get_inactive_texture_variant(icon)
+    if not inactive_cache[icon] then
+        inactive_cache[icon] = CopyTable(icon)
+        inactive_cache[icon].r = 0.5
+        inactive_cache[icon].g = 0.5
+        inactive_cache[icon].b = 0.5
+        inactive_cache[icon].a = 1
+    end
+    return inactive_cache[icon]
+end
+local upcoming_cache = {}
+local function get_upcoming_texture_variant(icon)
+    if not upcoming_cache[icon] then
+        upcoming_cache[icon] = CopyTable(icon)
+        upcoming_cache[icon].r = 1
+        upcoming_cache[icon].g = 0
+        upcoming_cache[icon].b = 0
+        upcoming_cache[icon].a = 0.7
+    end
+    return upcoming_cache[icon]
+end
 local get_point_info = function(point, isMinimap)
     if point then
         local label = work_out_label(point)
         local icon = work_out_texture(point)
+        if point.active and point.active.quest and not C_QuestLog.IsQuestFlaggedCompleted(point.active.quest) then
+            icon = get_inactive_texture_variant(icon)
+        elseif point.level and UnitLevel("player") < point.level then
+            icon = get_upcoming_texture_variant(icon)
+        elseif point.hide_before and not ns.allQuestsComplete(point.hide_before) then
+            icon = get_upcoming_texture_variant(icon)
+        end
         local category = "treasure"
         if point.npc then
             category = "npc"
@@ -268,8 +383,8 @@ local function handle_tooltip(tooltip, point)
         end
         if point.currency then
             local name
-            if point.currency == 'ARTIFACT' then
-                name = ARTIFACT_LABEL
+            if ns.currencies[point.currency] then
+                name = ns.currencies[point.currency].name
             else
                 local info = C_CurrencyInfo.GetCurrencyInfo(point.currency)
                 name = info and info.name
@@ -323,16 +438,22 @@ local function handle_tooltip(tooltip, point)
                 if link then
                     tooltip:AddDoubleLine(ENCOUNTER_JOURNAL_ITEM, quick_texture_markup(icon) .. link)
                 else
-                    tooltip:AddDoubleLine(ENCOUNTER_JOURNAL_ITEM, SEARCH_LOADING_TEXT, 1, 1, 0, 0, 1, 1)
+                    tooltip:AddDoubleLine(ENCOUNTER_JOURNAL_ITEM, SEARCH_LOADING_TEXT,
+                        NORMAL_FONT_COLOR.r, NORMAL_FONT_COLOR.g, NORMAL_FONT_COLOR.b,
+                        0, 1, 1
+                    )
                 end
             end
         end
+        if point.level and point.level > UnitLevel("player") then
+            tooltip:AddLine(ITEM_MIN_LEVEL:format(point.level), 1, 0, 0)
+        end
+        if point.hide_before and not ns.allQuestsComplete(point.hide_before) then
+            tooltip:AddLine(COMMUNITY_TYPE_UNAVAILABLE, 1, 0, 0)
+        end
+
         if point.quest and ns.db.tooltip_questid then
-            local quest = point.quest
-            if type(quest) == 'table' then
-                quest = string.join(", ", unpack(quest))
-            end
-            tooltip:AddDoubleLine("QuestID", quest or UNKNOWN)
+            tooltip:AddDoubleLine("QuestID", render_string_list("questid", point.quest), NORMAL_FONT_COLOR:GetRGB())
         end
 
         if (ns.db.tooltip_item or IsShiftKeyDown()) and (point.loot or point.npc) then
@@ -393,7 +514,6 @@ end
 ---------------------------------------------------------
 -- Plugin Handlers to HandyNotes
 local HLHandler = {}
-local info = {}
 
 function HLHandler:OnEnter(uiMapID, coord)
     local tooltip = GameTooltip
@@ -430,7 +550,7 @@ do
     local currentZone, currentCoord
     local function generateMenu(button, level)
         if (not level) then return end
-        wipe(info)
+        local info = UIDropDownMenu_CreateInfo()
         if (level == 1) then
             -- Create the title of the menu
             info.isTitle      = 1
@@ -476,7 +596,7 @@ do
         currentCoord = coord
         -- given we're in a click handler, this really *should* exist, but just in case...
         local point = ns.points[currentZone] and ns.points[currentZone][currentCoord]
-        if button == "RightButton" and not down then
+        if point and button == "RightButton" and not down then
             ToggleDropDownMenu(1, nil, HL_Dropdown, self, 0, 0)
         end
     end
@@ -504,7 +624,7 @@ do
         return nil, nil, nil, nil
     end
     function HLHandler:GetNodes2(uiMapID, minimap)
-        Debug("GetNodes2", uiMapID, minimap)
+        -- Debug("GetNodes2", uiMapID, minimap)
         currentZone = uiMapID
         isMinimap = minimap
         if minimap and ns.map_spellids[uiMapID] then
@@ -534,10 +654,14 @@ function HL:OnInitialize()
     self:RegisterEvent("LOOT_CLOSED", "Refresh")
     self:RegisterEvent("ZONE_CHANGED_INDOORS", "Refresh")
     self:RegisterEvent("CRITERIA_EARNED", "Refresh")
-    -- self:RegisterEvent("CRITERIA_UPDATE", "Refresh")
     self:RegisterEvent("BAG_UPDATE", "Refresh")
     self:RegisterEvent("QUEST_TURNED_IN", "Refresh")
     self:RegisterEvent("SHOW_LOOT_TOAST", "Refresh")
+    self:RegisterEvent("GARRISON_FOLLOWER_ADDED", "Refresh")
+    -- This is just constantly firing, so it's kinda useless:
+    -- self:RegisterEvent("CRITERIA_UPDATE", "Refresh")
+
+    ns.SetupMapOverlay()
 end
 
 do

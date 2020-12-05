@@ -3,7 +3,7 @@ local myname, ns = ...
 local merge = ns.merge
 local path = ns.path
 
-merge(ns.points[862], { -- Zuldazar
+ns.RegisterPoints(862, { -- Zuldazar
     [80972163] = {quest=50280, npc=129961, loot={161042}, achievement=12944, criteria=41850, note="Climb the ropes onto the ship"}, -- Atal'zul Gotaka
     [53944489] = path{quest=50280},
     [64253271] = {quest=50439, npc=129954, loot={161043}, achievement=12944, criteria=41851,}, -- Gahz'ralka
@@ -42,10 +42,10 @@ merge(ns.points[862], { -- Zuldazar
     -- Mushroom Harvest
     [45537917] = {npc=143314, achievement=13027, criteria=41391, note="On the beach, between trees",}, -- Bane of the Woods
 })
-merge(ns.points[1165], { -- Dazar'alor
+ns.RegisterPoints(1165, { -- Dazar'alor
     [55378240] = {quest=48333, npc=120899, loot={160947}, achievement=12944, criteria=41875,}, -- Kul'krazahn
 })
-merge(ns.points[863], { -- Nazmir
+ns.RegisterPoints(863, { -- Nazmir
     [67812972] = {quest=48063, npc=125250, achievement=12942, criteria=41440,}, -- Ancient Jawbreaker
     [32802690] = {quest=50563, npc=134293, achievement=12942, criteria=41447,}, -- Azerite-Infused Slag
     [44224873] = {quest=49305, npc=128965, achievement=12942, criteria=41450,}, -- Uroku the Bound
@@ -86,7 +86,7 @@ merge(ns.points[863], { -- Nazmir
     [73614870] = {npc=143311, achievement=13027, criteria=41393, note="In cave, entrance at 73.2 49.7",}, -- Toadcruel
     -- [73204970] = path(), Path without quest?
 })
-merge(ns.points[864], { -- Vol'dun
+ns.RegisterPoints(864, { -- Vol'dun
     [50378160] = {quest=51058, npc=135852, achievement=12943, criteria=41606,}, -- Ak'tar
     [54701517] = {quest=47532, npc=130439, achievement=12943, criteria=41607,}, -- Ashmane
     [49058905] = {quest=49252, npc=128553, achievement=12943, criteria=41608,}, -- Azer'tor
@@ -122,7 +122,7 @@ merge(ns.points[864], { -- Vol'dun
     -- Mushroom Harvest
     [61101826] = {npc=143313, achievement=13027, criteria=41392, note="Shrouded Shore, on the hill",}, -- Portakillo
 })
-merge(ns.points[895], { -- Tiragarde Sound
+ns.RegisterPoints(895, { -- Tiragarde Sound
     [75147848] = {quest=50156, npc=132182, achievement=12939, criteria=41793,}, -- Auditor Dolp
     [76218305] = {quest=50233, npc=129181, loot={163717}, achievement=12939, criteria=41795,}, -- Barman Bill
     [34013029] = {quest=50094, npc=132068, achievement=12939, criteria=41796,}, -- Bashmu
@@ -158,10 +158,10 @@ merge(ns.points[895], { -- Tiragarde Sound
     [61515233] = {quest=49963, npc=130350, loot={155571}, note="Ride to Roan Berthold in Southwind Station; follow the road",}, -- Guardian of the Spring (49983 is the ride, 49963 is the loot)
     -- [52253215] = {quest=nil, npc=132052, loot={155074},}, -- Vol'Jim (removed from game?)
 })
-merge(ns.points[1161], { -- Boralus
+ns.RegisterPoints(1161, { -- Boralus
     [80403500] = {quest=51877, npc=139287, achievement=12939, criteria=41830,}, -- Sawtooth
 })
-merge(ns.points[896], { -- Drustvar
+ns.RegisterPoints(896, { -- Drustvar
     [59933466] = {quest=47884, npc=124548, achievement=12941, criteria=41706,}, -- Betsy
     [58901790] = {quest=48842, npc=127333, achievement=12941, criteria=41708,}, -- Barbthorn Queen
     [66585068] = {quest=48978, loot={154376}, npc=126621, achievement=12941, criteria=41711,}, -- Bonesquall
@@ -200,7 +200,7 @@ merge(ns.points[896], { -- Drustvar
     -- [25151616] = {quest=nil, npc=139358,}, -- The Caterer
     -- [34722062] = {quest=nil, npc=137704,}, -- Matron Morana
 })
-merge(ns.points[942], { -- Stormsong Valley
+ns.RegisterPoints(942, { -- Stormsong Valley
     [71003200] = {quest=52448, npc=141175, loot={158218}, achievement=12940, criteria=41753,}, -- Song Mistress Dadalea
     [22607300] = {quest=50938, npc=140997, achievement=12940, criteria=41754,}, -- Severus the Outcast
     [33603800] = {quest=51757, npc=138938, loot={160477}, achievement=12940, criteria=41755,}, -- Seabreaker Skoloth
@@ -235,26 +235,26 @@ merge(ns.points[942], { -- Stormsong Valley
     [73806080] = {quest=52125, npc=139988, loot={154389}, achievement=12940, criteria=41846,}, -- Sandfang
     [60004600] = {quest=52123, npc=139980, loot={154449}, achievement=12940, criteria=41847,}, -- Taja the Tidehowler
     [53406450] = {quest=52323, npc=140925, loot={159179}, achievement=12940, criteria=nil, faction="Horde",}, -- Doc Marrtens
-    [53416451] = {quest=52324, npc=141043, item=nil, achievement=12940, criteria=nil, faction="Alliance", note="Talk to Doc Marrtens",}, -- Jakala the Cruel
+    [53416451] = {quest=52324, npc=141043, loot=nil, achievement=12940, criteria=nil, faction="Alliance", note="Talk to Doc Marrtens",}, -- Jakala the Cruel
     -- [72545052] = {quest=nil, npc=139515,}, -- Sandscour
     -- [68745147] = {quest=nil, npc=132047,}, -- Reinforced Hullbreaker
     -- [40143732] = {quest=nil, npc=137649,}, -- Pest Remover Mk. II
     -- [67217525] = {quest=nil, npc=134147,}, -- Beehemoth
 })
-merge(ns.points[1355], { -- Nazjatar
+ns.RegisterPoints(1355, { -- Nazjatar
     [78003280] = {quest=56276, npc=151870, loot={169369}, achievement=13691, criteria=45543,note="Summoned using a [Scrying Stone]"}, -- Sandcastle
     [58805460] = {quest=56281, npc=152566, loot={170184}, achievement=13691, criteria=45522,note="Requires killing a Colossal Ray on top of it for spawn"}, -- Anemonar
     [50606920] = {quest=56287, npc=152567, loot={170184}, achievement=13691, criteria=45535,note="Requries charming a Muck Slug using a [Prismatic Crystal] and bringing it in front of him"}, -- Kelpwillow
     [78602580] = {quest=56288, npc=152397, loot={170184}, achievement=13691, criteria=45539,note="Requires summoning the Drowned Hatchling pet in front of him"}, -- Oronu
     [31603060] = {quest=56299, npc=152568, loot={170184}, achievement=13691, criteria=45557,note="Must kill a Staghorn Reefwalker in front of him"}, -- Urduu
     [71605420] = {quest=56282, npc=152561, loot={170179}, achievement=13691, criteria=45524,note="Spawns after you kill Siltstalker",}, -- Banescale the Packfather
-    [56204360] = {quest=56272, npc=152291, item=nil, achievement=13691, criteria=45530,}, -- Deepglider
+    [56204360] = {quest=56272, npc=152291, loot=nil, achievement=13691, criteria=45530,}, -- Deepglider
     [28802900] = {quest=55671, npc=152323, loot={169371}, achievement=13691, criteria=45536,note="Requires to Shoo the Bloodfin Tadpoles until the King emotes a few times"}, -- King Gakula
     [71405480] = {quest=56297, npc=152359, loot={170179}, achievement=13691, criteria=45550,}, -- Siltstalker the Packmother
     [64604700] = {quest=56278, npc=152360, loot={170178}, achievement=13691, criteria=45556,}, -- Toxigore the Alpha
-    [63803260] = {quest=56284, npc=152414, item=nil, achievement=13691, criteria=45531,}, -- Elder Unu
-    [52404200] = {quest=56279, npc=152415, item=nil, achievement=13691, criteria=45519,}, -- Alga the Eyeless
-    [69204020] = {quest=56280, npc=152416, item=nil, achievement=13691, criteria=45520,}, -- Allseer Oma'kil
+    [63803260] = {quest=56284, npc=152414, loot=nil, achievement=13691, criteria=45531,}, -- Elder Unu
+    [52404200] = {quest=56279, npc=152415, loot=nil, achievement=13691, criteria=45519,}, -- Alga the Eyeless
+    [69204020] = {quest=56280, npc=152416, loot=nil, achievement=13691, criteria=45520,}, -- Allseer Oma'kil
     [47205500] = {quest=56286, npc=152448, loot={169352}, achievement=13691, criteria=45534,note="Requires killing Glimmershell Hulks around his spawn points"}, -- Iridescent Glimmershell
     [45602560] = {quest=56275, npc=152465, loot={169355}, achievement=13691, criteria=45538,}, -- Needlespine
     [35604120] = {quest=56292, npc=152548, loot={169370}, achievement=13691, criteria=45545,}, -- Scale Matriarch Gratinax
@@ -263,7 +263,7 @@ merge(ns.points[1355], { -- Nazjatar
     [37201320] = {quest=56274, npc=144644, loot={169366}, achievement=13691, criteria=45537,}, -- Mirecrawler
     [36003960] = {quest=56273, npc=152553, loot={170180}, achievement=13691, criteria=45533,}, -- Garnetscale
     [52207400] = {quest=56285, npc=152555, loot={169359}, achievement=13691, criteria=45532,}, -- Elderspawn Nalaada
-    [49008800] = {quest=56270, npc=152556, item=nil, achievement=13691, criteria=45528,}, -- Chasm-Haunter
+    [49008800] = {quest=56270, npc=152556, loot=nil, achievement=13691, criteria=45528,}, -- Chasm-Haunter
     [43008760] = {quest=56289, npc=152681, loot={169367}, achievement=13691, criteria=45540,}, -- Prince Typhonus
     [42807480] = {quest=56290, npc=152682, loot={169368}, achievement=13691, criteria=45541,}, -- Prince Vortran
     [36408000] = {quest=56269, npc=152712, loot={169372}, achievement=13691, criteria=45525,}, -- Blindlight
@@ -278,46 +278,46 @@ merge(ns.points[1355], { -- Nazjatar
     [40800735] = {quest=56283, npc=152464, loot={169356}, achievement=13691, criteria=45527,}, -- Caverndark Terror
     [62405950] = {quest=56291, npc=150583, loot={169374}, achievement=13691, criteria=45542,note="Has a chance to spawn after you kill Algans"}, -- Rockweed Shambler
     [57605220] = {quest=56298, npc=152290, loot={169163}, achievement=13691, criteria=45551,}, -- Soundless
-    [67603460] = {quest=56300, npc=151719, item=nil, achievement=13691, criteria=45558, note="Get a Molted Shell to break rocks"}, -- Voice in the Deeps
+    [67603460] = {quest=56300, npc=151719, loot=nil, achievement=13691, criteria=45558, note="Get a Molted Shell to break rocks"}, -- Voice in the Deeps
     [48352400] = {quest=55603, npc=150468, loot={169376},}, -- Vor'koth
     [36901120] = {quest=55584, npc=150191, loot={169373},}, -- Avarius
     [54804200] = {quest=55366, npc=149653, loot={169375},}, -- Carnivorous Lasher (also seen 56296 + 56587)
 })
-merge(ns.points[1462], { -- Mechagon
+ns.RegisterPoints(1462, { -- Mechagon
     [62802600] = {quest=55814, npc=150342, loot={167042}, achievement=13470, criteria=45138,}, -- Earthbreaker Gulroc
     [60604460] = {quest=55546, npc=150394, loot={170072}, achievement=13470, criteria=45158,}, -- Armored Vaultbot
     [38805320] = {quest=55368, npc=150575, loot={168001}, achievement=13470, criteria=45123,}, -- Rumblerocks
     [19207940] = {quest=55545, npc=150937, loot={168063}, achievement=13470, criteria=45133,}, -- Seaspit
     [56905330] = {quest=55207, npc=151124, loot={168490}, achievement=13470, criteria=45117,}, -- Mechagonian Nullifier
     [65605100] = {quest=55513, npc=151202, loot={167871}, achievement=13470, criteria=45127,}, -- Foul Manifestation
-    [56803990] = {quest=nil, npc=151296, item=nil, achievement=13470, criteria=45129,}, -- OOX-Avenger/MG
-    [53003300] = {quest=55539, npc=151308, item=nil, achievement=13470, criteria=45131,}, -- Boggac Skullbash
+    [56803990] = {quest=nil, npc=151296, loot=nil, achievement=13470, criteria=45129,}, -- OOX-Avenger/MG
+    [53003300] = {quest=55539, npc=151308, loot=nil, achievement=13470, criteria=45131,}, -- Boggac Skullbash
     [35804300] = {quest=55514, npc=151569, loot={167836}, achievement=13470, criteria=45128,}, -- Deepwater Maw
     [71204840] = {quest=55364, npc=151623, loot={168435}, achievement=13470, criteria=45118,}, -- The Scrap King
     [59806080] = {quest=55859, npc=151627, loot={168248}, achievement=13470, criteria=45156,}, -- Mr. Fixthis
     [86801940] = {quest=55386, npc=151672, loot={169393}, achievement=13470, criteria=45119,}, -- Mecharantula
-    [75404400] = {quest=55399, npc=151684, item=nil, achievement=13470, criteria=45121,}, -- Jawbreaker
-    [23006860] = {quest=55405, npc=151702, item=nil, achievement=13470, criteria=45122,}, -- Paol Pondwader
+    [75404400] = {quest=55399, npc=151684, loot=nil, achievement=13470, criteria=45121,}, -- Jawbreaker
+    [23006860] = {quest=55405, npc=151702, loot=nil, achievement=13470, criteria=45122,}, -- Paol Pondwader
     [48704760] = {quest=55367, npc=151884, loot={169379}, achievement=13470, criteria=45126,}, -- Fungarian Furor
     [61004120] = {quest=55544, npc=151933, loot={169382}, achievement=13470, criteria=45136,}, -- Malfunctioning Beastbot
     [51604160] = {quest=55512, npc=151934, loot={168823}, achievement=13470, criteria=45124,}, -- Arachnoid Harvester
-    [57002140] = {quest=55538, npc=151940, item=nil, achievement=13470, criteria=45132,}, -- Uncle T'Rogg
+    [57002140] = {quest=55538, npc=151940, loot=nil, achievement=13470, criteria=45132,}, -- Uncle T'Rogg
     [65202320] = {quest=55537, npc=152001, loot={169392}, achievement=13470, criteria=45130,}, -- Bonepicker
     [43404900] = {quest=55369, npc=152007, loot={167931}, achievement=13470, criteria=45125,}, -- Killsaw
     [68905430] = {quest=55858, npc=152113, loot={169886}, achievement=13470, criteria=45153,}, -- The Kleptoboss
     [63807800] = {quest=55811, npc=152182, loot={168370}, achievement=13470, criteria=45135,}, -- Rustfeather
     [82202100] = {quest=55812, npc=152570, loot={169167}, achievement=13470, criteria=45137,}, -- Crazed Trogg
-    [57206260] = {quest=55856, npc=152764, item=nil, achievement=13470, criteria=45157,}, -- Oxidized Leachbeast
-    [78203080] = {quest=nil, npc=153000, item=nil, achievement=13470, criteria=45134,}, -- Sparkqueen P'Emp
+    [57206260] = {quest=55856, npc=152764, loot=nil, achievement=13470, criteria=45157,}, -- Oxidized Leachbeast
+    [78203080] = {quest=nil, npc=153000, loot=nil, achievement=13470, criteria=45134,}, -- Sparkqueen P'Emp
     [51205000] = {quest=55857, npc=153200, loot={167042}, achievement=13470, criteria=45152,}, -- Boilburn
-    [59606730] = {quest=55855, npc=153205, item=nil, achievement=13470, criteria=45146,}, -- Gemicide
+    [59606730] = {quest=55855, npc=153205, loot=nil, achievement=13470, criteria=45146,}, -- Gemicide
     [56103600] = {quest=55853, npc=153206, loot={169691}, achievement=13470, criteria=45145,}, -- Ol' Big Tusk
     [24807720] = {quest=55854, npc=153226, loot={168062}, achievement=13470, criteria=45154,}, -- Steel Singer Freza
     [40203960] = {quest=55852, npc=153228, loot={167847}, achievement=13470, criteria=45155,}, -- Gear Checker Cogstar
     [53806180] = {quest=56207, npc=154153, loot={170467}, achievement=13470, criteria=45373,}, -- Enforcer KX-T57
-    [58305690] = {quest=56182, npc=154225, item=nil, achievement=13470, criteria=45374, note="Time displaced",}, -- The Rusty Prince
+    [58305690] = {quest=56182, npc=154225, loot=nil, achievement=13470, criteria=45374, note="Time displaced",}, -- The Rusty Prince
     [69205340] = {quest=56367, npc=154701, loot={167846}, achievement=13470, criteria=45410,}, -- Gorged Gear-Cruncher
-    [66505870] = {quest=56368, npc=154739, item=nil, achievement=13470, criteria=45411,}, -- Caustic Mechaslime
-    [80902020] = {quest=nil, npc=155060, item=nil, achievement=13470, criteria=45433,}, -- Doppel Ganger
+    [66505870] = {quest=56368, npc=154739, loot=nil, achievement=13470, criteria=45411,}, -- Caustic Mechaslime
+    [80902020] = {quest=nil, npc=155060, loot=nil, achievement=13470, criteria=45433,}, -- Doppel Ganger
     [81407600] = {quest=56737, npc=155583, loot={168490}, achievement=13470, criteria=45691,}, -- Scrapclaw
 })
