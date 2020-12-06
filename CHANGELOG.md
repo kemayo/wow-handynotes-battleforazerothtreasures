@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v14
+
+* Pick up new features from [HandyNotes: Shadowlands Treasures](https://www.curseforge.com/wow/addons/handynotes-shadowlands-treasures); overlay button for easy config access
+
 ## Changed in v13
 
 * Pick up fixes and improvements from [HandyNotes: Shadowlands Treasures](https://www.curseforge.com/wow/addons/handynotes-shadowlands-treasures)
