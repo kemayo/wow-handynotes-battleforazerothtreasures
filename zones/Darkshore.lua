@@ -12,93 +12,93 @@ local kodo = {
 }
 ns.RegisterPoints(62, {
     -- see: https://www.wowhead.com/npc=148790/frightened-kodo#comments:id=2869160
-    [44046756] = {},
-    [41275401] = {},
+    [44056755] = {},
+    [41255400] = {},
     [38006600] = {},
     [39205650] = {},
     [44006500] = {},
-    [41316548] = {},
+    [41306548] = {},
 }, kodo)
 
 -- Either faction
 ns.RegisterPoints(62, { -- Darkshore
-    [56533078] = { -- Alash'anir
+    [56553080] = { -- Alash'anir
         quest={54695, 54696, any=true},
         npc=148787,
         loot={{166432, mount=1200}},
     },
-    [37688489] = { -- Aman
+    [37708490] = { -- Aman
         quest={54405, 54406, any=true},
         npc=147966,
     },
-    [57381568] = { -- Amberclaw
+    [57401570] = { -- Amberclaw
         quest={54285, 54286, any=true},
         npc=147744,
     },
-    [58472424] = { -- Athrikus Narassin
+    [58452425] = { -- Athrikus Narassin
         quest={54278, 54279, any=true},
         npc=147708,
         loot={{166784, toy=true}},
     },
-    [38037584] = { -- Commander Ral'esh
+    [38057585] = { -- Commander Ral'esh
         quest={54426, 54427, any=true},
         npc=148025,
         loot={{166787, toy=true}},
     },
-    [39326213] = { -- Conflagros
+    [39306215] = { -- Conflagros
         quest={54232, 54233, any=true},
         npc=147260,
         loot={{166451, pet=2546}},
     },
-    [43765348] = { -- Cyclarus
+    [43755350] = { -- Cyclarus
         quest={54229, 54230, any=true},
         npc=147241,
         loot={{166448, pet=2545}},
     },
-    [43531963] = { -- Glimmerspine
+    [43551965] = { -- Glimmerspine
         quest={54884, 54885, any=true},
         npc=149654,
     },
-    [48255561] = { -- Granokk
+    [48255560] = { -- Granokk
         quest={54234, 54235, any=true},
         npc=147261,
     },
-    [40925645] = { -- Gren Tornfur
+    [40905645] = { -- Gren Tornfur
         quest={54428, 54429, any=true},
         npc=148031,
         loot={{166785, toy=true}},
     },
-    [52423217] = { -- Hydrath
+    [52403215] = { -- Hydrath
         quest={54227, 54228, any=true},
         npc=147240,
         loot={{166452, pet=2547}},
     },
-    [43974849] = { -- Madfeather
+    [43954849] = { -- Madfeather
         quest={54887, 54888, any=true},
         npc=149657,
     },
-    [35898173] = { -- Mrggr'marr
+    [35898175] = { -- Mrggr'marr
         quest={54408, 54409, any=true},
         npc=147970,
     },
-    [47274411] = { -- Scalefiend
+    [47254410] = { -- Scalefiend
         quest={54893, 54894, any=true},
         npc=149665,
     },
-    [43502943] = { -- Shattershard
+    [43502945] = { -- Shattershard
         quest={54289, 54290, any=true},
         npc=147751,
     },
-    [40548527] = { -- Soggoth the SLitherer
+    [40558525] = { -- Soggoth the Slitherer
         quest={54320, 54321, any=true},
         npc=147897,
         loot={{166454, pet=2549}},
     },
-    [45485896] = { -- Stonebinder Ssra'vess
+    [45485895] = { -- Stonebinder Ssra'vess
         quest={54247, 54248, any=true},
         npc=147332,
     },
-    [40618267] = { -- Twilight Prophet Graeme
+    [40608265] = { -- Twilight Prophet Graeme
         quest={54397, 54398, any=true},
         npc=147942,
         loot={{166455, pet=2550}},
@@ -115,7 +115,7 @@ ns.RegisterPoints(62, { -- Darkshore
         loot={{166438, mount=1199}},
         note="Requires Alliance control",
     },
-    [41607674] = { -- Burninator Mark V
+    [41607675] = { -- Burninator Mark V
         quest=54768,
         npc=149141,
         loot={
@@ -124,7 +124,7 @@ ns.RegisterPoints(62, { -- Darkshore
         },
         note="Requires Alliance control",
     },
-    [46528585] = { -- Commander Drald
+    [46508585] = { -- Commander Drald
         quest=54309,
         npc=147845,
         loot={{166790, toy=true}},
@@ -135,18 +135,18 @@ ns.RegisterPoints(62, { -- Darkshore
         loot={{166437, mount=1205}},
         note="Requires Alliance control",
     },
-    [67241877] = { -- Moxo the Beheader
+    [67251875] = { -- Moxo the Beheader
         quest=54277,
         npc=147701,
         loot={{166434, mount=1203}},
     },
-    [39663344] = { -- Orwell Stevenson
+    [39653345] = { -- Orwell Stevenson
         quest=54889,
         npc=149664,
         loot={{166528, pet=2563}},
         note="Requires Alliance control",
     },
-    [62390986] = { -- Zim'kaga
+    [62390985] = { -- Zim'kaga
         quest=54274,
         npc=147664,
         loot={{166453, pet=2548}},
@@ -169,28 +169,28 @@ ns.RegisterPoints(62, { -- Darkshore
         loot={{166428, mount=1199}},
         note="Requires Horde control",
     },
-    [50703231] = { -- Grimhorn
+    [50703230] = { -- Grimhorn
         quest=54891,
         npc=149656,
         loot={{166528, pet=2563}},
         note="Requires Horde control",
     },
-    [45187494] = { -- Onu
+    [45187495] = { -- Onu
         quest=54291,
         npc=147758,
         loot={{166453, pet=2548}},
     },
-    [32768407] = { -- Sapper Odette
+    [32758405] = { -- Sapper Odette
         quest=54452,
         npc=148103,
         loot={{166788, toy=true}},
     },
-    [39763269] = { -- Shadowclaw
+    [39753269] = { -- Shadowclaw
         quest=54892,
         npc=149658,
         loot={{166435, mount=1205}},
     },
-    [62121651] = { -- Thelar Moonstrike
+    [62101650] = { -- Thelar Moonstrike
         quest=54252,
         npc=147435,
         loot={{166790, toy=true}},
