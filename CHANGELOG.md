@@ -1,5 +1,15 @@
 # Changelog
 
+## Changed in v15
+
+* More new features from [HandyNotes: Shadowlands Treasures](https://www.curseforge.com/wow/addons/handynotes-shadowlands-treasures):
+    * Toggle for the overlay button if you want to disable it
+    * Daily rares which drop collectable loot can be told to count as complete if you've got their drop
+    * Rares which are part of an achievement can be told to count as complete if you've got the achievement, regardless of their quest status
+    * Changed how tooltips anchor on the map
+* Get Hek'd achievement is no longer missing some points
+* In the Belly of the Jelly achievement added to Nazjatar
+
 ## Changed in v14
 
 * Pick up new features from [HandyNotes: Shadowlands Treasures](https://www.curseforge.com/wow/addons/handynotes-shadowlands-treasures); overlay button for easy config access
