@@ -25,5 +25,8 @@ zones\Zuldazar.lua
 zones\Nazmir.lua
 zones\Voldun.lua
 
+zones\Darkshore.lua
+zones\ArathiHighlands.lua
+
 zones\Mechagon.lua
 zones\Nazjatar.lua
