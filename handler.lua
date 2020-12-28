@@ -47,9 +47,15 @@ ns.points = {
     },
     --]]
 }
-function ns.RegisterPoints(zone, points)
+function ns.RegisterPoints(zone, points, defaults)
     if not ns.points[zone] then
         ns.points[zone] = {}
+    end
+    if defaults then
+        local nodeType = ns.nodeMaker(defaults)
+        for coord, point in pairs(points) do
+            points[coord] = nodeType(point)
+        end
     end
     ns.merge(ns.points[zone], points)
 end
@@ -59,6 +65,7 @@ ns.merge = function(t1, t2)
     for k, v in pairs(t2) do
         t1[k] = v
     end
+    return t1
 end
 
 ns.nodeMaker = function(metatable)
@@ -74,6 +81,15 @@ ns.path = ns.nodeMaker{
     minimap = true,
     scale = 1.1,
 }
+
+ns.lootitem = function(item)
+    return type(item) == "table" and item[1] or item
+end
+
+local playerClassLocal, playerClass = UnitClass("player")
+ns.playerClass = playerClass
+ns.playerClassLocal = playerClassLocal
+ns.playerClassColor = RAID_CLASS_COLORS[playerClass]
 
 ---------------------------------------------------------
 -- All the utility code
@@ -105,6 +121,7 @@ end
 local completeColor = CreateColor(0, 1, 0, 1)
 local incompleteColor = CreateColor(1, 0, 0, 1)
 local function render_string(s)
+    if type(s) == "function" then s = s() end
     return s:gsub("{(%l+):(%d+):?([^}]*)}", function(variant, id, fallback)
         id = tonumber(id)
         if variant == "item" then
@@ -141,6 +158,7 @@ local function render_string(s)
 end
 local function cache_string(s)
     if not s then return end
+    if type(s) == "function" then s = s() end
     for variant, id, fallback in s:gmatch("{(%l+):(%d+):?([^}]*)}") do
         id = tonumber(id)
         if variant == "item" then
@@ -156,8 +174,9 @@ local function cache_string(s)
 end
 local function cache_loot(loot)
     if not loot then return end
-    for _,item in ipairs(loot) do
-        C_Item.RequestLoadItemDataByID(item)
+    for _, item in ipairs(loot) do
+
+        C_Item.RequestLoadItemDataByID(ns.lootitem(item))
     end
 end
 local render_string_list
@@ -196,10 +215,11 @@ local atlas_texture = function(atlas, scale)
         scale = scale or 1,
     }
 end
+ns.atlas_texture = atlas_texture
 local default_textures = {
-    VignetteLoot = atlas_texture("VignetteLoot", 1.4),
-    VignetteLootElite = atlas_texture("VignetteLootElite", 1.7),
-    Garr_TreasureIcon = atlas_texture("Garr_TreasureIcon", 2.5),
+    VignetteLoot = atlas_texture("VignetteLoot", 1.2),
+    VignetteLootElite = atlas_texture("VignetteLootElite", 1.3),
+    Garr_TreasureIcon = atlas_texture("Garr_TreasureIcon", 2.2),
 }
 local function work_out_label(point)
     local fallback
@@ -235,11 +255,11 @@ local function work_out_label(point)
     end
     if point.loot and #point.loot > 0 then
         -- handle multiples?
-        local _, link = GetItemInfo(point.loot[1])
+        local _, link = GetItemInfo(ns.lootitem(point.loot[1]))
         if link then
             return link
         end
-        fallback = 'item:'..point.loot[1]
+        fallback = 'item:'..ns.lootitem(point.loot[1])
     end
     if point.currency then
         if ns.currencies[point.currency] then
@@ -253,6 +273,9 @@ local function work_out_label(point)
     return fallback or UNKNOWN
 end
 local function work_out_texture(point)
+    if point.texture then
+        return point.texture
+    end
     if point.atlas then
         if not icon_cache[point.atlas] then
             icon_cache[point.atlas] = atlas_texture(point.atlas, point.scale)
@@ -261,7 +284,7 @@ local function work_out_texture(point)
     end
     if ns.db.icon_item or point.icon then
         if point.loot and #point.loot > 0 then
-            local texture = select(10, GetItemInfo(point.loot[1]))
+            local texture = select(10, GetItemInfo(ns.lootitem(point.loot[1])))
             if texture then
                 return trimmed_icon(texture)
             end
@@ -433,8 +456,21 @@ local function handle_tooltip(tooltip, point)
         end
         if point.loot then
             for _, item in ipairs(point.loot) do
-                local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(item)
+                local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(ns.lootitem(item))
                 if link then
+                    if type(item) == "table" then
+                        -- todo: faction?
+                        if item.covenant then
+                            local data = C_Covenants.GetCovenantData(item.covenant)
+                            -- local active = item.covenant == C_Covenants.GetActiveCovenantID()
+                            if data then
+                                link = TEXT_MODE_A_STRING_VALUE_TYPE:format(link, COVENANT_COLORS[item.covenant]:WrapTextInColorCode(data.name))
+                            end
+                        end
+                        if item.class then
+                            link = TEXT_MODE_A_STRING_VALUE_TYPE:format(link, RAID_CLASS_COLORS[item.class]:WrapTextInColorCode(LOCALIZED_CLASS_NAMES_FEMALE[item.class]))
+                        end
+                    end
                     tooltip:AddDoubleLine(ENCOUNTER_JOURNAL_ITEM, quick_texture_markup(icon) .. link)
                 else
                     tooltip:AddDoubleLine(ENCOUNTER_JOURNAL_ITEM, SEARCH_LOADING_TEXT,
@@ -442,6 +478,13 @@ local function handle_tooltip(tooltip, point)
                         0, 1, 1
                     )
                 end
+            end
+        end
+        if point.covenant then
+            local data = C_Covenants.GetCovenantData(point.covenant)
+            if data then
+                local active = point.covenant == C_Covenants.GetActiveCovenantID()
+                tooltip:AddLine(ITEM_REQ_SKILL:format(data.name), active and 0 or 1, active and 1 or 0, 0)
             end
         end
         if point.level and point.level > UnitLevel("player") then
@@ -495,7 +538,7 @@ local function handle_tooltip(tooltip, point)
             end
 
             if point.loot and #point.loot > 0 then
-                comparison:SetHyperlink(("item:%d"):format(point.loot[1]))
+                comparison:SetHyperlink(("item:%d"):format(ns.lootitem(point.loot[1])))
             elseif point.npc then
                 comparison:SetHyperlink(("unit:Creature-0-0-0-0-%d"):format(point.npc))
             end
@@ -515,11 +558,28 @@ end
 local HLHandler = {}
 
 function HLHandler:OnEnter(uiMapID, coord)
+    local point = ns.points[uiMapID] and ns.points[uiMapID][coord]
+    if point and point.route then
+        if ns.points[uiMapID][point.route] then
+            point = ns.points[uiMapID][point.route]
+        end
+        ns.RouteWorldMapDataProvider:HighlightRoute(point, uiMapID, coord)
+    end
     local tooltip = GameTooltip
-    if self:GetCenter() > UIParent:GetCenter() then -- compare X coordinate
-        tooltip:SetOwner(self, "ANCHOR_LEFT")
+    if ns.db.tooltip_pointanchor or self:GetParent() == Minimap then
+        if self:GetCenter() > UIParent:GetCenter() then -- compare X coordinate
+            tooltip:SetOwner(self, "ANCHOR_LEFT")
+        else
+            tooltip:SetOwner(self, "ANCHOR_RIGHT")
+        end
     else
-        tooltip:SetOwner(self, "ANCHOR_RIGHT")
+        tooltip:SetOwner(WorldMapFrame.ScrollContainer, "ANCHOR_NONE")
+        local x, y = HandyNotes:getXY(coord)
+        if y < 0.5 then
+            tooltip:SetPoint("BOTTOMLEFT", WorldMapFrame.ScrollContainer)
+        else
+            tooltip:SetPoint("TOPLEFT", WorldMapFrame.ScrollContainer)
+        end
     end
     handle_tooltip_by_coord(tooltip, uiMapID, coord)
 end
@@ -604,6 +664,14 @@ end
 function HLHandler:OnLeave(uiMapID, coord)
     GameTooltip:Hide()
     ShoppingTooltip1:Hide()
+
+    local point = ns.points[uiMapID] and ns.points[uiMapID][coord]
+    if point and point.route then
+        if ns.points[uiMapID][point.route] then
+            point = ns.points[uiMapID][point.route]
+        end
+        ns.RouteWorldMapDataProvider:UnhighlightRoute(point, uiMapID, coord)
+    end
 end
 
 do
@@ -661,6 +729,10 @@ function HL:OnInitialize()
     -- self:RegisterEvent("CRITERIA_UPDATE", "Refresh")
 
     ns.SetupMapOverlay()
+
+    if ns.RouteWorldMapDataProvider then
+        WorldMapFrame:AddDataProvider(ns.RouteWorldMapDataProvider)
+    end
 end
 
 do
@@ -670,12 +742,15 @@ do
         self.elapsed = self.elapsed + elapsed
         if self.elapsed > 1.5 then
             self.elapsed = 0
-            HL:Refresh()
             self:Hide()
+            HL:Refresh()
         end
     end)
     function HL:Refresh()
         HL:SendMessage("HandyNotes_NotifyUpdate", myname:gsub("HandyNotes_", ""))
+        if ns.RouteWorldMapDataProvider then
+            ns.RouteWorldMapDataProvider:RefreshAllData()
+        end
     end
     function HL:RefreshOnEvent(event)
         bucket:Show()
