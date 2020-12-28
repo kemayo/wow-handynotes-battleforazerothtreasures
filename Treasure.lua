@@ -364,6 +364,29 @@ ns.RegisterPoints(1355, { -- Nazjatar
     [61601070] = {quest=56991, minimap=true, achievement=13836, label=KITTY, atlas="Warfront-AllianceHero-Silver", scale=1.2},
     [73602590] = {quest=56992, minimap=true, achievement=13836, label=KITTY, atlas="Warfront-AllianceHero-Silver", scale=1.2},
 })
+ns.RegisterPoints(1355, {
+    -- Jellies!
+    -- all the quests are {daily,weekly}
+    -- TODO: better activation criteria for the quests
+    [54904870] = {quest={55427,55470},label="{npc:151218} #1"},
+    [71712570] = {quest={55428,55471},label="{npc:151782} #2"},
+    [45702411] = {quest={55429,55472},label="{npc:151874} #3"},
+    [32763953] = {quest={55430,55473},label="{npc:151875} #4"},
+}, {
+    achievement=13715,
+    atlas="vehicle-templeofkotmogu-cyanball", scale=1.2,
+    loot={
+        {167804, pet=2765}, -- Slimy Sea Slug
+        {167805, pet=2757}, -- Slimy Otter
+        {167806, pet=2760}, -- Slimy Octopode
+        {167807, pet=2761}, -- Slimy Fangtooth
+        {167808, pet=2758}, -- Slimy Eel
+        {167809, pet=2762}, -- Slimy Darkhunter
+        {167810, pet=2763}, -- Slimy Hermit Crab
+    },
+    note="Get a {item:167893} and use {spell:293404} to lure any critter here. Each {npc:151875} can be fed daily. Feed it five times and it'll give you a pet.",
+})
+
 ns.RegisterPoints(1462, { -- Mechagon
     -- 325659
     [43304977] = {quest=55547, criteria=0, label=CHEST_MECH, requires_no_buff=296644, note="Chest 1 (of 9 in Normal Time)"},
