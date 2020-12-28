@@ -12,5 +12,16 @@
 
 handler.lua
 config.lua
-Treasure.lua
-Rares.lua
+
+zones\KulTiras.lua
+zones\TiragardeSound.lua
+zones\StormsongValley.lua
+zones\Drustvar.lua
+
+zones\Zandalar.lua
+zones\Zuldazar.lua
+zones\Nazmir.lua
+zones\Voldun.lua
+
+zones\Mechagon.lua
+zones\Nazjatar.lua
