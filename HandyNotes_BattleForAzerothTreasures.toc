@@ -13,6 +13,8 @@
 handler.lua
 config.lua
 
+achievements\GetHekd.lua
+
 zones\KulTiras.lua
 zones\TiragardeSound.lua
 zones\StormsongValley.lua

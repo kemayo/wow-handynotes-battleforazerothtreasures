@@ -72,15 +72,6 @@ ns.RegisterPoints(864, { -- Vol'dun
     minimap=true,
 })
 
--- Jani
-ns.RegisterPoints(864, { -- Vol'dun
-    [46984656] = {quest=50883, note="In alcove, Summon Jani, give her Charged Ranishu Antennae"},
-    [49398446] = {quest=50892, note="Under bridge, Summon Jani, give her Sturdy Redrock Jaw"},
-}, {
-    achievement=12482,
-    label="Mysterious trashpile",
-})
-
 -- junk
 ns.RegisterPoints(864, { -- Vol'dun
     [59631517] = {quest=50914,},

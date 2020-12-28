@@ -46,17 +46,6 @@ ns.RegisterPoints(1165, { -- Dazar'alor
     [53230940] = {criteria=41581,}, -- Tales of de Loa: Zandalar
 }, tale)
 
--- Jani
-
-ns.RegisterPoints(862, { -- Zuldazar
-    [71684127] = {quest=50308,},
-    [63963171] = {quest=50720,},
-}, {
-    label="Mysterious trashpile",
-    achievement=12482,
-    note="Jani",
-})
-
 -- Junk
 local junk = {
     label='Treasure Chest',

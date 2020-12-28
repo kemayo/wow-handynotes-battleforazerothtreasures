@@ -60,16 +60,6 @@ ns.RegisterPoints(863, { -- Nazmir
     minimap=true,
 })
 
--- Jani
-ns.RegisterPoints(863, { -- Nazmir
-    [33957512] = {quest=50437,},
-    [68573280] = {quest=50441,},
-}, {
-    label="Mysterious trashpile",
-    achievement=12482,
-    note="Jani",
-})
-
 -- junk
 ns.RegisterPoints(863, { -- Nazmir
     [41575046] = {quest=49916,},
