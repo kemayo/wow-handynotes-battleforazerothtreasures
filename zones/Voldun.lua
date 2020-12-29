@@ -23,6 +23,24 @@ ns.RegisterPoints(864, { -- Vol'dun
     achievement=12849,
 })
 
+-- Elusive Quickhoof
+ns.RegisterPoints(864, {
+    [26405250] = {},
+    [28006500] = {},
+    [31106730] = {},
+    [42006000] = {},
+    [43006900] = {},
+    [51108590] = {},
+    [52508900] = {},
+    [54008300] = {},
+    [54605320] = {},
+    [55007300] = {},
+}, {
+    npc=162681,
+    loot={{174860,mount=1324}},
+    notes="Spawns rarely, waits 10 minutes. Feed it {item:161128:Seaside Leafy Greens Mix} to get the mount",
+})
+
 -- Scavenger of the Sands
 ns.RegisterPoints(864, { -- Vol'dun
     [56297011] = {quest=53132, criteria=41342, note="Under the bridge",}, -- Jason's Rusty Blade
