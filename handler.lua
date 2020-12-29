@@ -237,7 +237,7 @@ local function work_out_label(point)
     end
     if point.achievement then
         if point.criteria and type(point.criteria) ~= "table" then
-            local criteria = GetAchievementCriteriaInfoByID(point.achievement, point.criteria)
+            local criteria = (point.criteria < 40 and GetAchievementCriteriaInfo or GetAchievementCriteriaInfoByID)(point.achievement, point.criteria)
             if criteria then
                 return criteria
             end
@@ -431,14 +431,14 @@ local function handle_tooltip(tooltip, point)
             if point.criteria then
                 if type(point.criteria) == "table" then
                     for _, criteria in ipairs(point.criteria) do
-                        local criteria, _, complete = GetAchievementCriteriaInfoByID(point.achievement, criteria)
+                        local criteria, _, complete = (criteria < 40 and GetAchievementCriteriaInfo or GetAchievementCriteriaInfoByID)(point.achievement, criteria)
                         tooltip:AddDoubleLine(" ", criteria,
                             nil, nil, nil,
                             complete and 0 or 1, complete and 1 or 0, 0
                         )
                     end
                 else
-                    local criteria, _, complete = GetAchievementCriteriaInfoByID(point.achievement, point.criteria)
+                    local criteria, _, complete = (point.criteria < 40 and GetAchievementCriteriaInfo or GetAchievementCriteriaInfoByID)(point.achievement, point.criteria)
                     tooltip:AddDoubleLine(" ", criteria,
                         nil, nil, nil,
                         complete and 0 or 1, complete and 1 or 0, 0

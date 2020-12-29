@@ -282,7 +282,7 @@ local allQuestsComplete = testMaker(function(quest) return C_QuestLog.IsQuestFla
 ns.allQuestsComplete = allQuestsComplete
 
 local allCriteriaComplete = testMaker(function(criteria, achievement)
-    local _, _, completed, _, _, completedBy = GetAchievementCriteriaInfoByID(achievement, criteria)
+    local _, _, completed, _, _, completedBy = (criteria < 40 and GetAchievementCriteriaInfo or GetAchievementCriteriaInfoByID)(achievement, criteria)
     if not (completed and (not completedBy or completedBy == ns.playerName)) then
         return false
     end
