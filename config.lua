@@ -460,6 +460,9 @@ ns.should_show_point = function(coord, point, currentZone, isMinimap)
         if point.active and point.active.quest and not C_QuestLog.IsQuestFlaggedCompleted(point.active.quest) then
             return false
         end
+        if point.active and point.active.notquest and C_QuestLog.IsQuestFlaggedCompleted(point.active.notquest) then
+            return false
+        end
         if point.hide_before and not allQuestsComplete(point.hide_before) then
             return false
         end

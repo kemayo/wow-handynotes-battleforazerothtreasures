@@ -184,7 +184,6 @@ end
 local function cache_loot(loot)
     if not loot then return end
     for _, item in ipairs(loot) do
-
         C_Item.RequestLoadItemDataByID(ns.lootitem(item))
     end
 end
@@ -374,6 +373,8 @@ local get_point_info = function(point, isMinimap)
         local label = work_out_label(point)
         local icon = work_out_texture(point)
         if point.active and point.active.quest and not C_QuestLog.IsQuestFlaggedCompleted(point.active.quest) then
+            icon = get_inactive_texture_variant(icon)
+        elseif point.active and point.active.notquest and C_QuestLog.IsQuestFlaggedCompleted(point.active.notquest) then
             icon = get_inactive_texture_variant(icon)
         elseif point.level and UnitLevel("player") < point.level then
             icon = get_upcoming_texture_variant(icon)
