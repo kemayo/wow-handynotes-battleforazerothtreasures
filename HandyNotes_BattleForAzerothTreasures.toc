@@ -30,3 +30,6 @@ zones\ArathiHighlands.lua
 
 zones\Mechagon.lua
 zones\Nazjatar.lua
+
+zones\ValeOfEternalBlossoms.lua
+zones\Uldum.lua
