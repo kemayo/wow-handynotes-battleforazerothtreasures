@@ -71,7 +71,7 @@ ns.RegisterPoints(1530, { -- Vale of Eternal Blossoms
     [26805510] = { -- Ivory Cloud Serpent
         npc=163042,
         loot={{174752,mount=1311}},
-        notes="You need a {item:174927:Zan-Tien Lasso} to catch it. It spawns fairly high up",
+        note="You need a {item:174927:Zan-Tien Lasso} to catch it. It spawns fairly high up",
     },
 }, {
     poi={MOGU},

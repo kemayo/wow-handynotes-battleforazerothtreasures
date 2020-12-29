@@ -19,7 +19,7 @@ ns.RegisterPoints(1527, {
     label="{npc:162765}", -- Friendly Alpaca
     quest=58879,
     loot={{174859,mount=1329}},
-    notes="Feed it Gersahl Greens for 7 days",
+    note="Feed it {item:174858:Gersahl Greens} for 7 days; find them by the rivers",
     atlas="stablemaster", scale=1.2,
 })
 
@@ -73,6 +73,7 @@ ns.RegisterPoints(1527, { -- Uldum
     label="Summoning Ritual",
     quest={57434,57435,57436,57437,57438,57439,},
     loot={{174874,toy=true}},
+    atlas="VignetteKillElite", scale=1.2,
     note="Complete the summoning ritual for a chance at one of six rares spawning:\n"..
         "* {npc:157390} ({quest:57434})\n"..
         "* {npc:157469} ({quest:57435})\n"..
@@ -147,7 +148,7 @@ ns.RegisterPoints(1527, {
         quest=57430, npc=156299,
         loot=aqirWeapons,
         poi={NZOTH, AQIR},
-        -- route={50205080,56405240,57407280,57407820,58006000,58406640},
+        -- route={50205080,56405240,58006000,58406640,57407820},
     },
 })
 
