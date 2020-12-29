@@ -104,6 +104,22 @@ ns.RegisterPoints(942, { -- Stormsong Valley
     [53416451] = {quest=52324, npc=141043, loot={159179}, criteria=34, faction="Alliance", note="Talk to Doc Marrtens",}, -- Jakala the Cruel
 }, {achievement=12940,})
 
+-- Adherent of the Abyss
+local adherent = {
+    npc=140474,
+    loot={
+        {161479, mount=1057}
+    },
+    atlas="stablemaster", scale=1.2,
+    notes="Needs 20 Abyssal Fragments to summon. They're *very* rare drops, so you may want to just buy them on the AH",
+}
+ns.RegisterPoints(942, {
+    [46463606] = adherent,
+})
+ns.RegisterPoints(1182, {
+    [59365421] = adherent,
+})
+
 -- world quest rares
 -- [72545052] = {quest=nil, npc=139515,}, -- Sandscour
 -- [68745147] = {quest=nil, npc=132047,}, -- Reinforced Hullbreaker
