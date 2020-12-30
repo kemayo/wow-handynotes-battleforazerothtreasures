@@ -12,9 +12,6 @@ ns.HL = HL
 ns.map_spellids = {
     -- zone = spellid
 }
-ns.map_questids = {
-    -- zone = questid
-}
 
 ns.currencies = {
     ANIMA = {
@@ -331,13 +328,13 @@ local function work_out_texture(point)
     end
     if point.currency then
         if not currency_texture then
-            currency_texture = atlas_texture("Auctioneer", 1.5)
+            currency_texture = atlas_texture("Auctioneer", 1.3)
         end
         return currency_texture
     end
     if point.junk then
         if not junk_texture then
-            junk_texture = atlas_texture("VignetteLoot", 1.5)
+            junk_texture = atlas_texture("VignetteLoot", 1)
         end
         return junk_texture
     end
@@ -479,6 +476,10 @@ local function handle_tooltip(tooltip, point)
                         end
                         if item.class then
                             link = TEXT_MODE_A_STRING_VALUE_TYPE:format(link, RAID_CLASS_COLORS[item.class]:WrapTextInColorCode(LOCALIZED_CLASS_NAMES_FEMALE[item.class]))
+                        end
+                        local known = ns.itemIsKnown(item)
+                        if known ~= nil then
+                            link = link .. CreateAtlasMarkup(known and "common-icon-checkmark" or "common-icon-redx")
                         end
                     end
                     tooltip:AddDoubleLine(ENCOUNTER_JOURNAL_ITEM, quick_texture_markup(icon) .. link)

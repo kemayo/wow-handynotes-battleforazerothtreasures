@@ -289,33 +289,35 @@ local allCriteriaComplete = testMaker(function(criteria, achievement)
     return true
 end)
 
-local hasKnowableLoot = testMaker(function(item)
-    return type(item) == "table" and (item.toy or item.mount or item.pet)
-end, doTestAny)
 local function PlayerHasMount(mountid)
     return (select(11, C_MountJournal.GetMountInfoByID(mountid)))
 end
 local function PlayerHasPet(petid)
     return (C_PetJournal.GetNumCollectedInfo(petid) > 0)
 end
+ns.itemIsKnowable = function(item)
+    return type(item) == "table" and (item.toy or item.mount or item.pet)
+end
+ns.itemIsKnown = function(item)
+    -- returns true/false/nil for yes/no/not-knowable
+    if type(item) == "table" then
+        -- TODO: could arguably do transmog here, too. Since we're mostly
+        -- considering soulbound things, the restrictions on seeing appearances
+        -- known cross-armor-type wouldn't really matter...
+        if item.toy then return PlayerHasToy(item[1]) end
+        if item.mount then return PlayerHasMount(item.mount) end
+        if item.pet then return PlayerHasPet(item.pet) end
+    end
+end
+local hasKnowableLoot = testMaker(ns.itemIsKnowable, doTestAny)
 local allLootKnown = testMaker(function(item)
     -- This returns true if all loot is known-or-unknowable
     -- If the "no knowable loot" case matters this should be gated behind hasKnowableLoot
-    -- TODO: could arguably do transmog here, too. Since we're mostly
-    -- considering soulbound things, the restrictions on seeing appearances
-    -- known cross-armor-type wouldn't really matter...
-    if type(item) == "table" then
-        if item.toy and not PlayerHasToy(item[1]) then
-            return false
-        end
-        if item.mount and not PlayerHasMount(item.mount) then
-            return false
-        end
-        if item.pet and not PlayerHasPet(item.pet) then
-            return false
-        end
+    local known = ns.itemIsKnown(item)
+    if known == nil then
+        return true
     end
-    return true
+    return known
 end)
 
 local zoneHidden
@@ -389,9 +391,6 @@ ns.should_show_point = function(coord, point, currentZone, isMinimap)
     if point.poi and not checkPois(point.poi) then
         return false
     end
-    if ns.map_questids[currentZone] and not (point.junk or point.npc or point.follower) and C_QuestLog.IsQuestFlaggedCompleted(ns.map_questids[currentZone]) then
-        return false
-    end
     if point.junk and not ns.db.show_junk then
         return false
     end
@@ -428,6 +427,12 @@ ns.should_show_point = function(coord, point, currentZone, isMinimap)
         if point.onquest and C_QuestLog.IsOnQuest(point.onquest) then
             return false
         end
+        if point.hide_quest and C_QuestLog.IsQuestFlaggedCompleted(point.hide_quest) then
+            -- This is distinct from point.quest as it's supposed to be for
+            -- other trackers that make the point not _complete_ but still
+            -- hidden (Draenor treasure maps, so far):
+            return false
+        end
     end
     if not point.follower then
         if point.npc then
@@ -448,6 +453,9 @@ ns.should_show_point = function(coord, point, currentZone, isMinimap)
         return false
     end
     if point.requires_item and not itemInBags(point.requires_item) then
+        return false
+    end
+    if point.requires_worldquest and not C_TaskQuest.IsActive(point.requires_worldquest) then
         return false
     end
     if point.covenant and point.covenant ~= C_Covenants.GetActiveCovenantID() then
