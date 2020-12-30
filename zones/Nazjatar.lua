@@ -97,50 +97,48 @@ ns.RegisterPoints(1355, {
 
 -- I Thought You Said They'd Be Rare
 ns.RegisterPoints(1355, { -- Nazjatar
-    [78003280] = {quest=56276, npc=151870, loot={169369}, criteria=45543,note="Summoned using a [Scrying Stone]"}, -- Sandcastle
-    [58805460] = {quest=56281, npc=152566, loot={170184}, criteria=45522,note="Requires killing a Colossal Ray on top of it for spawn"}, -- Anemonar
-    [50606920] = {quest=56287, npc=152567, loot={170184}, criteria=45535,note="Requries charming a Muck Slug using a [Prismatic Crystal] and bringing it in front of him"}, -- Kelpwillow
-    [78602580] = {quest=56288, npc=152397, loot={170184}, criteria=45539,note="Requires summoning the Drowned Hatchling pet in front of him"}, -- Oronu
-    [31603060] = {quest=56299, npc=152568, loot={170184}, criteria=45557,note="Must kill a Staghorn Reefwalker in front of him"}, -- Urduu
-    [71605420] = {quest=56282, npc=152561, loot={170179}, criteria=45524,note="Spawns after you kill Siltstalker",}, -- Banescale the Packfather
-    [56204360] = {quest=56272, npc=152291, loot={{169371,pet=2681}}, criteria=45530,}, -- Deepglider
-    [28802900] = {quest=55671, npc=152323, loot={169371}, criteria=45536,note="Requires to Shoo the Bloodfin Tadpoles until the King emotes a few times"}, -- King Gakula
-    [71405480] = {quest=56297, npc=152359, loot={170179}, criteria=45550,}, -- Siltstalker the Packmother
-    [64604700] = {quest=56278, npc=152360, loot={170178}, criteria=45556,}, -- Toxigore the Alpha
-    [63803260] = {quest=56284, npc=152414, loot=nil, criteria=45531,}, -- Elder Unu
-    [52404200] = {quest=56279, npc=152415, loot=nil, criteria=45519,}, -- Alga the Eyeless
-    [69204020] = {quest=56280, npc=152416, loot=nil, criteria=45520,}, -- Allseer Oma'kil
-    [47205500] = {quest=56286, npc=152448, loot={{169352,pet=2686}}, criteria=45534,note="Requires killing Glimmershell Hulks around his spawn points"}, -- Iridescent Glimmershell
-    [45602560] = {quest=56275, npc=152465, loot={{169357,pet=2689}}, criteria=45538,}, -- Needlespine
-    [35604120] = {quest=56292, npc=152548, loot={{169370,pet=2704}}, criteria=45545,}, -- Scale Matriarch Gratinax
-    [27403720] = {quest=56293, npc=152545, loot={{169370,pet=2704}}, criteria=45546,}, -- Scale Matriarch Vynara
-    [28704630] = {quest=56294, npc=152542, loot={{169370,pet=2704}}, criteria=45547,}, -- Scale Matriarch Zodia
-    [37201320] = {quest=56274, npc=144644, loot={{169366,pet=2700}}, criteria=45537,}, -- Mirecrawler
-    [36003960] = {quest=56273, npc=152553, loot={170180}, criteria=45533,}, -- Garnetscale
-    [52207400] = {quest=56285, npc=152555, loot={{169359,pet=2693}}, criteria=45532,}, -- Elderspawn Nalaada
-    [49008800] = {quest=56270, npc=152556, loot=nil, criteria=45528,}, -- Chasm-Haunter
-    [43008760] = {quest=56289, npc=152681, loot={{169367,pet=2701}}, criteria=45540,}, -- Prince Typhonus
-    [42807480] = {quest=56290, npc=152682, loot={{169368,pet=2702}}, criteria=45541,}, -- Prince Vortran
-    [36408000] = {quest=56269, npc=152712, loot={{169372,pet=2682}}, criteria=45525,}, -- Blindlight
-    [72203620] = {quest=56268, npc=152794, loot={{169363,pet=2697}}, criteria=45521,}, -- Amethyst Spireshell
-    [64804060] = {quest=56277, npc=152795, loot={{169350,pet=2684}}, criteria=45544,}, -- Sandclaw Stoneshell
-    [37801440] = {quest=56296, npc=153658, loot={170182}, criteria=45549,}, -- Shiz'narasz the Consumer
-    [62402960] = {quest=56122, npc=153898, loot={170502}, criteria=45553,note="Must kill chanelling Azsh'ari Invokers until it spawns"}, -- Tidelord Aquatus
-    [57602600] = {quest=56123, npc=153928, loot={170502}, criteria=45554,note="Must kill chanelling Azsh'ari Invokers until it spawns"}, -- Tidelord Dispersius
-    [39005930] = {quest=56271, npc=152756, loot={{169361,pet=2695}}, criteria=45529,}, -- Daggertooth Terror
-    [63401160] = {quest=56295, npc=152552, loot={{170187,toy=170187}}, criteria=45548,}, -- Shassera
-    [67152325] = {quest=56106, npc=154148, loot={{170196,toy=170196}}, criteria=45555,}, -- Tidemistress Leth'sindra
-    [40800735] = {quest=56283, npc=152464, loot={{169356,pet=2690}}, criteria=45527,}, -- Caverndark Terror
-    [62405950] = {quest=56291, npc=150583, loot={{169374,pet=2707}}, criteria=45542,note="Has a chance to spawn after you kill Algans"}, -- Rockweed Shambler
-    [57605220] = {quest=56298, npc=152290, loot={{169163,mount=1257}}, criteria=45551,}, -- Soundless
+    [78003280] = {quest=56276, npc=151870, loot={{169369, pet=2703}}, criteria=45543, note="Summoned using a [Scrying Stone]"}, -- Sandcastle
+    [58805460] = {quest=56281, npc=152566, loot={170184}, criteria=45522, note="Requires killing a Colossal Ray on top of it for spawn"}, -- Anemonar
+    [50606920] = {quest=56287, npc=152567, loot={170184}, criteria=45535, note="Requries charming a Muck Slug using a [Prismatic Crystal] and bringing it in front of him"}, -- Kelpwillow
+    [78602580] = {quest=56288, npc=152397, loot={170184}, criteria=45539, note="Requires summoning the Drowned Hatchling pet in front of him"}, -- Oronu
+    [31603060] = {quest=56299, npc=152568, loot={170184}, criteria=45557, note="Must kill a Staghorn Reefwalker in front of him"}, -- Urduu
+    [71605420] = {quest=56282, npc=152561, loot={170179}, criteria=45524, note="Spawns after you kill Siltstalker"}, -- Banescale the Packfather
+    [56204360] = {quest=56272, npc=152291, loot=nil, criteria=45530}, -- Deepglider
+    [28802900] = {quest=55671, npc=152323, loot={{169371, pet=2681}}, criteria=45536, note="Requires to Shoo the Bloodfin Tadpoles until the King emotes a few times"}, -- King Gakula
+    [71405480] = {quest=56297, npc=152359, loot={170179}, criteria=45550}, -- Siltstalker the Packmother
+    [64604700] = {quest=56278, npc=152360, loot={170178}, criteria=45556}, -- Toxigore the Alpha
+    [63803260] = {quest=56284, npc=152414, loot=nil, criteria=45531}, -- Elder Unu
+    [52404200] = {quest=56279, npc=152415, loot=nil, criteria=45519}, -- Alga the Eyeless
+    [69204020] = {quest=56280, npc=152416, loot=nil, criteria=45520}, -- Allseer Oma'kil
+    [47205500] = {quest=56286, npc=152448, loot={{169352, pet=2686}}, criteria=45534, note="Requires killing Glimmershell Hulks around his spawn points"}, -- Iridescent Glimmershell
+    [45602560] = {quest=56275, npc=152465, loot={{169357, pet=2689}}, criteria=45538}, -- Needlespine
+    [35604120] = {quest=56292, npc=152548, loot={{169370, pet=2704}}, criteria=45545}, -- Scale Matriarch Gratinax
+    [27403720] = {quest=56293, npc=152545, loot={{169370, pet=2704}}, criteria=45546}, -- Scale Matriarch Vynara
+    [28704630] = {quest=56294, npc=152542, loot={{169370, pet=2704}}, criteria=45547}, -- Scale Matriarch Zodia
+    [37201320] = {quest=56274, npc=144644, loot={{169366, pet=2700}}, criteria=45537}, -- Mirecrawler
+    [36003960] = {quest=56273, npc=152553, loot={170180}, criteria=45533}, -- Garnetscale
+    [52207400] = {quest=56285, npc=152555, loot={{169359, pet=2693}}, criteria=45532}, -- Elderspawn Nalaada
+    [49008800] = {quest=56270, npc=152556, loot=nil, criteria=45528}, -- Chasm-Haunter
+    [43008760] = {quest=56289, npc=152681, loot={{169367, pet=2701}}, criteria=45540}, -- Prince Typhonus
+    [42807480] = {quest=56290, npc=152682, loot={{169368, pet=2702}}, criteria=45541}, -- Prince Vortran
+    [36408000] = {quest=56269, npc=152712, loot={{169372, pet=2682}}, criteria=45525}, -- Blindlight
+    [72203620] = {quest=56268, npc=152794, loot={{169363, pet=2697}}, criteria=45521}, -- Amethyst Spireshell
+    [64804060] = {quest=56277, npc=152795, loot={{169350, pet=2684}}, criteria=45544}, -- Sandclaw Stoneshell
+    [37801440] = {quest=56296, npc=153658, loot={170182}, criteria=45549}, -- Shiz'narasz the Consumer
+    [62402960] = {quest=56122, npc=153898, loot={170502}, criteria=45553, note="Must kill chanelling Azsh'ari Invokers until it spawns"}, -- Tidelord Aquatus
+    [57602600] = {quest=56123, npc=153928, loot={170502}, criteria=45554, note="Must kill chanelling Azsh'ari Invokers until it spawns"}, -- Tidelord Dispersius
+    [39005930] = {quest=56271, npc=152756, loot={{169361, pet=2695}}, criteria=45529}, -- Daggertooth Terror
+    [63401160] = {quest=56295, npc=152552, loot={{170187, toy=true}}, criteria=45548}, -- Shassera
+    [67152325] = {quest=56106, npc=154148, loot={{170196, toy=true}}, criteria=45555}, -- Tidemistress Leth'sindra
+    [40800735] = {quest=56283, npc=152464, loot={{169356, pet=2690}}, criteria=45527}, -- Caverndark Terror
+    [62405950] = {quest=56291, npc=150583, loot={{169374, pet=2707}}, criteria=45542, note="Has a chance to spawn after you kill Algans"}, -- Rockweed Shambler
+    [57605220] = {quest=56298, npc=152290, loot={{169163, mount=1257}}, criteria=45551}, -- Soundless
     [67603460] = {quest=56300, npc=151719, loot=nil, criteria=45558, note="Get a Molted Shell to break rocks"}, -- Voice in the Deeps
-    -- can appear basically-anwhere:
-    -- [] = {quest=56276,npc=151870,loot={{169369,pet=2703}},criteria=45543,}, -- Sandcastle
 }, {achievement=13691,})
 
 -- Non-achievement
 ns.RegisterPoints(1355, { -- Nazjatar
-    [48352400] = {quest=55603, npc=150468, loot={{169376,pet=2709}},}, -- Vor'koth
-    [36901120] = {quest=55584, npc=150191, loot={{169373,pet=2706}},}, -- Avarius
-    [54804200] = {quest=55366, npc=149653, loot={{169375,pet=2708}},}, -- Carnivorous Lasher (also seen 56296 + 56587)
+    [48352400] = {quest=55603, npc=150468, loot={{169376, pet=2709}}}, -- Vor'koth
+    [36901120] = {quest=55584, npc=150191, loot={{169373, pet=2706}}}, -- Avarius
+    [54804200] = {quest=55366, npc=149653, loot={{169375, pet=2708}}}, -- Carnivorous Lasher (also seen 56296 + 56587)
 })

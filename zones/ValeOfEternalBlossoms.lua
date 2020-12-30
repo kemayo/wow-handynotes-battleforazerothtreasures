@@ -23,8 +23,8 @@ ns.RegisterPoints(1530, { -- Vale of Eternal Blossoms
         quest=57341, npc=157266,
         -- route={44606320,45205900,48005860,50606550,49206860,46407020},
     },
-    [51804100] = {quest=57342, npc=157176, loot={{174473,pet=2845}}, note="On floating platform",}, -- The Forgotten
-    [52406140] = {quest=56303, npc=154495, loot={{175140,toy=true},175141,{174474,pet=2846}},}, -- Will of N'Zoth
+    [51804100] = {quest=57342, npc=157176, loot={{174473, pet=2845}}, note="On floating platform"}, -- The Forgotten
+    [52406140] = {quest=56303, npc=154495, loot={{175140, toy=true}, 175141, {174474, pet=2846}}}, -- Will of N'Zoth
     [56404120] = {quest=56237, npc=154447,}, -- Brother Meller
     [67602900] = {quest=56183, npc=154332, note="Underground in Pools of Power",}, -- Voidtender Malketh
     [64405140] = {quest=56302, npc=154490,}, -- Rijz'x the Devourer
@@ -57,7 +57,7 @@ ns.RegisterPoints(1530, { -- Vale of Eternal Blossoms
         note="Flying in a circle counterclockwise",
     },
     [28404020] = {quest=57347, npc=157171,}, -- Heixi the Stonelord
-    [29402220] = {quest=58507, npc=155958, loot={{174873,toy=true}},}, -- Tashara
+    [29402220] = {quest=58507, npc=155958, loot={{174873, toy=true}}}, -- Tashara
     [33406740] = {quest=57363, npc=157466, loot=tAppendAll({{174840,mount=1328}}, moguWeapons),}, -- Anh-De the Loyal
     [41406000] = {quest=57349, npc=157287,}, -- Dokani Obliterator
     [47605600] = {quest=56954, npc=156083, loot=tAppendAll({174071}, moguWeapons),}, -- Sanguifang

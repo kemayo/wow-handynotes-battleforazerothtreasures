@@ -41,16 +41,16 @@ ns.RegisterPoints(1527, { -- Uldum
         -- route={44407820,46407320,51806880},
     },
     [47407720] = {quest=57664, npc=158528,}, -- High Guard Reshef
-    [49208260] = {quest=57688, npc=158636, loot={{169303,toy=true}}, note="Up on the floating platform",}, -- The Grand Executor
+    [49208260] = {quest=57688, npc=158636, loot={{169303, toy=true}}, note="Up on the floating platform"}, -- The Grand Executor
     [49403840] = {quest=57672, npc=158594,}, -- Doomsayer Vathiris
     [57403740] = {quest=58333, npc=161033,}, -- Shadowmaw
-    [53205020] = {quest=57680, npc=158633, loot={175142,{175140,toy=true}},}, -- Gaze of N'Zoth
+    [53205020] = {quest=57680, npc=158633, loot={175142, {175140, toy=true}}}, -- Gaze of N'Zoth
     [54604300] = {quest=57675, npc=158597,}, -- High Executor Yothrim
     [58408220] = {quest=57432, npc=156654,}, -- Shol'thoss the Doomspeaker
     [59203940] = {quest=58206, npc=160623,}, -- Hungering Miasma
     -- [60003940] = {quest=58206, npc=160631,}, -- Hungering Miasma
     [59404940] = {quest=57673, npc=158595,}, -- Thoughtstealer Vos
-    [59807240] = {quest=58330, npc=157593, loot={{174478,pet=2851}}, note="Complete the {quest:57429} event",}, -- Amalgamation of Flesh
+    [59807240] = {quest=58330, npc=157593, loot={{174478, pet=2851}}, note="Complete the {quest:57429} event"}, -- Amalgamation of Flesh
     [66407380] = {quest=57669, npc=158557,}, -- Actiss the Deceiver
     [70407440] = {quest=57433, npc=156655,}, -- Korzaran the Slaughterer
     -- [50208180,50807320] = {quest=57665, npc=158531,}, -- Corrupted Neferset Guard
@@ -66,7 +66,7 @@ ns.RegisterPoints(1527, { -- Uldum
     -- [] = {quest=57435, npc=157469,}, -- Zoth'rum the Intellect Pillager
     -- [] = {quest=57436, npc=157470,}, -- R'aas the Anima Devourer
     -- [] = {quest=57437, npc=157472,}, -- Aphrom the Guise of Madness
-    -- [] = {quest=57438, npc=157473, loot={{174874,toy=true}},}, -- Yiphrim the Will Ravager
+    -- [] = {quest=57438, npc=157473, loot={{174874, toy=true}}}, -- Yiphrim the Will Ravager
     -- [] = {quest=57439, npc=157476,}, -- Shugshul the Flesh Gorger
 }, {
     poi={NZOTH},
@@ -92,7 +92,7 @@ ns.RegisterPoints(1527, { -- Uldum
     [65005140] = {quest=55710, npc=152757,}, -- Atekhramun
     [66401820] = {quest=57277, npc=157157,}, -- Muminah the Incandescent
     [67406340] = {quest=55716, npc=152788,}, -- Uat-ka the Sun's Wrath
-    [68003140] = {quest=57273, npc=157146, loot={{174753,mount=1317}},}, -- Rotfeaster
+    [68003140] = {quest=57273, npc=157146, loot={{174753, mount=1317}}}, -- Rotfeaster
     [73805180] = {quest=55468, npc=151883,}, -- Anaua
     [69604140] = {quest=55518, npc=152040,}, -- Scoutmaster Moswen
     [73406420] = {quest=55496, npc=151948,}, -- Senbu the Pridefather
@@ -156,7 +156,7 @@ ns.RegisterPoints(1527, {
 ns.RegisterPoints(1527, { -- Uldum
     [32406440] = {quest=56834, npc=155703, loot=aqirWeapons,}, -- Anq'uri the Titanic
     [35001740] = {quest=58681, npc=162196, loot=aqirWeapons,}, -- Obsidian Annihilator
-    [73808340] = {quest=57259, npc=157134, loot={{174641,mount=1314}},}, -- Ishak of the Four Winds
+    [73808340] = {quest=57259, npc=157134, loot={{174641, mount=1314}}}, -- Ishak of the Four Winds
     -- [] = {quest=58691, npc=162254,}, -- Corrupted Observer
     -- [] = {quest=58691, npc=158632,}, -- Corrupted Fleshbeast
 })
