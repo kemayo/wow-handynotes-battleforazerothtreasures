@@ -80,7 +80,7 @@ ns.RegisterPoints(1462, { -- Mechagon
     [56905330] = {quest=55207, npc=151124, loot={168490,169688}, achievement=13470, criteria=45117,}, -- Mechagonian Nullifier
     [65605100] = {quest=55513, npc=151202, loot={167871,167042}, achievement=13470, criteria=45127,}, -- Foul Manifestation
     [56803990] = {quest=55515, npc=151296, loot={168492}, achievement=13470, criteria=45129,}, -- OOX-Avenger/MG
-    [53003300] = {quest=55539, npc=151308, loot={53003300,54202720}, achievement=13470, criteria=45131,}, -- Boggac Skullbash
+    [53003300] = {quest=55539, npc=151308, loot={169688}, achievement=13470, criteria=45131,}, -- Boggac Skullbash
     [35804300] = {quest=55514, npc=151569, loot={167836}, achievement=13470, criteria=45128,}, -- Deepwater Maw
     [71204840] = {quest=55364, npc=151623, loot={167846,168435}, achievement=13470, criteria=45118,}, -- The Scrap King
     [59806080] = {quest=55859, npc=151627, loot={168248,167794}, achievement=13470, criteria=45156,}, -- Mr. Fixthis
