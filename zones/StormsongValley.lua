@@ -96,7 +96,7 @@ ns.RegisterPoints(942, { -- Stormsong Valley
     [47306590] = {quest=52296, npc=129803, criteria=41841, note="Requires a world quest to be up",}, -- Whiplash
     [61605700] = {quest=52441, npc=141143, loot={155164}, criteria=41842,}, -- Sister Absinthe
     [42807500] = {quest=50819, npc=130079, loot={154431}, criteria=41843,}, -- Wagga Snarltusk
-    [43404490] = {quest=51762, npc=138963, loot={160477}, criteria=41844,}, -- Nestmother Acada
+    [43404490] = {quest=51762, npc=138963, loot={160458}, criteria=41844,}, -- Nestmother Acada
     [42006280] = {quest=52461, npc=141239, loot={159169}, criteria=41845,}, -- Osca the Bloodied
     [73806080] = {quest=52125, npc=139988, loot={154389}, criteria=41846,}, -- Sandfang
     [60004600] = {quest=52123, npc=139980, loot={154449}, criteria=41847,}, -- Taja the Tidehowler
