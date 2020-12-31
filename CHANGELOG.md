@@ -1,5 +1,15 @@
 # Changelog
 
+## Changed in v16
+
+* Now includes Darkshore, Arathi Highlands, Uldum, and Vale of Eternal Blossoms
+* Mechagon loot with associated quests now can count as "completed" if you've done the quest -- blueprints, paints, vinyl
+* Includes the honey events in Stormsong
+* Added missing loot to various rares
+* More new features from [HandyNotes: Shadowlands Treasures](https://www.curseforge.com/wow/addons/handynotes-shadowlands-treasures):
+    * Show a check/cross in summary tooltips next to knowable loot
+    * Ability to track associated quests on loot
+
 ## Changed in v15
 
 * More new features from [HandyNotes: Shadowlands Treasures](https://www.curseforge.com/wow/addons/handynotes-shadowlands-treasures):
