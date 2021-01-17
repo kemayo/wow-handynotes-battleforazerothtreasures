@@ -16,7 +16,7 @@ ns.RegisterPoints(862, { -- Zuldazar
     [71684127] = {quest=50308, criteria=40037, note=loot:format(156963, 122504),}, -- Golden Ravasaur Egg
     [66211662] = {quest=50332, criteria=40038, note=quest:format(50332),}, -- Big Hunter Mon
     [61964689] = {quest=50381, criteria=40039, note=quest:format(50381),}, -- The Great Hat Robbery
-    [62732058] = {quest=50331, criteria=40040, note=loot:format(157794, 132410),}, -- Feathered Viper Scale
+    [62732058] = {quest=50431, criteria=40040, note=loot:format(157794, 132410),}, -- Feathered Viper Scale
 }, gethekd)
 ns.RegisterPoints(1165, { -- Dazar'alor
     [61825347] = {quest=50381, criteria=40039, note=quest:format(50381),}, -- The Great Hat Robbery
