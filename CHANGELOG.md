@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v17
+
+* Update for 9.0.5
+* Fix in the Get Hek'd achievement
+
 ## Changed in v16
 
 * Now includes Darkshore, Arathi Highlands, Uldum, and Vale of Eternal Blossoms
