@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v19
+
+* Updated for 9.1.5
+* Add progress tracker for the Friendly Alpaca
+* Bring in updates to the handler code from ShadowlandsTreasures
+
 ## Changed in v18
 
 * Updated for 9.1
