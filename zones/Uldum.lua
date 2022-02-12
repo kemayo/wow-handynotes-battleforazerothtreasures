@@ -21,6 +21,10 @@ ns.RegisterPoints(1527, {
     loot={{174859,mount=1329}},
     note="Feed it {item:174858:Gersahl Greens} for 7 days; find them by the rivers",
     atlas="stablemaster", scale=1.2,
+    progress=function()
+        -- it's a different quest for the progress than for the overall completion...
+        return select(4, GetQuestObjectiveInfo(58881, 0, false))
+    end,
 })
 
 local NZOTH = {947, 6486}
