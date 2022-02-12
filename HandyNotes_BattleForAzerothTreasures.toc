@@ -10,8 +10,11 @@
 ## SavedVariables: HandyNotes_BattleForAzerothTreasuresDB
 ## RequiredDeps: HandyNotes
 
-handler.lua
-config.lua
+handler\handler.lua
+handler\config.lua
+handler\overlay.lua
+
+battleforazeroth.lua
 
 achievements\GetHekd.lua
 
