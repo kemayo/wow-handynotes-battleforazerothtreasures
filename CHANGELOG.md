@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v20
+
+* Updated for 9.2
+* Bring in updates to the handler code from ShadowlandsTreasures
+
 ## Changed in v19
 
 * Updated for 9.1.5
