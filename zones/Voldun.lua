@@ -10,7 +10,7 @@ ns.RegisterPoints(864, { -- Vol'dun
     [29388742] = {quest=51137, criteria=40972, note="Under Disturbed Sand",}, -- Zem'lan's Buried Treasure
     [40578574] = {quest=52994, criteria=41003,}, -- Deadwood Chest
     [38848290] = ns.path{quest=52994},
-    [48186469] = {quest=51093, criteria=40967, note="Door on East side", hide_before=50550, faction="Horde",}, -- Grayal's Last Offering
+    [48186469] = {quest=51093, criteria=40967, note="Door on East side", hide_before=ns.conditions.QuestComplete(50550), faction="Horde",}, -- Grayal's Last Offering
     [48176469] = {quest=51093, criteria=40967, note="Door on East side", faction="Alliance",}, -- Grayal's Last Offering
     [49166469] = ns.path{quest=51093},
     [47195846] = {quest=51133, criteria=40969, note="Path from South side",}, -- Sandfury Reserve
@@ -115,8 +115,8 @@ ns.RegisterPoints(864, { -- Vol'dun
     [52328519] = {quest=51673,},
     [51908251] = {quest=51673,},
 }, {
-    junk=true,
     label='Treasure Chest',
+    group="junk",
 })
 
 -- Rares

@@ -8,17 +8,21 @@ ns.RegisterPoints(895, { -- Tiragarde Sound
     [72495814] = {quest=50442, loot={155381}, criteria=41013,}, -- Cutwater Treasure Chest
     [61786275] = {quest=52867, criteria=41015, note="In cave",}, -- Forgotten Smuggler's Stash
     [73103950] = {quest=52195, loot={161342}, criteria=41017, note="In Boralus, on Stomsong Monastary",}, -- Secret of the Depths
-    [55769095] = {quest=52195, hide_before={52134, 52135, 52136, 52137, 52138}, loot={161342}, criteria=41017, note="Teleport here from Stormsong, pick up the gem",}, -- Secret of the Depths
+    [55769095] = { -- Secret of the Depths
+        quest=52195,
+        loot={161342}, criteria=41017, note="Teleport here from Stormsong, pick up the gem",
+        hide_before={ns.conditions.QuestComplete(52134), ns.conditions.QuestComplete(52135), ns.conditions.QuestComplete(52136), ns.conditions.QuestComplete(52137), ns.conditions.QuestComplete(52138)},
+    },
     -- Freehold treasure maps
     [80007600] = {quest=52853, loot={162571}, criteria=41018, note="Kill pirates in Freehold until the map drops",}, -- Soggy Treasure Map 162571 (q:52853)
     [80708050] = {quest=52859, loot={162581}, criteria=41020, note="Kill pirates in Freehold until the map drops",}, -- Yellowed Treasure Map 162581 (q:52859)
     [74008300] = {quest=52854, loot={162580}, criteria=41019, note="Kill pirates in Freehold until the map drops",}, -- Fading Treasure Map 162580 (q:52854)
     [76008500] = {quest=52860, loot={162584}, criteria=41021, note="Kill pirates in Freehold until the map drops",}, -- Singed Treasure Map 162584 (q:52860)
     -- ...and the actual treasures they point to
-    [54994608] = {quest=52807, hide_before=52853, criteria=41018, note="Kill pirates in Freehold until the map drops",}, -- Soggy Treasure Map 162571 (q:52853)
-    [90507551] = {quest=52836, hide_before=52859, criteria=41020, note="Kill pirates in Freehold until the map drops",}, -- Yellowed Treasure Map 162581 (q:52859)
-    [29222534] = {quest=52833, hide_before=52854, criteria=41019, note="Kill pirates in Freehold until the map drops",}, -- Fading Treasure Map 162580 (q:52854)
-    [48983759] = {quest=52845, hide_before=52860, criteria=41021, note="Kill pirates in Freehold until the map drops",}, -- Singed Treasure Map 162584 (q:52860)
+    [54994608] = {quest=52807, hide_before=ns.conditions.QuestComplete(52853), criteria=41018, note="Kill pirates in Freehold until the map drops",}, -- Soggy Treasure Map 162571 (q:52853)
+    [90507551] = {quest=52836, hide_before=ns.conditions.QuestComplete(52859), criteria=41020, note="Kill pirates in Freehold until the map drops",}, -- Yellowed Treasure Map 162581 (q:52859)
+    [29222534] = {quest=52833, hide_before=ns.conditions.QuestComplete(52854), criteria=41019, note="Kill pirates in Freehold until the map drops",}, -- Fading Treasure Map 162580 (q:52854)
+    [48983759] = {quest=52845, hide_before=ns.conditions.QuestComplete(52860), criteria=41021, note="Kill pirates in Freehold until the map drops",}, -- Singed Treasure Map 162584 (q:52860)
 }, {
     achievement=12852,
 })
@@ -31,7 +35,13 @@ ns.RegisterPoints(1161, { -- Boralus
     [63078186] = {quest=52136, atlas="poi-workorders", minimap=true, criteria=41017, note="Read Damp Scrolls; upstairs",},
     [70328576] = {quest=52137, atlas="poi-workorders", minimap=true, criteria=41017, note="Read Damp Scrolls; underground",},
     [67147982] = {quest=52138, atlas="poi-workorders", minimap=true, criteria=41017, note="Read Damp Scrolls",},
-    [55769095] = {quest=52195, atlas="DemonInvasion2", scale=1.4, minimap=true, hide_before={52134, 52135, 52136, 52137, 52138}, loot={161342}, criteria=41017, note="Ominous Altar; use it, get teleported, pick up the gem",}, -- Secret of the Depths
+    [55769095] = { -- Secret of the Depths
+        quest=52195, criteria=41017,
+        loot={161342},
+        note="Ominous Altar; use it, get teleported, pick up the gem",
+        atlas="DemonInvasion2", scale=1.4, minimap=true,
+        hide_before={ns.conditions.QuestComplete(52134), ns.conditions.QuestComplete(52135), ns.conditions.QuestComplete(52136), ns.conditions.QuestComplete(52137), ns.conditions.QuestComplete(52138)},
+    },
 }, {
     achievement=12852,
 })
@@ -59,7 +69,7 @@ ns.RegisterPoints(1161, { -- Boralus
 -- junk
 local junk = {
     label='Small Treasure Chest',
-    junk=true,
+    group="junk",
 }
 ns.RegisterPoints(895, { -- Tiragarde Sound
     [83673580] = {quest=53631, label="Dusty Marine Supplies",},

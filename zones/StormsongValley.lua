@@ -60,7 +60,7 @@ ns.RegisterPoints(942, { -- Stormsong Valley
     [46915393] = {quest=51949,},
 }, {
     label='Small Treasure Chest',
-    junk=true,
+    group="junk",
 })
 
 -- Rares

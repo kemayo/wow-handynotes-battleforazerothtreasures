@@ -1,5 +1,12 @@
 local myname, ns = ...
 
 ns.hiddenConfig = {
-    groupsHidden = true,
+    groupsHiddenByZone = true,
 }
+
+ns.defaultsOverride = {
+    -- show_on_minimap = true,
+    groupsHidden = {junk=true,},
+}
+
+ns.groups["junk"] = "Junk"

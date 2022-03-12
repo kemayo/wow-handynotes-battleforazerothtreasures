@@ -46,7 +46,7 @@ ns.RegisterPoints(896, { -- Drustvar
     [24223681] = {quest=51911,},
     [39326173] = {quest=51914,},
 }, {
-    junk=true,
+    group="junk",
     label='Small Treasure Chest',
 })
 

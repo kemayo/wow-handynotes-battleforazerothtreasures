@@ -67,7 +67,7 @@ ns.RegisterPoints(863, { -- Nazmir
     [28048187] = {quest=50895,},
 }, {
     label='Treasure Chest',
-    junk=true,
+    group="junk",
 })
 
 -- Rares

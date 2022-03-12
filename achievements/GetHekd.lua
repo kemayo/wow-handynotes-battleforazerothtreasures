@@ -3,7 +3,7 @@ local myname, ns = ...
 local gethekd = {
     achievement=12482,
     -- "Pests" in Zuldazar (Horde) or Voldun (Alliance)
-    hide_before=(UnitFactionGroup("player") == "Horde") and 47441 or 51142,
+    hide_before=ns.conditions.QuestComplete((UnitFactionGroup("player") == "Horde") and 47441 or 51142),
     note="Talk to {npc:126334:Jani}",
     atlas="bags-icon-scrappable",
     minimap=true,

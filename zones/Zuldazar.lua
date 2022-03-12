@@ -49,7 +49,7 @@ ns.RegisterPoints(1165, { -- Dazar'alor
 -- Junk
 local junk = {
     label='Treasure Chest',
-    junk=true,
+    group="junk",
 }
 ns.RegisterPoints(862, { -- Zuldazar
     [50823158] = {quest=50711,},
