@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v21
+
+* Bring in updates to the handler code from ShadowlandsTreasures
+* Minor fixes to paths
+
 ## Changed in v20
 
 * Updated for 9.2
