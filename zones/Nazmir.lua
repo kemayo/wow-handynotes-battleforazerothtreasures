@@ -113,10 +113,3 @@ ns.RegisterPoints(863, { -- Nazmir
 ns.RegisterPoints(863, { -- Nazmir
     [25706971] = {npc=143898, achievement=13048, criteria=41683, note="Flying close to the road from Vol'dun to Zuldazar",}, -- Makatau the Pterrordax
 })
-
--- Mushroom Harvest
-ns.RegisterPoints(863, { -- Nazmir
-    [52357020] = {npc=143316, criteria=41390, note="South of Heart of Darkness. Entrance is from the north side of Xal'vor ruins",}, -- Skullcap
-    [73614870] = {npc=143311, criteria=41393, note="In cave, entrance at 73.2 49.7",}, -- Toadcruel
-    -- [73204970] = path(), Path without quest?
-}, {achievement=13027,})

@@ -20,6 +20,7 @@ handler\overlay.lua
 battleforazeroth.lua
 
 achievements\GetHekd.lua
+achievements\MushroomHarvest.lua
 
 zones\KulTiras.lua
 zones\TiragardeSound.lua

@@ -125,8 +125,3 @@ ns.RegisterPoints(862, { -- Zuldazar
     [61622537] = {npc=130741, criteria=41673, note="Fighting Ten'gor at crossroad",}, -- Nol'ixwan the Direhorn
     [71242184] = {npc=123502, criteria=41677, note="On the road from Zeb'ahari to Tal'gurub",}, -- King K'tal the Devilsaur
 }, {achievement=13048,})
-
--- Mushroom Harvest
-ns.RegisterPoints(862, { -- Zuldazar
-    [45537917] = {npc=143314, achievement=13027, criteria=41391, note="On the beach, between trees",}, -- Bane of the Woods
-})

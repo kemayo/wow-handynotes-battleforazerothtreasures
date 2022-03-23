@@ -155,8 +155,3 @@ ns.RegisterPoints(864, { -- Vol'dun
     [43915405] = {quest=48319, npc=129411, criteria=41633, note="Inside skeleton under the sand"}, -- Zunashi the Exile
     [43985246] = ns.path{quest=48319},
 }, {achievement=12943,})
-
--- Mushroom Harvest
-ns.RegisterPoints(864, { -- Vol'dun
-    [61101826] = {npc=143313, achievement=13027, criteria=41392, note="Shrouded Shore, on the hill",}, -- Portakillo
-})
