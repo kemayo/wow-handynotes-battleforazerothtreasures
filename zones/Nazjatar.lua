@@ -13,19 +13,16 @@ ns.RegisterPoints(1355, { -- Nazjatar
     [64303350] = {quest=55943},
     [56493390] = {quest=55944, note="Top of the cliffs"},
     [52904980] = {quest=55945},
-    [58103510] = {quest=55946, note="Underwater Cave"},
-    [57303900] = ns.path{quest=55946},
+    [58103510] = {quest=55946, path=57303900, note="Underwater Cave"},
     [44804880] = {quest=55947},
     [43305810] = {quest=55948},
     [49506450] = {quest=55949},
     [38707440] = {quest=55950},
     [48508740] = {quest=55951},
-    [34704350] = {quest=55952, note="Inside Cave"},
-    [37404280] = ns.path{quest=55952},
+    [34704350] = {quest=55952, path=37404280, note="Inside Cave"},
     [26003230] = {quest=55953, note="Under Starfish pile"},
     [34504050] = {quest=55954},
-    [50605000] = {quest=55955, note="Inside Cave"},
-    [49705030] = ns.path{quest=55955},
+    [50605000] = {quest=55955, path=49705030, note="Inside Cave"},
     [39804930] = {quest=55956},
     [38006060] = {quest=55957},
 }, {
@@ -35,14 +32,14 @@ ns.RegisterPoints(1355, { -- Nazjatar
 })
 
 ns.RegisterPoints(1355, { -- Nazjatar
-    [61502290] = {quest=55958, label="Arcane Pylon", note="Inside Cave"}, [61401990] = ns.path{quest=55958}, -- game quest id: 55359
-    [37900604] = {quest=55959, note="Inside Cave"}, [39351005] = ns.path{quest=55959},
+    [61502290] = {quest=55958, label="Arcane Pylon", path=61401990, note="Inside Cave"}, -- game quest id: 55359
+    [37900604] = {quest=55959, path=39351005, note="Inside Cave"},
     [55701440] = {quest=55961,}, -- game quest id: 55998
     [64202850] = {quest=55962, note="Click Arcane device on the side on the right"}, -- game quest id: 55996
     [43901680] = {quest=55963,},
     [37191919] = {quest=55960, note="Underwater Cave"},
-    [24803520] = {quest=56912, label="Arcane Pylon", note="Inside Cave"}, [26703380] = ns.path{quest=56912}, -- game quest id: 56913
-    [80503190] = {quest=56547, label="Arcane Pylon", note="Up the building"}, [83003380] = ns.path{quest=56547}, -- game quest id: 56913
+    [24803520] = {quest=56912, label="Arcane Pylon", path=26703380, note="Inside Cave"}, -- game quest id: 56913
+    [80503190] = {quest=56547, label="Arcane Pylon", path=83003380, note="Up the building"}, -- game quest id: 56913
 }, {
     achievement=13549,
     label=AR_TRUNK,
@@ -55,11 +52,9 @@ ns.RegisterPoints(1355, {
     [61102680] = {quest=56984,},
     [59103040] = {quest=56985,},
     [55302720] = {quest=56986,},
-    [40158608] = {quest=56987, note="In underwater cave",},
-    [40318144] = ns.path{quest=56987},
+    [40158608] = {quest=56987, path=40318144, note="In underwater cave",},
     [71402370] = {quest=56988,},
-    [38004930] = {quest=56989,},
-    [38704930] = ns.path{quest=56989},
+    [38004930] = {quest=56989, path=38704930,},
     [58202200] = {quest=56990,},
     [61601070] = {quest=56991,},
     [73602590] = {quest=56992,},

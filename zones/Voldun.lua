@@ -2,21 +2,15 @@ local myname, ns = ...
 
 -- Treasures of Vol'dun
 ns.RegisterPoints(864, { -- Vol'dun
-    [46598801] = {quest=50237, criteria=40966, note="Use mine cart",}, -- Ashvane Spoils
-    [44339222] = ns.path{quest=50237, label="Mine cart"},
+    [46598801] = {quest=50237, criteria=40966, path={44339222, label="Mine cart"}, note="Use mine cart",}, -- Ashvane Spoils
     [49787940] = {quest=51132, criteria=40968, note="Climb the rock arch",}, -- Lost Explorer's Bounty
-    [44502613] = {quest=51135, criteria=40970, note="Climb fallen tree",}, -- Stranded Cache
-    [44712480] = ns.path{quest=51135},
+    [44502613] = {quest=51135, criteria=40970, path=44712480, note="Climb fallen tree",}, -- Stranded Cache
     [29388742] = {quest=51137, criteria=40972, note="Under Disturbed Sand",}, -- Zem'lan's Buried Treasure
-    [40578574] = {quest=52994, criteria=41003,}, -- Deadwood Chest
-    [38848290] = ns.path{quest=52994},
+    [40578574] = {quest=52994, criteria=41003, path=38848290,}, -- Deadwood Chest
     [48186469] = {quest=51093, criteria=40967, note="Door on East side", hide_before=ns.conditions.QuestComplete(50550), faction="Horde",}, -- Grayal's Last Offering
-    [48176469] = {quest=51093, criteria=40967, note="Door on East side", faction="Alliance",}, -- Grayal's Last Offering
-    [49166469] = ns.path{quest=51093},
-    [47195846] = {quest=51133, criteria=40969, note="Path from South side",}, -- Sandfury Reserve
-    [47445984] = ns.path{quest=51133},
-    [57746464] = {quest=51136, criteria=40971,}, -- Excavator's Greed
-    [56696469] = ns.path{quest=51136},
+    [48176469] = {quest=51093, criteria=40967, path=49166469, note="Door on East side", faction="Alliance",}, -- Grayal's Last Offering
+    [47195846] = {quest=51133, criteria=40969, path=47445984, note="Path from South side",}, -- Sandfury Reserve
+    [57746464] = {quest=51136, criteria=40971, path=56696469,}, -- Excavator's Greed
     [57061121] = {quest=52992, criteria=41002, note="Enter at top of temple",}, -- Lost Offerings of Kimbul
     [26484534] = {quest=53004, loot={163036}, criteria=41004, note="Use Abandoned Bobber",}, -- Sandsunken Treasure
 }, {
@@ -39,6 +33,7 @@ ns.RegisterPoints(864, {
     npc=162681,
     loot={{174860,mount=1324}},
     notes="Spawns rarely, waits 10 minutes. Feed it {item:161128:Seaside Leafy Greens Mix} to get the mount",
+    atlas="stablemaster",
 })
 
 -- Scavenger of the Sands
@@ -53,15 +48,14 @@ ns.RegisterPoints(864, { -- Vol'dun
     [43217700] = {quest=53139, criteria=41349, note="Near the wall",}, -- Navarro's Flask
     [47067577] = {quest=53140, criteria=41350, note="Under the stairs",}, -- Zach's Canteen
     [45883072] = {quest=53141, criteria=41351, note="Hanging on the hut",}, -- Damarcus' Backpack
-    [66413590] = {quest=53142, criteria=41352, note="In cave",}, -- Rachel's Flute
-    [64883632] = ns.path{quest=53142},
+    [66413590] = {quest=53142, criteria=41352, path=64883632, note="In cave",}, -- Rachel's Flute
     [47933673] = {quest=53143, criteria=41353, note="Cave under the giant tree",}, -- Josh's Fang Necklace
     [45229114] = {quest=53144, criteria=41354, note="On the wall",}, -- Portrait of Commander Martens
     [62832267] = {quest=53145, criteria=41355, note="Down from Tortaka Refuge",}, -- Kurt's Ornate Key
 }, {
     achievement=13016,
     atlas="VignetteLootElite",
-    scale=1.2,
+    scale=1,
     minimap=true,
 })
 
@@ -132,26 +126,22 @@ ns.RegisterPoints(864, { -- Vol'dun
     [42679245] = {quest=50905, npc=124722, criteria=41613,}, -- Commodore Calhoun
     [61853788] = {quest=51077, npc=136335, criteria=41614,}, -- Enraged Krolusk
     [64004757] = {quest=49270, npc=128674, criteria=41615,}, -- Gut-Gut the Glutton
-    [53685347] = {quest=47533, npc=130443, criteria=41616, note="In cave"}, -- Hivemother Kraxi
-    [53835149] = ns.path{quest=47533},
+    [53685347] = {quest=47533, npc=130443, criteria=41616, path=53835149, note="In cave"}, -- Hivemother Kraxi
     [37428498] = {quest=49392, npc=129283, criteria=41617,}, -- Jumbo Sandsnapper
     [60561801] = {quest=51074, npc=136341, criteria=41618,}, -- Jungleweb Hunter
     [35085183] = {quest=50528, npc=128686, criteria=41619,}, -- Kamid the Trapper
-    [38284138] = {quest=51424, loot={161108}, npc=137681, criteria=41620, note="In cave"}, -- King Clickyclack
-    [37354050] = ns.path{quest=51424},
+    [38284138] = {quest=51424, loot={161108}, npc=137681, criteria=41620, path=37354050, note="In cave"}, -- King Clickyclack
     [43758624] = {quest=50898, npc=128951, criteria=41621,}, -- Nez'ara
     [49017210] = {quest=51126, npc=136340, criteria=41622,}, -- Relic Hunter Hazaak
     [44538023] = {quest=48960, npc=127776, criteria=41623,}, -- Scaleclaw Broodmother
     [32716522] = {quest=51076, npc=136336, criteria=41624,}, -- Scorpox
     [24736850] = {quest=51075, npc=136338, criteria=41625,}, -- Sirokar
-    [46972518] = {quest=50637, npc=134571, criteria=41626, note="In cave",}, -- Skycaller Teskris
-    [46242714] = ns.path{quest=50637},
+    [46972518] = {quest=50637, npc=134571, criteria=41626, path=46242714, note="In cave",}, -- Skycaller Teskris
     [51263645] = {quest=50686, npc=134745, criteria=41627,}, -- Skycarver Krakit
     [66892446] = {quest=51063, npc=136304, criteria=41628,}, -- Songstress Nahjeen
     [57197349] = {quest=49674, npc=130401, criteria=41629,}, -- Vathikur
     [37084616] = {quest=49373, npc=129180, criteria=41630,}, -- Warbringer Hozzik
     [30115256] = {quest=50662, npc=134638, criteria=41631,}, -- Warlord Zothix
     [50713086] = {quest=50658, npc=134625, criteria=41632,}, -- Warmother Captive
-    [43915405] = {quest=48319, npc=129411, criteria=41633, note="Inside skeleton under the sand"}, -- Zunashi the Exile
-    [43985246] = ns.path{quest=48319},
+    [43915405] = {quest=48319, npc=129411, criteria=41633, path=43985246, note="Inside skeleton under the sand"}, -- Zunashi the Exile
 }, {achievement=12943,})

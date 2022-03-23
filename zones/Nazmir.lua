@@ -4,8 +4,7 @@ local myname, ns = ...
 ns.RegisterPoints(863, { -- Nazmir
     [77903634] = {quest=49867, criteria=40857,}, -- Lucky Horace's Lucky Chest
     [77884635] = {quest=50061, criteria=40858, note="In dead hippo's mouth",}, -- Partially-Digested Treasure
-    [43065078] = {quest=49979, criteria=40859, note="In cave",}, -- Cursed Nazmani Chest
-    [42275056] = ns.path{quest=49979},
+    [43065078] = {quest=49979, criteria=40859, path=42275056, note="In cave",}, -- Cursed Nazmani Chest
     [35668560] = {quest=49885, criteria=40860, note="In cave",}, -- Cleverly Disguised Chest
     [62103487] = {quest=49891, criteria=40861, note="Underwater cave",}, -- Lost Nazmani Treasure
     [42772620] = {quest=49484, criteria=40862, note="Climb the tree",}, -- Offering to Bwonsamdi
@@ -91,8 +90,7 @@ ns.RegisterPoints(863, { -- Nazmir
     [38722674] = {quest=49469, npc=129657, criteria=41476,}, -- Za'amar the Queen's Blade
     [78084451] = {quest=50355, npc=133539, criteria=41478,}, -- Lo'kuno
     [54128110] = {quest=50569, npc=134298, criteria=41444,}, -- Azerite-Infused Elemental
-    [43199131] = {quest=48541, npc=126635, criteria=41448, note="In cave, behind waterfall"}, -- Blood Priest Xak'lar
-    [43069011] = ns.path{quest=48541},
+    [43199131] = {quest=48541, npc=126635, criteria=41448, path=43069011, note="In cave, behind waterfall"}, -- Blood Priest Xak'lar
     [53694287] = {quest=49317, npc=129005, criteria=41451,}, -- King Kooba
     [41665344] = {quest=48462, npc=126187, criteria=41453,}, -- Corpse Bringer Yal'kar
     [33538708] = {quest=48638, npc=127001, criteria=41455,}, -- Gwugnug the Cursed

@@ -5,15 +5,11 @@ ns.RegisterPoints(862, { -- Zuldazar
     [54093150] = {quest=48938, criteria=40988, note="On second floor",}, -- Offerings of the Chosen
     [64712167] = {quest=50259, criteria=40989,}, -- Witch Doctor's Hoard
     [51718690] = {quest=49936, criteria=40990, note="Bottom floor of ship",}, -- Spoils of Pandaria
-    [51442661] = {quest=50582, criteria=40991, note="Top of hill"}, -- Gift of the Brokenhearted
-    [50112715] = ns.path{quest=50582},
+    [51442661] = {quest=50582, criteria=40991, note="Top of hill", path=50112715}, -- Gift of the Brokenhearted
     [49506526] = {quest=49257, criteria=40992, note="Top of ship",}, -- Warlord's Cache
-    [38793444] = {quest=50707, criteria=40993, note="Up on the rocks",}, -- Dazar's Forgotten Chest
-    [41003328] = ns.path{quest=50707, note="Path behind the waterfall"},
-    [41973566] = ns.path{quest=50707},
+    [38793444] = {quest=50707, criteria=40993, note="Up on the rocks", path={39903290, 41003328, 41973566, note="Behind the waterfall"},}, -- Dazar's Forgotten Chest
     [61065863] = {quest=50947, criteria=40994, npc=133208, note="Event: kill Da White Shark first",}, -- Da White Shark's Bounty
-    [71821677] = {quest=50949, loot={163036}, criteria=40995, note="In cave",}, -- The Exile's Lament
-    [71161767] = ns.path{quest=50949},
+    [71821677] = {quest=50949, loot={163036}, criteria=40995, note="In cave", path=71161767}, -- The Exile's Lament
     [56123806] = {quest=51338, criteria=40996, note="In cave behind waterfall",}, -- Cache of Secrets
     [52974719] = {quest=51624, criteria=40997}, -- Riches of Tor'nowa
     [54303440] = {quest=52269, loot={161443}, note="Pepe'jin is perched above the bar",}, -- A Tiny Voodoo Mask
@@ -21,8 +17,7 @@ ns.RegisterPoints(862, { -- Zuldazar
 ns.RegisterPoints(1165, { -- Dazar'alor
     [59258870] = {quest=50947, minimap=true, criteria=40994, npc=133208, note="Event: kill Da White Shark first",}, -- Da White Shark's Bounty
     [44472690] = {quest=51338, minimap=true, criteria=40996, note="In cave behind waterfall",}, -- Cache of Secrets
-    [38300716] = {quest=48938, minimap=true, criteria=40988, note="On top of the Hall of the High Priests",}, -- Offerings of the Chosen
-    [41141101] = ns.path{quest=48938},
+    [38300716] = {quest=48938, minimap=true, criteria=40988, note="On top of the Hall of the High Priests", path=41141101}, -- Offerings of the Chosen
     [39001580] = {quest=52269, loot={161443}, note="Pepe'jin is perched above the bar",}, -- A Tiny Voodoo Mask
 }, {achievement=12851,})
 
@@ -80,21 +75,18 @@ ns.RegisterPoints(1165, { -- Dazar'alor
 -- Adventurer of Zuldazar
 ns.RegisterPoints(862, { -- Zuldazar
     [80972163] = {quest=50280, npc=129961, loot={161042}, criteria=41850, note="Climb the ropes onto the ship"}, -- Atal'zul Gotaka
-    [53944489] = ns.path{quest=50280},
     [64253271] = {quest=50439, npc=129954, loot={161043}, criteria=41851,}, -- Gahz'ralka
     [44157652] = {quest=51083, npc=136428, loot={160979}, criteria=41852,}, -- Dark Chronicler
-    [53404465] = {quest=51080, npc=136413, loot={161047}, criteria=41853, note="In cave, down the river"}, -- Syrawon the Dominus
+    [53404465] = {quest=51080, npc=136413, loot={161047}, criteria=41853, path=53944489, note="In cave, down the river"}, -- Syrawon the Dominus
     [48005424] = {quest=49972, npc=131476, loot={161125}, criteria=41869,}, -- Zayoos
     [58777395] = {quest=49911, npc=131233, loot={161033}, criteria=41870,}, -- Lei-zhi
-    [49855744] = {quest=49410, npc=129343, loot={161034}, criteria=41871, note="In cave",}, -- Avatar of Xolotal
-    [49605911] = ns.path{quest=49410},
+    [49855744] = {quest=49410, npc=129343, loot={161034}, criteria=41871, path=49605911, note="In cave",}, -- Avatar of Xolotal
     [59821830] = {quest=49267, npc=128699, loot={161104}, criteria=41872,}, -- Bloodbulge
     [46616533] = {quest=49004, npc=127939, loot={161029}, criteria=41873,}, -- Torraske the Eternal
     [68714875] = {quest=48543, npc=126637, loot={160984}, criteria=41874,}, -- Kandak
     [59605640] = {quest=48333, npc=120899, loot={160947}, criteria=41875,}, -- Kul'krazahn
     [74112850] = {quest=47792, npc=124185, loot={161035}, criteria=41876,}, -- Golrakahn
-    [71423239] = {quest=47567, npc=122004, loot={161091}, criteria=41877, note="In cave",}, -- Umbra'jin
-    [70333301] = ns.path{quest=47567},
+    [71423239] = {quest=47567, npc=122004, loot={161091}, criteria=41877, path=70333301, note="In cave",}, -- Umbra'jin
     [65411022] = {quest=50693, npc=134760, loot={160958}, criteria=41855,}, -- Darkspeaker Jo'la
     [42003620] = {quest=50677, npc=134738, loot={160978}, criteria=41856,}, -- Hakbi the Risen
     [61904622] = {quest=50508, npc=134048, loot={162613}, criteria=41858, note="Interact with Strange Egg",}, -- Vukuba

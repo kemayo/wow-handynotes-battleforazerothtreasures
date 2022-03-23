@@ -27,9 +27,9 @@ ns.RegisterPoints(14, { -- Arathi Highlands
         quest={53086, 53509, any=true},
         npc=142686,
         loot={{163735, toy=true}},
+        path=28594561,
         note="Inside Boulderfist Outpost",
     },
-    [28594561] = ns.path{quest={53086, 53509, any=true},},
 
     [59802810] = { -- Fozruk
         quest={53019, 53510, any=true},
@@ -40,9 +40,9 @@ ns.RegisterPoints(14, { -- Arathi Highlands
         quest={53060, 53511, any=true},
         npc=142662,
         loot={{163713, toy=true}},
+        path=78153685,
         note="Inside cave",
     },
-    [78153685] = ns.path{quest={53060, 53511, any=true},},
 
     [26703280] = { -- Horrific Apparition
         quest={53087, 53512, any=true},
@@ -60,16 +60,16 @@ ns.RegisterPoints(14, { -- Arathi Highlands
         quest={53058, 53513, any=true},
         npc=142112,
         loot={{163744, toy=true}},
+        path=48107955,
         note="Inside cave",
     },
-    [48107955] = ns.path{quest={53058, 53513, any=true},},
     [25294855] = { -- Kovork
         quest={53089, 53514, any=true},
         npc=142684,
         loot={{163750, toy=true}},
+        path=28594560,
         note="Inside Boulderfist Outpost",
     },
-    [28594560] = ns.path{quest={53089, 53514, any=true},},
     [52197485] = { -- Man-Hunter Rog
         quest={53090, 53515, any=true},
         npc=142716,
@@ -91,16 +91,16 @@ ns.RegisterPoints(14, { -- Arathi Highlands
         quest={53014, 53518, any=true},
         npc=142423,
         loot={{163646, mount=1182}},
+        path=33693675,
         note="Requires Alliance control",
     },
-    [33693675] = ns.path{quest={53014, 53518, any=true},},
     [27255710] = { -- Overseer Krix
         quest={53014, 53518, any=true},
         npc=142423,
         loot={{163646, mount=1182}},
+        path=27485560,
         note="Requires Horde control",
     },
-    [27485560] = ns.path{quest={53014, 53518, any=true},},
     [35606435] = { -- Plaguefeather
         quest={53020, 53519, any=true},
         npc=142435,
@@ -154,9 +154,9 @@ ns.RegisterPoints(14, { -- Arathi Highlands
         quest={53094, 53530, any=true},
         npc=142682,
         loot={{163745, toy=true}},
+        path=63257750,
         note="Inside cave",
     },
-    [63257750] = ns.path{quest={53094, 53530, any=true},},
 
     -- Myzrael:
     [30604475] = { -- Burning Goliath
