@@ -151,7 +151,7 @@ ns.RegisterPoints(942, {
     [72295224] = {},
 }, {
     npc=155069,
-    active={notquest=56414}, -- hourly
+    active={ns.conditions.QuestIncomplete(56414)}, -- hourly
     note="You can loot the Jelly hourly",
     atlas="bags-icon-scrappable",
     faction="Alliance",
