@@ -68,10 +68,10 @@ ns.RegisterPoints(1355, {
     -- Jellies!
     -- all the quests are {daily,weekly}
     -- TODO: better activation criteria for the quests
-    [54904870] = {quest={55427,55470},label="{npc:151218} #1"},
-    [71712570] = {quest={55428,55471},label="{npc:151782} #2"},
-    [45702411] = {quest={55429,55472},label="{npc:151874} #3"},
-    [32763953] = {quest={55430,55473},label="{npc:151875} #4"},
+    [54904870] = {quest={55427,55470,any=true},label="{npc:151218} #1"},
+    [71712570] = {quest={55428,55471,any=true},label="{npc:151782} #2"},
+    [45702411] = {quest={55429,55472,any=true},label="{npc:151874} #3"},
+    [32763953] = {quest={55430,55473,any=true},label="{npc:151875} #4"},
 }, {
     achievement=13715,
     atlas="vehicle-templeofkotmogu-cyanball", scale=1.2,
