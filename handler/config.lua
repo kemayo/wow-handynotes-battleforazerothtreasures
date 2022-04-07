@@ -579,6 +579,7 @@ local function showOnMapType(point, isMinimap)
 end
 
 ns.should_show_point = function(coord, point, currentZone, isMinimap)
+    if not coord or coord < 0 then return false end
     if not showOnMapType(point, isMinimap) then
         return false
     end
@@ -658,6 +659,9 @@ ns.should_show_point = function(coord, point, currentZone, isMinimap)
         return false
     end
     if point.requires_worldquest and not C_TaskQuest.IsActive(point.requires_worldquest) then
+        return false
+    end
+    if point.requires and not ns.conditions.check(point.requires) then
         return false
     end
     if not ns.db.upcoming or point.upcoming == false then
