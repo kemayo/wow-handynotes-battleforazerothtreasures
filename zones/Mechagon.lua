@@ -73,7 +73,7 @@ ns.RegisterPoints(1462, { -- Mechagon
 
 -- Rares
 ns.RegisterPoints(1462, { -- Mechagon
-    [62802600] = {quest=55814, npc=150342, loot={{167042, quest=55030}}, criteria=45138}, -- Earthbreaker Gulroc
+    [62802600] = {quest=55814, npc=150342, loot={{167042, quest=55030}}, criteria=45138, note="Complete Drill Rig DR-TR35 and enter the cave"}, -- Earthbreaker Gulroc
     [60604460] = {quest=55546, npc=150394, loot={{170072, pet=2766}, {167843, quest=55058}, {167796, quest=55455}}, criteria=45158}, -- Armored Vaultbot
     [38805320] = {quest=55368, npc=150575, loot={{168001, quest=55517}}, criteria=45123}, -- Rumblerocks
     [19207940] = {quest=55545, npc=150937, loot={{168063, quest=55065}}, criteria=45133}, -- Seaspit
@@ -93,20 +93,29 @@ ns.RegisterPoints(1462, { -- Mechagon
     [57002140] = {quest=55538, npc=151940, loot=nil, criteria=45132}, -- Uncle T'Rogg
     [65202320] = {quest=55537, npc=152001, loot={{169392, pet=2719}}, criteria=45130}, -- Bonepicker
     [43404900] = {quest=55369, npc=152007, loot={{167931, toy=true}}, criteria=45125}, -- Killsaw
-    [68905430] = {quest=55858, npc=152113, loot={{169886, pet=2753}}, criteria=45153}, -- The Kleptoboss
+    [68354810] = { -- The Kleptoboss
+        quest=55858, npc=152113, loot={{169886, pet=2753}}, criteria=45153,
+        note="Complete Drill Rig DR-CC88 and enter the cave",
+    },
     [63807800] = {quest=55811, npc=152182, loot={{168370, mount=1248}}, criteria=45135}, -- Rustfeather
     [82202100] = {quest=55812, npc=152570, loot={{169167, quest=55075}, {169169, quest=55077}, {169168, quest=55076}, {167793, quest=55457}, {167792, quest=55452}}, criteria=45137}, -- Crazed Trogg
     [57206260] = {quest=55856, npc=152764, loot={{167794, quest=55454}}, criteria=45157}, -- Oxidized Leachbeast
     [78203080] = {quest=55810, npc=153000, loot=nil, criteria=45134}, -- Sparkqueen P'Emp
-    [51205000] = {quest=55857, npc=153200, loot={{167042, quest=55030}, {169691, quest=56518}}, criteria=45152}, -- Boilburn
-    [59606730] = {quest=55855, npc=153205, loot={{169691, quest=56518}}, criteria=45146}, -- Gemicide
-    [56103600] = {quest=55853, npc=153206, loot={{169691, quest=56518}}, criteria=45145}, -- Ol' Big Tusk
+    [51205000] = {quest=55857, npc=153200, loot={{167042, quest=55030}, {169691, quest=56518}}, criteria=45152, note="Complete Drill Rig DR-JD41 and enter the cave"}, -- Boilburn
+    [59606730] = {quest=55855, npc=153205, loot={{169691, quest=56518}}, criteria=45146, note="Complete Drill Rig DR-JD99 and enter the cave"}, -- Gemicide
+    [56103600] = {quest=55853, npc=153206, loot={{169691, quest=56518}}, criteria=45145, note="Complete Drill Rig DR-TR28 and enter the cave"}, -- Ol' Big Tusk
     [24807720] = {quest=55854, npc=153226, loot={{168062, quest=55064}}, criteria=45154}, -- Steel Singer Freza
     [40203960] = {quest=55852, npc=153228, loot={{167847, quest=55062}}, criteria=45155}, -- Gear Checker Cogstar
     [53806180] = {quest=56207, npc=154153, loot={{169174, quest=55082}, 170467}, criteria=45373}, -- Enforcer KX-T57
     [58305690] = {quest=56182, npc=154225, loot={{169347, toy=true}, 170467}, criteria=45374, note="Time displaced"}, -- The Rusty Prince
-    [69205340] = {quest=56367, npc=154701, loot={{167846, quest=55061}}, criteria=45410}, -- Gorged Gear-Cruncher
-    [66505870] = {quest=56368, npc=154739, loot={{169170, quest=55078}}, criteria=45411}, -- Caustic Mechaslime
+    [72965404] = { -- Gorged Gear-Cruncher
+        quest=56367, npc=154701, loot={{167846, quest=55061}}, criteria=45410,
+        note="Complete Drill Rig DR-CC61 project and enter the cave",
+    },
+    [66505870] = { -- Caustic Mechaslime
+        quest=56368, npc=154739, loot={{169170, quest=55078}}, criteria=45411,
+        note="Complete Drill Rig DR-CC73 project and enter the cave",
+    },
     [80902020] = {quest=56419, npc=155060, loot=nil, criteria=45433}, -- Doppel Ganger
     [81407600] = {quest=56737, npc=155583, loot={{168490, quest=55069}}, criteria=45691}, -- Scrapclaw
 }, {
