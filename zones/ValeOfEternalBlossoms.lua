@@ -36,6 +36,11 @@ ns.RegisterPoints(1530, { -- Vale of Eternal Blossoms
 }, {
     poi={NZOTH},
 })
+ns.RegisterPoints(1579, { -- Pools of Power
+    [37004780] = {quest=56183, npc=154332}, -- Voidtender Malketh
+}, {
+    poi={NZOTH},
+})
 
 -- Mogu Assault
 ns.RegisterPoints(1530, { -- Vale of Eternal Blossoms
