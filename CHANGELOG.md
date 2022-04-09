@@ -1,5 +1,14 @@
 # Changelog
 
+## Changed in v22
+
+* Vale of Eternal Blossoms: add a point for Malketh inside the Pools of Power
+* Mechagon: add the Secret Fish achievement, also see [HandyNotes: Secret Fish](https://www.curseforge.com/wow/addons/handynotes-secret-fish) for the follow-up
+* Nazjatar: hide the ravenous jellies once you've done their daily
+* Stormsong Valley: the lush flower bed point wasn't properly hidden after you did the event
+* Bring in updates to the handler code from [HandyNotes: Shadowlands Treasures](https://www.curseforge.com/wow/addons/handynotes-shadowlands-treasures):
+    * Paths will now highlight their associated route when you mouse over them
+
 ## Changed in v21
 
 * Bring in updates to the handler code from ShadowlandsTreasures
