@@ -7,7 +7,7 @@ local kodo = {
     loot={
         {166433, mount=1201}, -- Frightened Kodo
     },
-    atlas="stablemaster", scale=1.2,
+    atlas="stablemaster", scale=1.2, minimap=true,
     note="Appears for a few minutes at a time, you just need to click it",
 }
 ns.RegisterPoints(62, {
