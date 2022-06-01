@@ -199,3 +199,20 @@ ns.RegisterPoints(62, { -- Darkshore
     art=1176,
     faction="Horde",
 })
+
+-- Caches
+
+-- There's 10 different objectids here, appearing in clusters. I haven't
+-- actually proved to myself that each objectid corresponds to a specific
+-- questid, but it does seem likely...
+
+ns.RegisterPoints(62, {
+    [61761934] = {quest=54908},
+    [49881814] = {quest=54909},
+    [40804337] = {quest=54910},
+    [41324820] = {quest=54911},
+    [39576230] = {quest=54912},
+}, {
+    art=1176,
+    label="Darkshore Cache",
+})

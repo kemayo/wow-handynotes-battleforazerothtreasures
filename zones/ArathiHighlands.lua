@@ -58,6 +58,7 @@ ns.RegisterPoints(14, { -- Arathi Highlands
     },
     [49308425] = { -- Kor'gresh Coldrage
         quest={53058, 53513, any=true},
+        worldquest=54567,
         npc=142112,
         loot={{163744, toy=true}},
         path=48107955,
@@ -79,6 +80,7 @@ ns.RegisterPoints(14, { -- Arathi Highlands
     },
     [47657800] = { -- Molok the Crusher
         quest={53057, 53516, any=true},
+        worldquest=54604,
         npc=141942,
         loot={{163775, toy=true}},
     },
@@ -152,6 +154,7 @@ ns.RegisterPoints(14, { -- Arathi Highlands
     },
     [62858120] = { -- Zalas Witherbark
         quest={53094, 53530, any=true},
+        worldquest=54561,
         npc=142682,
         loot={{163745, toy=true}},
         path=63257750,
