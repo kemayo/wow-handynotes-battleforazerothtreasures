@@ -1,5 +1,12 @@
 # Changelog
 
+## Changed in v23
+
+* Updated for 9.2.5, fixing errors about C_TransmogCollection (in a rush, so there might be followup fixes)
+* Frightened Kodo spawn points in Darkshore will appear on your minimap now
+* Bring in updates to the handler code from [HandyNotes: Shadowlands Treasures](https://www.curseforge.com/wow/addons/handynotes-shadowlands-treasures):
+    * More information in tooltips for items which haven't loaded from the server yet
+
 ## Changed in v22
 
 * Vale of Eternal Blossoms: add a point for Malketh inside the Pools of Power
