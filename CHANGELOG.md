@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v24
+
+* Add option to show loot only for your current character
+* Better labels for tooltip loot, showing item types
+* Better fix for the C_TransmogCollection changes
+
 ## Changed in v23
 
 * Updated for 9.2.5, fixing errors about C_TransmogCollection (in a rush, so there might be followup fixes)
