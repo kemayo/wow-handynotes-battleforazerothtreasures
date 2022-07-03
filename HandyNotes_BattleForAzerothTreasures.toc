@@ -17,6 +17,7 @@ battleforazeroth.lua
 
 achievements\GetHekd.lua
 achievements\MushroomHarvest.lua
+achievements\UnboundMonstrosities.lua
 
 zones\KulTiras.lua
 zones\TiragardeSound.lua
