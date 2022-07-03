@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v25
+
+* Include the Unbound Monstrosities and their loot
+
 ## Changed in v24
 
 * Add option to show loot only for your current character
