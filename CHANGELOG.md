@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v26
+
+* Updated for 9.2.7
+
 ## Changed in v25
 
 * Include the Unbound Monstrosities and their loot
