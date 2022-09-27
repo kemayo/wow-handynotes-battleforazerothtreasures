@@ -10,6 +10,11 @@
 ## X-Wago-ID: ME6gYXG1
 ## SavedVariables: HandyNotes_BattleForAzerothTreasuresDB
 ## RequiredDeps: HandyNotes
+## OptionalDeps: !LibUIDropDownMenu
+
+#@non-debug@
+# lib\LibUIDropDownMenu\LibUIDropDownMenu.xml
+#@end-non-debug@
 
 handler\handler.xml
 
