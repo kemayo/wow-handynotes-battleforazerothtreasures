@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v29
+
+* Updated for 10.0.2
+
 ## Changed in v28
 
 * Updated for 10.0.0
