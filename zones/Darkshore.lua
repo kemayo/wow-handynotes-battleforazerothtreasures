@@ -207,6 +207,7 @@ ns.RegisterPoints(62, { -- Darkshore
 -- questid, but it does seem likely...
 
 ns.RegisterPoints(62, {
+    [43578125] = {quest=54881},
     [61761934] = {quest=54908},
     [49881814] = {quest=54909},
     [40804337] = {quest=54910},
