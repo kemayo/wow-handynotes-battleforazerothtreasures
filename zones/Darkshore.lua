@@ -1,7 +1,6 @@
 local myname, ns = ...
 
 -- The kodo
-
 local kodo = {
     npc=148790,
     loot={
@@ -207,11 +206,14 @@ ns.RegisterPoints(62, { -- Darkshore
 -- questid, but it does seem likely...
 
 ns.RegisterPoints(62, {
+    [58802525] = {quest=54872},
+    [48202749] = {quest=54877},
     [43578125] = {quest=54881},
+    [37746163] = {quest=54881, vignette=3518},
     [61761934] = {quest=54908},
     [49881814] = {quest=54909},
-    [40804337] = {quest=54910},
-    [41324820] = {quest=54911},
+    [40804337] = {quest=54910}, -- 54879
+    [41324820] = {quest=54911}, -- 54880
     [39576230] = {quest=54912},
 }, {
     art=1176,
