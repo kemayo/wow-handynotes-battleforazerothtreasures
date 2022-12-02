@@ -1,8 +1,8 @@
 local myname, ns = ...
 
-local NZOTH = {947, 6489}
-local MOGU = {947, 6490}
-local MANTID = {947,6491}
+local NZOTH = ns.conditions.WorldQuestActive(56064)
+local MOGU = ns.conditions.WorldQuestActive(57008)
+local MANTID = ns.conditions.WorldQuestActive(57728)
 
 -- these come up a lot...
 local moguWeapons = {
@@ -34,12 +34,12 @@ ns.RegisterPoints(1530, { -- Vale of Eternal Blossoms
     [85404120] = {quest=56213, npc=154394,}, -- Veskan the Fallen
     [89004760] = {quest=56094, npc=154106,}, -- Quid
 }, {
-    poi={NZOTH},
+    requires=NZOTH,
 })
 ns.RegisterPoints(1579, { -- Pools of Power
     [37004780] = {quest=56183, npc=154332}, -- Voidtender Malketh
 }, {
-    poi={NZOTH},
+    requires=NZOTH,
 })
 
 -- Mogu Assault
@@ -79,7 +79,7 @@ ns.RegisterPoints(1530, { -- Vale of Eternal Blossoms
         note="You need a {item:174927:Zan-Tien Lasso} to catch it. It spawns fairly high up",
     },
 }, {
-    poi={MOGU},
+    requires=MOGU,
     loot=moguWeapons,
 })
 
@@ -105,7 +105,7 @@ ns.RegisterPoints(1530, { -- Vale of Eternal Blossoms
     [21604460] = {quest=58304, npc=160872,}, -- Destroyer Krox'tazar
     [25406780] = {quest=58304, npc=160872,}, -- Destroyer Krox'tazar
 }, {
-    poi={MANTID},
+    requires=MANTID,
     loot=mantidWeapons,
 })
 

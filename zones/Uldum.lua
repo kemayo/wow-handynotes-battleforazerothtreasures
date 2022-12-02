@@ -27,9 +27,9 @@ ns.RegisterPoints(1527, {
     end,
 })
 
-local NZOTH = {947, 6486}
-local AMATHET = {947, 6487}
-local AQIR = {947,6488}
+local NZOTH = ns.conditions.WorldQuestActive(57157)
+local AMATHET = ns.conditions.WorldQuestActive(55350)
+local AQIR = ns.conditions.WorldQuestActive(56308)
 
 -- these come up a lot...
 local aqirWeapons = {
@@ -59,7 +59,7 @@ ns.RegisterPoints(1527, { -- Uldum
     [70407440] = {quest=57433, npc=156655,}, -- Korzaran the Slaughterer
     -- [50208180,50807320] = {quest=57665, npc=158531,}, -- Corrupted Neferset Guard
 }, {
-    poi={NZOTH},
+    requires=NZOTH,
 })
 ns.RegisterPoints(1527, { -- Uldum
     -- Summoning rituals:
@@ -73,7 +73,7 @@ ns.RegisterPoints(1527, { -- Uldum
     -- [] = {quest=57438, npc=157473, loot={{174874, toy=true}}}, -- Yiphrim the Will Ravager
     -- [] = {quest=57439, npc=157476,}, -- Shugshul the Flesh Gorger
 }, {
-    poi={NZOTH},
+    requires=NZOTH,
     label="Summoning Ritual",
     quest={57434,57435,57436,57437,57438,57439,},
     loot={{174874,toy=true}},
@@ -109,7 +109,7 @@ ns.RegisterPoints(1527, { -- Uldum
     [83404760] = {quest=57285, npc=157188,}, -- The Tomb Widow
     [84405700] = {quest=55479, npc=151897,}, -- Sun Priestess Nubitt
 }, {
-    poi={AMATHET},
+    requires=AMATHET,
 })
 
 -- Aqir Assault
@@ -134,24 +134,26 @@ ns.RegisterPoints(1527, { -- Uldum
     -- [] = {quest=58614, npc=154576,}, -- Aqir Titanus
     -- [] = {quest=58694, npc=162172,}, -- Aqir Warcaster
 }, {
-    poi={AQIR},
+    requires=AQIR,
 })
 
+-- multi-assault:
 ns.RegisterPoints(1527, {
-    -- multi-assault:
-    [43804140] = {quest=58718, npc=162370, poi={AMATHET, AQIR},}, -- Armagedillo
-    [50004000] = {quest=58716, npc=162352, poi={AMATHET, AQIR}, note="In cave",}, -- Spirit of Dark Ritualist Zakahn
-    [60607300] = {quest=58169, npc=160532, poi={NZOTH, AQIR},}, -- Shoth the Darkened
-    [74806820] = {quest=57258, npc=157120, poi={AMATHET, AQIR},}, -- Fangtaker Orsa
-    [75205140] = {quest=57280, npc=157167, poi={AMATHET, AQIR},}, -- Champion Sen-mat
-    [58006160] = {quest=58715, npc=162372, poi={AMATHET, AQIR},}, -- Spirit of Cyrus the Black
-    [58008240] = {quest=58715, npc=162372, poi={AMATHET, AQIR},}, -- Spirit of Cyrus the Black
-    [66406800] = {quest=58715, npc=162372, poi={AMATHET, AQIR},}, -- Spirit of Cyrus the Black
-    [70807460] = {quest=58715, npc=162372, poi={AMATHET, AQIR},}, -- Spirit of Cyrus the Black
+    [43804140] = {quest=58718, npc=162370, }, -- Armagedillo
+    [50004000] = {quest=58716, npc=162352, note="In cave",}, -- Spirit of Dark Ritualist Zakahn
+    [74806820] = {quest=57258, npc=157120, }, -- Fangtaker Orsa
+    [75205140] = {quest=57280, npc=157167, }, -- Champion Sen-mat
+    [58006160] = {quest=58715, npc=162372, }, -- Spirit of Cyrus the Black
+    [58008240] = {quest=58715, npc=162372, }, -- Spirit of Cyrus the Black
+    [66406800] = {quest=58715, npc=162372, }, -- Spirit of Cyrus the Black
+    [70807460] = {quest=58715, npc=162372, }, -- Spirit of Cyrus the Black
+}, {requires={AMATHET, AQIR, any=true}})
+ns.RegisterPoints(1527, {
+    [60607300] = {quest=58169, npc=160532, requires={NZOTH, AQIR, any=true},}, -- Shoth the Darkened
     [58006000] = { -- R'khuzj the Unfathomable
         quest=57430, npc=156299,
         loot=aqirWeapons,
-        poi={NZOTH, AQIR},
+        requires={NZOTH, AQIR, any=true},
         -- route={50205080,56405240,58006000,58406640,57407820},
     },
 })
