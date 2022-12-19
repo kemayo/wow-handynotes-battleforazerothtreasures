@@ -168,7 +168,7 @@ ns.RegisterPoints(62, { -- Darkshore
         loot={{166428, mount=1199}},
         note="Requires Horde control",
     },
-    [50703230] = { -- Grimhorn
+    [50703231] = { -- Grimhorn
         quest=54891,
         npc=149656,
         loot={{166528, pet=2563}},

@@ -2,7 +2,7 @@ local myname, ns = ...
 
 -- Treasures of Tiragarde
 ns.RegisterPoints(895, { -- Tiragarde Sound
-    [61515233] = {quest=49963, criteria=41012, note="Ride the Guardian",}, -- Hay Covered Chest
+    [61515233] = {quest=49963, criteria=41012, npc=130350, loot={155571}, note="Ride the Guardian",}, -- Hay Covered Chest; Guardian of the Spring (49983 is the ride, 49963 is the loot)
     [56033319] = {quest=52866, criteria=41014,}, -- Precarious Noble Cache
     [72482169] = {quest=52870, criteria=41016, note="In cave",}, -- Scrimshaw Cache
     [72495814] = {quest=50442, loot={155381}, criteria=41013,}, -- Cutwater Treasure Chest
@@ -54,7 +54,7 @@ local shanty =  {
 }
 ns.RegisterPoints(895, { -- Tiragarde Sound
     [43382585] = {quest=53410, loot={163715}, criteria=41542, note="In a cave",}, -- Fruit Counting
-    [76218305] = {quest=50233, loot={163717}, criteria=41544, note="Kill Barman Bill",}, -- Josephus
+    [76218306] = {quest=50233, loot={163717}, criteria=41544, note="Kill Barman Bill",}, -- Josephus
     [56706990] = {quest=50096, loot={163718}, criteria=41545, note="Kill Black-Eyed Bart",}, -- Black Sphere
     [73208410] = {quest=53411, loot={163719}, criteria=41546, note="Ground floor, on a table",}, -- Horse
     [70602270] = {quest=53407, loot={163716}, criteria=41543, note="Behind Jay the Tavern Bard",}, -- Inebriation
@@ -144,6 +144,5 @@ ns.RegisterPoints(1161, { -- Boralus
 
 -- non-achievement
 ns.RegisterPoints(895, { -- Tiragarde Sound
-    [61515233] = {quest=49963, npc=130350, loot={155571}, note="Ride to Roan Berthold in Southwind Station; follow the road",}, -- Guardian of the Spring (49983 is the ride, 49963 is the loot)
     -- [52253215] = {quest=nil, npc=132052, loot={155074},}, -- Vol'Jim (removed from game?)
 })
