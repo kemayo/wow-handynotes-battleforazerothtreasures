@@ -1,6 +1,8 @@
 ## Interface: 100002
 ## Title: HandyNotes: Battle for Azeroth Treasures
+## Title-ruRU: HandyNotes: Сокровища в Битве за Азерот
 ## Notes: Where are the hidden treasures in Battle For Azeroth?
+## Notes-ruRU: Показывает на карте, где спрятаны сокровища в Битве за Азерот
 ## Author: Kemayo
 ## Version: @project-version@
 ## DefaultState: enabled
