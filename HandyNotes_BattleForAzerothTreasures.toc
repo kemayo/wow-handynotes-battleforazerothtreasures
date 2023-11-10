@@ -1,4 +1,4 @@
-## Interface: 100007
+## Interface: 100200
 ## Title: HandyNotes: Battle for Azeroth Treasures
 ## Notes: Where are the hidden treasures in Battle For Azeroth?
 ## Author: Kemayo
