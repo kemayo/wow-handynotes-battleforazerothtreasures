@@ -1,5 +1,13 @@
 # Changelog
 
+## Changed in v31
+
+* Updated for 10.2.0
+* Bring in updates to the handler code from [HandyNotes: Dragonflight Treasures](https://www.curseforge.com/wow/addons/handynotes-dragonflight-treasures):
+    * Avoid some possible tooltip errors with other addons
+    * Minimap routes should respect display settings
+    * New config "only show notable NPCs": enable and rares will only be shown if they've got something for you (achievements or transmogs)
+
 ## Changed in v30
 
 * The Assault rares weren't being shown because Blizzard removed the continient-level icons I was using to decide which assault was currently active, so I have changed the check
