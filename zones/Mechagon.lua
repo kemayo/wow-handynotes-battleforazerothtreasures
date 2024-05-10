@@ -74,7 +74,7 @@ ns.RegisterPoints(1462, { -- Mechagon
 -- Rares
 ns.RegisterPoints(1462, { -- Mechagon
     [62802600] = {quest=55814, npc=150342, loot={{167042, quest=55030}}, criteria=45138, note="Complete Drill Rig DR-TR35 and enter the cave"}, -- Earthbreaker Gulroc
-    [60604460] = {quest=55546, npc=150394, loot={{170072, pet=2766}, {167843, quest=55058}, {167796, quest=55455}}, criteria=45158}, -- Armored Vaultbot
+    [60604460] = {quest=55546, npc=150394, loot={{170072, pet=2766}, {167843, quest=55058}, {167796, quest=55455}}, criteria=45158, vignette=3586,}, -- Armored Vaultbot
     [38805320] = {quest=55368, npc=150575, loot={{168001, quest=55517}}, criteria=45123}, -- Rumblerocks
     [19207940] = {quest=55545, npc=150937, loot={{168063, quest=55065}}, criteria=45133}, -- Seaspit
     [56905330] = {quest=55207, npc=151124, loot={{168490, quest=55069}, {169688, quest=56515}}, criteria=45117}, -- Mechagonian Nullifier
