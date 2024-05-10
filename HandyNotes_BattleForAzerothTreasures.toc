@@ -42,3 +42,4 @@ zones\Nazjatar.lua
 
 zones\ValeOfEternalBlossoms.lua
 zones\Uldum.lua
+zones\Visions.lua
