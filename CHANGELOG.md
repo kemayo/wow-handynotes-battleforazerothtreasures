@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v32
+
+* Updated for 11.0.0
+* Added some points inside the Visions of N'Zoth
+* Fixed the vignette for the Armored Vaultbot
+
 ## Changed in v31
 
 * Updated for 10.2.0
