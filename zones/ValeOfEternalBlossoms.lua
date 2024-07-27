@@ -112,4 +112,17 @@ ns.RegisterPoints(1530, { -- Vale of Eternal Blossoms
 -- Any assault
 ns.RegisterPoints(1530, { -- Vale of Eternal Blossoms
     [9406740] = {quest=57364, npc=157468, loot=moguWeapons}, -- Tisiphon
+    [5405620] = { -- Grand Empress Shek'zara
+        quest=58705, -- todo: actual quest
+        worldquest=58705,
+        npc=154638,
+        loot={
+            174234, -- Maniacal Speaker's Cover
+            174243, -- Guise of the Voracious Prowler
+            174255, -- Greaves of Shattered Thoughts
+            174264, -- Chitinous Conqueror's Legplates
+            174268, -- Loop of Abhorrent Celerity
+        },
+        requires={MANTID, MOGU, any=true},
+    },
 })

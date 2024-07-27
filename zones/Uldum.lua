@@ -165,4 +165,17 @@ ns.RegisterPoints(1527, { -- Uldum
     [73808340] = {quest=57259, npc=157134, loot={{174641, mount=1314}}}, -- Ishak of the Four Winds
     -- [] = {quest=58691, npc=162254,}, -- Corrupted Observer
     -- [] = {quest=58691, npc=158632,}, -- Corrupted Fleshbeast
+    [45401620] = { -- Vuk'laz the Earthbreaker
+        quest=58510
+        worldquest=55466,
+        npc=160970,
+        loot={
+            174237, -- Breeches of Faithful Execution
+            174247, -- Grotesque Mutilator's Leggings
+            174250, -- Psyche Tormentor's Visage
+            174258, -- Greathelm of Indiscriminate Brutality
+            174469, -- Band of Insidious Ruminations
+        },
+        requires={AMATHET, AQIR, any=true},
+    },
 })
