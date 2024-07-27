@@ -166,7 +166,7 @@ ns.RegisterPoints(1527, { -- Uldum
     -- [] = {quest=58691, npc=162254,}, -- Corrupted Observer
     -- [] = {quest=58691, npc=158632,}, -- Corrupted Fleshbeast
     [45401620] = { -- Vuk'laz the Earthbreaker
-        quest=58510
+        quest=58510,
         worldquest=55466,
         npc=160970,
         loot={
