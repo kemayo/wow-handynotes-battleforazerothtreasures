@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v34
+
+* Updated for 11.1.0
+* Switched to the new menu system
+
 ## Changed in v33
 
 * Assaults: add Shek'zara and Vuk'laz loot
