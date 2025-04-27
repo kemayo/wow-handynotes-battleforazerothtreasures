@@ -1,4 +1,4 @@
-## Interface: 110100
+## Interface: 110105
 ## Title: HandyNotes: Battle for Azeroth Treasures
 ## Notes: Where are the hidden treasures in Battle For Azeroth?
 ## Author: Kemayo
@@ -10,7 +10,6 @@
 ## X-Wago-ID: ME6gYXG1
 ## SavedVariables: HandyNotes_BattleForAzerothTreasuresDB
 ## RequiredDeps: HandyNotes
-## OptionalDeps: !LibUIDropDownMenu
 
 handler\handler.xml
 
