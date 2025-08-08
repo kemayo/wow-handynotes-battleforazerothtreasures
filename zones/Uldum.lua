@@ -140,7 +140,7 @@ ns.RegisterPoints(1527, { -- Uldum
 -- multi-assault:
 ns.RegisterPoints(1527, {
     [43804140] = {quest=58718, npc=162370, }, -- Armagedillo
-    [50004000] = {quest=58716, npc=162352, note="In cave",}, -- Spirit of Dark Ritualist Zakahn
+    [50004000] = {quest=58716, npc=162352, note="In cave", path=52044011}, -- Spirit of Dark Ritualist Zakahn
     [74806820] = {quest=57258, npc=157120, }, -- Fangtaker Orsa
     [75205140] = {quest=57280, npc=157167, }, -- Champion Sen-mat
     [58006160] = {quest=58715, npc=162372, }, -- Spirit of Cyrus the Black
