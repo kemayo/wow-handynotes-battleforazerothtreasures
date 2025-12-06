@@ -51,6 +51,7 @@ ns.RegisterPoints(862, { -- Zuldazar
     [65041636] = {quest=50715,},
     [68902222] = {quest=50715,},
     [68503365] = {quest=50716,},
+    [74836214] = {quest=50719,},
     [66552896] = {quest=50720,},
     [63062832] = {quest=50720,},
     [75042303] = {quest=50721,},
@@ -64,10 +65,11 @@ ns.RegisterPoints(862, { -- Zuldazar
     [40953756] = {quest=50727,},
     [81203857] = {quest=50728,},
     [80135512] = {quest=51346,},
-    [82465431] = {quest=51346, },
+    [82465431] = {quest=51346,},
 }, junk)
 ns.RegisterPoints(1165, { -- Dazar'alor
-    [48981013] = {quest=49142,},
+    [48981013] = {quest=49142, parent=true,},
+    [52341766] = {quest=49142, parent=true,},
 }, junk)
 
 -- Rares
