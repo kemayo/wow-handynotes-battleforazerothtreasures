@@ -217,6 +217,7 @@ ns.RegisterPoints(14, { -- Arathi Highlands
         loot={{163579, mount=1174}},
         faction="Alliance",
         note="Requires Alliance control",
+        worldquest=54540,
     },
 }, {
     art=1137,
