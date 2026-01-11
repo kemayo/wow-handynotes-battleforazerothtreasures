@@ -1,5 +1,12 @@
 # Changelog
 
+## Changed in v38
+
+* Ready for Midnight
+* Bring in systems improvements from [my Midnight plugin](https://www.curseforge.com/wow/addons/handynotes-midnight-treasures)
+* Zuldazar: added a few junk chests
+* Arathi Highlands: added the world quest for Doomrider Helgrim
+
 ## Changed in v37
 
 * Updated for 11.2.7
