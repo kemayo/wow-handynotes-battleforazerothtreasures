@@ -8,6 +8,7 @@ local kodo = {
     },
     atlas="stablemaster", scale=1.2, minimap=true,
     note="Appears for a few minutes at a time, you just need to click it",
+    art=1176,
 }
 ns.RegisterPoints(62, {
     -- see: https://www.wowhead.com/npc=148790/frightened-kodo#comments:id=2869160
@@ -19,6 +20,18 @@ ns.RegisterPoints(62, {
     [41306548] = {},
 }, kodo)
 
+local decor = {
+    {241066, decor=true, expansion=LE_EXPANSION_WAR_WITHIN}, -- Forsaken Spiked Brazier
+    {245462, decor=true, expansion=LE_EXPANSION_WAR_WITHIN}, -- Banshee Queen's Banner
+    {245627, decor=true, expansion=LE_EXPANSION_WAR_WITHIN}, -- Elven Temple Brazier
+    {246110, decor=true, expansion=LE_EXPANSION_WAR_WITHIN}, -- Filigree Moon Sconce
+}
+local addDecor = function(loot)
+    if not loot then return decor end
+    tAppendAll(loot, decor)
+    return loot
+end
+
 -- Either faction
 ns.RegisterPoints(62, { -- Darkshore
     [56553080] = { -- Alash'anir
@@ -29,6 +42,7 @@ ns.RegisterPoints(62, { -- Darkshore
     [37708490] = { -- Aman
         quest={54405, 54406, any=true},
         npc=147966,
+        loot=addDecor(),
     },
     [57401570] = { -- Amberclaw
         quest={54285, 54286, any=true},
@@ -57,10 +71,12 @@ ns.RegisterPoints(62, { -- Darkshore
     [43551965] = { -- Glimmerspine
         quest={54884, 54885, any=true},
         npc=149654,
+        loot=addDecor(),
     },
     [48255560] = { -- Granokk
         quest={54234, 54235, any=true},
         npc=147261,
+        loot=addDecor(),
     },
     [40905645] = { -- Gren Tornfur
         quest={54428, 54429, any=true},
@@ -75,18 +91,22 @@ ns.RegisterPoints(62, { -- Darkshore
     [43954849] = { -- Madfeather
         quest={54887, 54888, any=true},
         npc=149657,
+        loot=addDecor(),
     },
     [35898175] = { -- Mrggr'marr
         quest={54408, 54409, any=true},
         npc=147970,
+        loot=addDecor(),
     },
     [47254410] = { -- Scalefiend
         quest={54893, 54894, any=true},
         npc=149665,
+        loot=addDecor(),
     },
     [43502945] = { -- Shattershard
         quest={54289, 54290, any=true},
         npc=147751,
+        loot=addDecor(),
     },
     [40558525] = { -- Soggoth the Slitherer
         quest={54320, 54321, any=true},
@@ -96,6 +116,7 @@ ns.RegisterPoints(62, { -- Darkshore
     [45485895] = { -- Stonebinder Ssra'vess
         quest={54247, 54248, any=true},
         npc=147332,
+        loot=addDecor(),
     },
     [40608265] = { -- Twilight Prophet Graeme
         quest={54397, 54398, any=true},
