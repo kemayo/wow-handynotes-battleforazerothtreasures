@@ -171,6 +171,24 @@ ns.RegisterPoints(62, { -- Darkshore
         npc=147664,
         loot={{166453, pet=2548}},
     },
+    [41233602] = { -- Ivus the Decayed
+        quest=54862,
+        worldquest=54895,
+        npc=148295,
+        loot={
+            161413, -- Knot of Ancient Fury
+            161415, -- Forest Lord's Razorleaf
+            161417, -- Ancient Knot of Wisdom
+            166683, -- Garments of the Forest Lord
+            166686, -- Ivus' Tanglemoss Waistcord
+            166687, -- Warring Ancient's Mask
+            166690, -- Protector's Tangleroot Belt
+            166691, -- Forest Protector's Shoulderguards
+            166694, -- Gnarled Bough Gauntlets
+            166695, -- Petrified Ironbark Crown
+            166698, -- Stoneroot Stompers
+        },
+    },
 }, {
     art=1176,
     faction="Alliance",
@@ -214,6 +232,24 @@ ns.RegisterPoints(62, { -- Darkshore
         quest=54252,
         npc=147435,
         loot={{166790, toy=true}},
+    },
+    [41233600] = { -- Ivus the Forest Lord
+        quest=54896, -- wq
+        worldquest=54896,
+        npc=144946,
+        loot={
+            166684, -- Garments of the Forest Lord
+            166685, -- Ivus' Tanglemoss Waistcord
+            166688, -- Warring Ancient's Crown
+            166689, -- Protector's Tangleroot Belt
+            166692, -- Forest Protector's Shoulderguards
+            166693, -- Gnarled Bough Gauntlets
+            166696, -- Petrified Ironbark Crown
+            166697, -- Stoneroot Stompers
+            166793, -- Ancient Knot of Wisdom
+            166794, -- Forest Lord's Razorleaf
+            166795, -- Knot of Ancient Fury
+        },
     },
 }, {
     art=1176,
