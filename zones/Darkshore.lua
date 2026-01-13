@@ -263,16 +263,21 @@ ns.RegisterPoints(62, { -- Darkshore
 -- questid, but it does seem likely...
 
 ns.RegisterPoints(62, {
-    [58802525] = {quest=54872},
-    [48202749] = {quest=54877},
-    [43578125] = {quest=54881},
+    [58802525] = {quest=54872, vignette=3514},
+    [61222000] = {quest=54872, vignette=3514},
+    [48242742] = {quest=54877, vignette=3515},
+    [42383860] = {quest=54879, vignette=3516},
+    [46825568] = {quest=54880, vignette=3517},
+    [37277695] = {quest=54881, vignette=3518},
     [37746163] = {quest=54881, vignette=3518},
-    [61761934] = {quest=54908},
-    [49881814] = {quest=54909},
-    [40804337] = {quest=54910}, -- 54879
-    [41324820] = {quest=54911}, -- 54880
-    [39576230] = {quest=54912},
+    [43578125] = {quest=54881, vignette=3518},
+    [61761934] = {quest=54908, vignette=3529},
+    [49881814] = {quest=54909, vignette=3530},
+    [40804337] = {quest=54910, vignette=3531}, -- 54879
+    [41324820] = {quest=54911, vignette=3532}, -- 54880
+    [39576230] = {quest=54912, vignette=3533},
 }, {
     art=1176,
     label="Darkshore Cache",
+    minimap=false,
 })
