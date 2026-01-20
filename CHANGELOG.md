@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v39
+
+* Darkshore: add new decor rewards from 11.2.7
+* Darkshore: also, add some missing chests and tweak mob coordinates
+* Bring in systems improvements from [my Midnight plugin](https://www.curseforge.com/wow/addons/handynotes-midnight-treasures)
+
 ## Changed in v38
 
 * Ready for Midnight
