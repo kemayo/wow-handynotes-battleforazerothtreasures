@@ -136,4 +136,21 @@ ns.RegisterPoints(1355, { -- Nazjatar
     [48352400] = {quest=55603, npc=150468, loot={{169376, pet=2709}}}, -- Vor'koth
     [36901120] = {quest=55584, npc=150191, loot={{169373, pet=2706}}}, -- Avarius
     [54804200] = {quest=55366, npc=149653, loot={{169375, pet=2708}}}, -- Carnivorous Lasher (also seen 56296 + 56587)
+    [83913611] = { -- Ulmath, The Soulbinder
+        quest=56057, -- The Soulbinder
+        npc=152697,
+        loot={
+            168603, -- Cloak of Restless Spirits
+            169317, -- Enthraller's Bindstone
+            170088, -- Ulmath's Soulseeker
+            170089, -- Liara's Spire
+            170090, -- Merciless Pincher
+            170091, -- Willbinder's Halberd
+            170092, -- Netherdancer's Knife
+            170093, -- Tyr'mar's Greatsword
+            170094, -- Temple Guardian's Saber
+            170095, -- Moon Priestess' Baton
+        },
+        worldquest=56057,
+    },
 })
