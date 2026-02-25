@@ -1,5 +1,17 @@
 # Changelog
 
+## Changed in v40
+
+* Nazjatar: add loot to The Soulbinder
+* Bring in systems improvements from [my Midnight plugin](https://www.curseforge.com/wow/addons/handynotes-midnight-treasures)
+    * Fixes for midnight transmog
+    * Fixes for midnight secrets
+    * Improvements to hooking into Blizzard's map pins
+    * Performance improvement: only start caching points on-load if you're in a relevant zone
+    * Adjust display so that tooltip titles use normal blizzard color
+    * Change the tooltip anchoring to points default to true
+    * Override reward item tooltip display to not use a MoneyFrame
+
 ## Changed in v39
 
 * Darkshore: add new decor rewards from 11.2.7
