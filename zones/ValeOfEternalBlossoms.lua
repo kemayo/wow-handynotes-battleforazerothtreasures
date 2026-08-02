@@ -21,7 +21,7 @@ ns.RegisterPoints(1530, { -- Vale of Eternal Blossoms
     [44004420] = {quest=57343, npc=157267,}, -- Escaped Mutation
     [50606560] = { -- Kilxl the Gaping Maw
         quest=57341, npc=157266,
-        -- route={44606320,45205900,48005860,50606550,49206860,46407020},
+        -- routes={{44606320,45205900,48005860,50606550,49206860,46407020}},
     },
     [51804100] = {quest=57342, npc=157176, loot={{174473, pet=2845}}, note="On floating platform"}, -- The Forgotten
     [52406140] = {quest=56303, npc=154495, loot={{175140, toy=true}, 175141, {174474, pet=2846}}}, -- Will of N'Zoth
@@ -52,12 +52,12 @@ ns.RegisterPoints(1530, { -- Vale of Eternal Blossoms
     [20401260] = {quest=57346, npc=157162, loot=tAppendAll({174230,{174649,mount=1313}}, moguWeapons), note="Use the scale to buy the mount",}, -- Rei Lun
     [27007400] = { -- Stormhowl
         quest=57348, npc=157279,
-        -- route={23807700,27007400,27207140},
+        -- routes={{23807700,27007400,27207140}},
     },
     [26401040] = {quest=57350, npc=157290, note="In cave",}, -- Jade Watcher
     [29053930] = { -- Ha-Li
         quest=57344, npc=157153,
-        -- route={37323630,33973378,29053930,31524387,37313632,37323630,loop=true},
+        -- routes={{37323630,33973378,29053930,31524387,37313632,37323630,loop=true}},
         loot=tAppendAll({{173887,mount=1297}}, moguWeapons),
         note="Flying in a circle counterclockwise",
     },
@@ -71,7 +71,7 @@ ns.RegisterPoints(1530, { -- Vale of Eternal Blossoms
     [11603160] = { -- Houndlord Ren
         quest=57345, npc=157160,
         loot=tAppendAll({{174841,mount=1327}}, moguWeapons),
-        route={09003520,11603160,12802640},
+        routes={{09003520,11603160,12802640}},
     },
     [26805510] = { -- Ivory Cloud Serpent
         npc=163042,
@@ -96,7 +96,7 @@ ns.RegisterPoints(1530, { -- Vale of Eternal Blossoms
     [27204380] = {quest=58309, npc=160906,}, -- Skiver
     [04204860] = { -- Captain Vor'lek
         quest=58308, npc=160893,
-        --route={08807060,06607060,06606400,04206400,04204860,06604180,06602860},
+        --routes={{08807060,06607060,06606400,04206400,04204860,06604180,06602860}},
     },
     [28205260] = {quest=58299, npc=160810,}, -- Harbinger Il'koxik
     [05606400] = {quest=58307, npc=160878,}, -- Buh'gzaki the Blasphemous

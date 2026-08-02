@@ -75,7 +75,7 @@ ns.RegisterPoints(14, { -- Arathi Highlands
         quest={53090, 53515, any=true},
         npc=142716,
         loot={{163689, pet=2441}},
-        --route={52297686, 51807585, 52197487, 51957382, 52187259},
+        --routes={{52297686, 51807585, 52197487, 51957382, 52187259}},
         note="Wanders a bit",
     },
     [47657800] = { -- Molok the Crusher

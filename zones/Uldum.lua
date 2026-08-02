@@ -42,7 +42,7 @@ local aqirWeapons = {
 ns.RegisterPoints(1527, { -- Uldum
     [46407320] = { -- Falconer Amenophis
         quest=57662, npc=158491,
-        -- route={44407820,46407320,51806880},
+        -- routes={{44407820,46407320,51806880}},
     },
     [47407720] = {quest=57664, npc=158528,}, -- High Guard Reshef
     [49208260] = {quest=57688, npc=158636, loot={{169303, toy=true}}, note="Up on the floating platform"}, -- The Grand Executor
@@ -119,7 +119,7 @@ ns.RegisterPoints(1527, { -- Uldum
     [28601420] = { -- R'krox the Runt
         quest=58864, npc=162173,
         loot=aqirWeapons,
-        -- route={30603200, 30202760, 28601420, 25400900, 30800940, 33801100, 37801000},
+        -- routes={{30603200, 30202760, 28601420, 25400900, 30800940, 33801100, 37801000}},
     },
     [30006500] = {quest=56952, npc=156078, loot=aqirWeapons,}, -- Magus Rehleth
     [30404940] = {quest=58696, npc=162147, loot=tAppendAll({{174769,mount=1319}}, aqirWeapons),}, -- Corpse Eater
@@ -154,7 +154,7 @@ ns.RegisterPoints(1527, {
         quest=57430, npc=156299,
         loot=aqirWeapons,
         requires={NZOTH, AQIR, any=true},
-        -- route={50205080,56405240,58006000,58406640,57407820},
+        -- routes={{50205080,56405240,58006000,58406640,57407820}},
     },
 })
 
