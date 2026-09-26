@@ -124,11 +124,12 @@ ns.RegisterPoints(14, { -- Arathi Highlands
         loot={{163689, pet=2437}},
         note="Requires Alliance control",
     },
-    [11905220] = { -- Ragebeak
+    [12075218] = { -- Ragebeak
         quest={53016, 53522, any=true},
         npc=142436,
         loot={{163689, pet=2437}},
         note="Requires Horde control",
+        vignette=3193,
     },
     [42905650] = { -- Ruul Onestone
         quest={53092, 53524, any=true},
@@ -163,10 +164,11 @@ ns.RegisterPoints(14, { -- Arathi Highlands
         loot={{163648, pet=2432}},
         vignette=3201,
     },
-    [13253535] = { -- Yogursa
+    [14323718] = { -- Yogursa
         quest={53015, 53529, any=true},
         npc=142440,
         loot={{163684, pet=2436}},
+        vignette=3192,
     },
     [62858120] = { -- Zalas Witherbark
         quest={53094, 53530, any=true},
