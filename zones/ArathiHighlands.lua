@@ -5,6 +5,7 @@ ns.RegisterPoints(14, { -- Arathi Highlands
         quest={53083, 53504, any=true},
         npc=142709,
         loot={{163644, mount=1180}},
+        vignette=3207,
     },
     [21752215] = { -- Branchlord Aldrus
         quest={53013, 53505, any=true},
@@ -17,24 +18,27 @@ ns.RegisterPoints(14, { -- Arathi Highlands
         loot={{163652, pet=2434}},
         note="Requires Alliance control",
     },
-    [50756120] = { -- Darbel Montrose
+    [50386103] = { -- Darbel Montrose
         quest={53084, 53507, any=true},
         npc=142688,
         loot={{163652, pet=2434}},
         note="Requires Horde control",
+        vignette=3208,
     },
-    [22305105] = { -- Foulbelly
+    [22325113] = { -- Foulbelly
         quest={53086, 53509, any=true},
         npc=142686,
         loot={{163735, toy=true}},
         path=28594561,
         note="Inside Boulderfist Outpost",
+        vignette=3210,
     },
 
-    [59802810] = { -- Fozruk
+    [59362774] = { -- Fozruk
         quest={53019, 53510, any=true},
         npc=142433,
         loot={{163711, pet=2440}},
+        vignette=3196,
     },
     [79552945] = { -- Geomancer Flintdagger
         quest={53060, 53511, any=true},
@@ -50,11 +54,12 @@ ns.RegisterPoints(14, { -- Arathi Highlands
         loot={{163736, toy=true}},
         note="Requires Alliance control",
     },
-    [19406120] = { -- Horrific Apparition
+    [19436131] = { -- Horrific Apparition
         quest={53087, 53512, any=true},
         npc=142725,
         loot={{163736, toy=true}},
         note="Requires Horde control",
+        vignette=3211,
     },
     [49308425] = { -- Kor'gresh Coldrage
         quest={53058, 53513, any=true},
@@ -64,15 +69,17 @@ ns.RegisterPoints(14, { -- Arathi Highlands
         path=48107955,
         note="Inside cave",
     },
-    [25294855] = { -- Kovork
+    [25224856] = { -- Kovork
         quest={53089, 53514, any=true},
         npc=142684,
         loot={{163750, toy=true}},
         path=28594560,
         note="Inside Boulderfist Outpost",
+        vignette=3213,
     },
     [52197485] = { -- Man-Hunter Rog
         quest={53090, 53515, any=true},
+        worldquest=54565,
         npc=142716,
         loot={{163689, pet=2441}},
         --routes={{52297686, 51807585, 52197487, 51957382, 52187259}},
@@ -84,10 +91,11 @@ ns.RegisterPoints(14, { -- Arathi Highlands
         npc=141942,
         loot={{163775, toy=true}},
     },
-    [67486060] = { -- Nimar the Slayer
+    [67626087] = { -- Nimar the Slayer
         quest={53091, 53517, any=true},
         npc=142692,
         loot={{163706, mount=1185}},
+        vignette=3215,
     },
     [32903845] = { -- Overseer Krix
         quest={53014, 53518, any=true},
@@ -96,17 +104,19 @@ ns.RegisterPoints(14, { -- Arathi Highlands
         path=33693675,
         note="Requires Alliance control",
     },
-    [27255710] = { -- Overseer Krix
+    [27485710] = { -- Overseer Krix
         quest={53014, 53518, any=true},
         npc=142423,
         loot={{163646, mount=1182}},
         path=27485560,
         note="Requires Horde control",
+        vignette=3191,
     },
-    [35606435] = { -- Plaguefeather
+    [37776374] = { -- Plaguefeather
         quest={53020, 53519, any=true},
         npc=142435,
         loot={{163690, pet=2438}},
+        vignette=3197,
     },
     [18402795] = { -- Ragebeak
         quest={53016, 53522, any=true},
@@ -120,10 +130,12 @@ ns.RegisterPoints(14, { -- Arathi Highlands
         loot={{163689, pet=2437}},
         note="Requires Horde control",
     },
-    [42905660] = { -- Ruul Onestone
+    [42905650] = { -- Ruul Onestone
         quest={53092, 53524, any=true},
+        worldquest=54563,
         npc=142683,
         loot={{163741, toy=true}},
+        vignette=3216,
     },
     [51204000] = { -- Singer
         quest={53093, 53525, any=true},
@@ -131,21 +143,25 @@ ns.RegisterPoints(14, { -- Arathi Highlands
         loot={{163738, toy=true}},
         note="Requires Alliance control",
     },
-    [50705750] = { -- Singer
+    [50595745] = { -- Singer
         quest={53093, 53525, any=true},
         npc=142690,
         loot={{163738, toy=true}},
         note="Requires Horde control",
+        vignette=3217,
     },
-    [57154575] = { -- Skullripper
+    [57304599] = { -- Skullripper
         quest={53022, 53526, any=true},
         npc=142437,
         loot={{163645, mount=1183}},
+        vignette=3199,
     },
-    [56955330] = { -- Venomarus
+    [57265414] = { -- Venomarus
         quest={53024, 53528, any=true},
+        worldquest=54597,
         npc=142438,
         loot={{163648, pet=2432}},
+        vignette=3201,
     },
     [13253535] = { -- Yogursa
         quest={53015, 53529, any=true},
@@ -162,31 +178,36 @@ ns.RegisterPoints(14, { -- Arathi Highlands
     },
 
     -- Myzrael:
-    [30604475] = { -- Burning Goliath
+    [30644473] = { -- Burning Goliath
         quest={53017, 53506, any=true},
         npc=141615,
         note="Defeat all the goliaths to make {npc:141668} appear",
+        vignette=3194,
     },
-    [62503085] = { -- Cresting Goliath
+    [62083150] = { -- Cresting Goliath
         quest={53018, 53531, any=true},
         npc=141618,
         note="Defeat all the goliaths to make {npc:141668} appear",
+        vignette=3195,
     },
-    [29405835] = { -- Rumbling Goliath
+    [29865982] = { -- Rumbling Goliath
         quest={53021, 53523, any=true},
         npc=141620,
         note="Defeat all the goliaths to make {npc:141668} appear",
+        vignette=3198,
     },
-    [46255220] = { -- Thundering Goliath
+    [46345212] = { -- Thundering Goliath
         quest={53023, 53527, any=true},
         npc=141616,
         note="Defeat all the goliaths to make {npc:141668} appear",
+        vignette=3200,
     },
-    [57053470] = { -- Echo of Myzrael
+    [57073474] = { -- Echo of Myzrael
         quest={53059, 53508, any=true},
         npc=141668,
         loot={{163677, pet=2435}},
         note="Defeat all the goliaths to make this appear",
+        vignette=3204,
     },
 
     -- Faction-specific:
@@ -206,8 +227,23 @@ ns.RegisterPoints(14, { -- Arathi Highlands
     },
     [37093920] = { -- Doom's Howl
         quest=53002,
+        worldquest=52847,
         npc=138122,
-        loot={{163828, toy=true}},
+        loot={
+            161464, -- Alliance Bowman's Coif
+            161465, -- Warcaster's Arcane Mantle
+            161466, -- Battlemage's Collar
+            161467, -- Vest of the Veiled Gryphon
+            161468, -- Gilded-Wing Shoulderguards
+            161469, -- Sharpshooter's Chainmail Hauberk
+            161470, -- Polished Shieldbearer's Breastplate
+            161471, -- Lion's Roar Pauldrons
+            161472, -- Lion's Grace
+            161473, -- Lion's Guile
+            161474, -- Lion's Strength
+            163195, -- Schematic: Makeshift Azerite Detector
+            {163828,toy=true,}, -- Toy Siege Tower
+        },
         faction="Alliance",
         note="Requires Alliance control",
     },
