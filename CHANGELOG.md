@@ -1,5 +1,15 @@
 # Changelog
 
+## Changed in v46
+
+* Uldum / Vale: fix some loot not showing during assaults
+* Arathi Highlands: update various points from vignettes
+* Nazjatar: fix typo in Banescale the Packfather's ID (it's not really a compressed ocean)
+* Bring in systems improvements from [my Midnight plugin](https://www.curseforge.com/wow/addons/handynotes-midnight-treasures), notably:
+    * Performance improvements in zones with lots of points
+    * Fixes for some secret-taint issues
+    * Update Krowi_WorldMapButtons-1.4 to v11
+
 ## Changed in v45
 
 * Bring in systems improvements from [my Midnight plugin](https://www.curseforge.com/wow/addons/handynotes-midnight-treasures), notably:
